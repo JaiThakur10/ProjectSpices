@@ -73,11 +73,11 @@ const Blog = () => {
      
 
       {/* blogs section */}
-      <div className=" grid gap-6 gap-y-10 py-6 md:grid-cols-2 lg:grid-cols-1 lg:w-1/2 m-auto mt-4">
+      <div className="grid gap-6 gap-y-10 py-6 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
-            <div key={post.title} className=" border-4 flex ">
-              <img src={post.poster} className="aspect-video  rounded-md w-1/2 object-cover" alt=""  />
-              <div className="min-h-min p-3 w-1/2 ">
+            <div key={post.title} className="border">
+              <img src={post.poster} className="aspect-video w-full rounded-md" alt="" />
+              <div className="min-h-min p-3">
                 <p className="mt-4 w-full text-xs font-semibold leading-tight text-gray-700">
                   #{post.category}
                 </p>
