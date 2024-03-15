@@ -37,7 +37,7 @@ const posts = [
       'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
   },
   {
-    category: 'Health',
+    category: 'Health & Fitness',
     title: 'The Benefits of Mindfulness Meditation',
     description:
       'Discover the scientifically proven benefits of mindfulness meditation and how it can improve your health and wellbeing.',
