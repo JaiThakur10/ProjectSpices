@@ -4,7 +4,6 @@ import { Text } from "../Text";
 import { Img } from "../Img";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
-import { Slider } from "../Slider";
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
@@ -53,11 +52,29 @@ export default function HomepagePage() {
                   </Text>
                 </div>
               </div>
-              <Img
-                src="https://nurserylive.com/cdn/shop/articles/indian-spices-602199.jpg?v=1679748509"
-                alt="nathanoakleyo"
-                className="w-[48%] object-cover"
-              />
+              <div className="carousel carousel-center max-w-2xl p-4 space-x-7 bg-organe-50 ">
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box " />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+  </div>
+</div>
             </div>
           </div>
         </div>
