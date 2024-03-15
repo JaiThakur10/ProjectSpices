@@ -9,6 +9,7 @@ import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Blend from './Components/Blend/Blend.jsx'
 import Blog from './Components/Blog/Blog.jsx'
+import B2B from './Components/B2B/B2B.jsx'
 
 
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact/>} />
       <Route path='blend' element={<Blend/>} />
       <Route path='blog' element={<Blog/>} />
+      <Route path='B2B' element={<B2B/>} />
 
     </Route>
   )
