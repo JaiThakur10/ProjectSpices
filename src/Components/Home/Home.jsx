@@ -397,7 +397,7 @@ export default function HomepagePage() {
                 className="flex flex-col items-center justify-start w-[33%] gap-6"
               />
               <HomepageCardblog
-                imagesrc="https://www.youtube.com/embed/c-YUMFFeUkc?si=l3Gy935OKF0VoBQt"
+                imagesrc="https://youtu.be/08R-wR2LHCc?si=SuuHbsm9d-Z8pjM2"
                 className="flex flex-col items-center justify-start w-[33%] gap-6"
               />
               <HomepageCardblog
