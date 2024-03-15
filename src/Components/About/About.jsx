@@ -1,4 +1,8 @@
 import React from 'react'
+import { Heading } from "../Heading";
+import { Text } from "../Text";
+import { Img } from "../Img";
+
 
 export default function About() {
     return (
