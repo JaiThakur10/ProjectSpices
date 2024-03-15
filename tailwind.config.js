@@ -21,6 +21,7 @@ module.exports = {
       opacity: { 0.81: 0.81 },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"),require("daisyui")],
+  
 };
 
