@@ -4,14 +4,12 @@ import { Text } from "../Text";
 import { Img } from "../Img";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
-import { Slider } from "../Slider";
+
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
 
 export default function HomepagePage() {
-  const [sliderState, setSliderState] = React.useState(0);
-  const sliderRef = React.useRef(null);
 
   return (
     <>
@@ -23,8 +21,8 @@ export default function HomepagePage() {
         />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-yellow-50">
-        <div className="flex flex-col items-center justify-start w-full">
-          <div className="flex flex-row justify-center w-full px-14 py-[75px] bg-orange-50">
+        <div className="flex flex-col items-center justify-start w-full max-h-full">
+        <div className="flex flex-row justify-center w-full px-14 py-[75px] bg-orange-50">
             <div className="flex flex-row justify-between items-center w-full my-[5px] max-w-[1290px]">
               <div className="flex flex-col items-start justify-start w-[48%] gap-[30px]">
                 <div className="flex flex-col items-start justify-start w-full gap-[26px]">
@@ -53,15 +51,33 @@ export default function HomepagePage() {
                   </Text>
                 </div>
               </div>
-              <Img
-                src="https://nurserylive.com/cdn/shop/articles/indian-spices-602199.jpg?v=1679748509"
-                alt="nathanoakleyo"
-                className="w-[48%] object-cover"
-              />
+              <div className="carousel carousel-center max-w-2xl p-4 space-x-7 bg-organe-50 ">
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box " />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+  </div> 
+  <div className="carousel-item">
+    <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+  </div>
+</div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-full gap-11 p-[41px] bg-black-900">
+        <div className="flex flex-col items-center justify-center w-full gap-11 p-[41px] bg-black-900 ">
           <Text
             size="lg"
             as="p"
@@ -193,51 +209,51 @@ export default function HomepagePage() {
                 established.
               </Text>
             </div>
-                  <div className="flex flex-col gap-[50px] mx-auto">
-                    <div className="flex flex-row justify-start w-full gap-[19px]">
-                      <Link to="/blend">
-                        <HomepageCardproduct
-                          status="Main"
-                          imageOne="images/blend.png"
-                          category="Blended"
-                          centretext="Blended"
-                          bxheartoneOne=""
-                          className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                        />
-                      </Link>
-                      <Link to="/blend">
-                        <HomepageCardproduct
-                          status="Main"
-                          imageOne="images/blend.png"
-                          category="Blended"
-                          centretext="Blended"
-                          bxheartoneOne=""
-                          className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                        />
-                      </Link>
+            <div className="flex flex-col gap-[50px] mx-auto">
+              <div className="flex flex-row justify-start w-full gap-[19px]">
+                <Link to="/blend">
+                  <HomepageCardproduct
+                    status="Main"
+                    imageOne="images/blend.png"
+                    category="Blended"
+                    centretext="Blended"
+                    bxheartoneOne=""
+                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
+                  />
+                </Link>
+                <Link to="/blend">
+                  <HomepageCardproduct
+                    status="Main"
+                    imageOne="images/blend.png"
+                    category="Blended"
+                    centretext="Blended"
+                    bxheartoneOne=""
+                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
+                  />
+                </Link>
 
-                      <Link to="/blend">
-                        <HomepageCardproduct
-                          status="Main"
-                          imageOne="images/blend.png"
-                          category="Blended"
-                          centretext="Blended"
-                          bxheartoneOne=""
-                          className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                        />
-                      </Link>
-                      <Link to="/blend">
-                        <HomepageCardproduct
-                          status="Main"
-                          imageOne="images/blend.png"
-                          category="Blended"
-                          centretext="Blended"
-                          bxheartoneOne=""
-                          className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                        />
-                      </Link>
-                    </div>
-                  </div>
+                <Link to="/blend">
+                  <HomepageCardproduct
+                    status="Main"
+                    imageOne="images/blend.png"
+                    category="Blended"
+                    centretext="Blended"
+                    bxheartoneOne=""
+                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
+                  />
+                </Link>
+                <Link to="/blend">
+                  <HomepageCardproduct
+                    status="Main"
+                    imageOne="images/blend.png"
+                    category="Blended"
+                    centretext="Blended"
+                    bxheartoneOne=""
+                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
+                  />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="h-[535px] w-full relative">
@@ -397,11 +413,11 @@ export default function HomepagePage() {
                 className="flex flex-col items-center justify-start w-[33%] gap-6"
               />
               <HomepageCardblog
-                imagesrc="https://youtu.be/08R-wR2LHCc?si=SuuHbsm9d-Z8pjM2"
+                imagesrc="https://www.youtube.com/embed/08R-wR2LHCc?si=SuuHbsm9d-Z8pjM2"
                 className="flex flex-col items-center justify-start w-[33%] gap-6"
               />
               <HomepageCardblog
-                imagesrc="https://www.youtube.com/embed/EGGLqXw8bfM?si=Y4ZgbJ4uvfnY2glk"
+                imagesrc="https://www.youtube.com/embed/pIdJYnVkU0c?si=eNN7lINT9o50PuOk"
                 className="flex flex-col items-center justify-start w-[31%] gap-6 "
               />
             </div>
