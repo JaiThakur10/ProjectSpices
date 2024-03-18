@@ -5,6 +5,7 @@ import { Img } from "../Img";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
 
+
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
@@ -313,14 +314,15 @@ export default function HomepagePage() {
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start w-full gap-[67px] max-w-[1290px]"></div>
         </div>
-        <Heading
-                size="xl"
-                as="h2"
-                className="tracking-[-0.50px] text-center !font-semibold"
-              >
-                Instagram Posts
-              </Heading>
-        
+        <div>
+          <Heading
+            size="xl"
+            as="h2"
+            className="tracking-[-0.50px] text-center !font-semibold"
+          >
+            Instagram Posts
+          </Heading>
+        </div>
 
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
