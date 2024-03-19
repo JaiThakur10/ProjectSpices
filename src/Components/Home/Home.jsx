@@ -234,7 +234,7 @@ export default function HomepagePage() {
               <div className="flex flex-row justify-start w-full gap-[19px]">
                 <Link to="/blend">
                   <HomepageCardproduct
-                    status="Main"
+                    
                     imageOne="images/blend.png"
                     category="Blended"
                     centretext="Blended"
@@ -244,10 +244,10 @@ export default function HomepagePage() {
                 </Link>
                 <Link to="/blend">
                   <HomepageCardproduct
-                    status="Main"
+                  
                     imageOne="images/blend.png"
-                    category="Blended"
-                    centretext="Blended"
+                    category="Basic"
+                    centretext="Basic"
                     bxheartoneOne=""
                     className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
                   />
@@ -255,24 +255,25 @@ export default function HomepagePage() {
 
                 <Link to="/blend">
                   <HomepageCardproduct
-                    status="Main"
+                    
                     imageOne="images/blend.png"
                     category="Blended"
-                    centretext="Blended"
+                    centretext="Mixed"
                     bxheartoneOne=""
                     className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
                   />
                 </Link>
                 <Link to="/blend">
                   <HomepageCardproduct
-                    status="Main"
+                    
                     imageOne="images/blend.png"
                     category="Blended"
-                    centretext="Blended"
+                    centretext="Salts & Others"
                     bxheartoneOne=""
                     className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
                   />
                 </Link>
+                
               </div>
             </div>
           </div>

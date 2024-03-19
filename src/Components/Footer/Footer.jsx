@@ -7,27 +7,7 @@ import { Heading } from "../Heading";
 export default function Footer({ ...props }) {
   return (
     <footer {...props}>
-      <div className="flex flex-row justify-start w-full pl-[46px] gap-11 py-[46px] mx-auto bg-gradient max-w-[1290px]">
-        <div className="flex flex-col items-center justify-start w-[48%] ml-[13px] gap-10">
-          <div className="flex flex-col items-center justify-start w-full gap-2.5">
-            <Heading size="xl" as="h1" className="!text-gray-50_01 tracking-[-0.50px]">
-              OUR NUMBERS
-            </Heading>
-            <Text size="s" as="p" className="!text-gray-50_01 tracking-[-0.50px] leading-[35px]">
-              51 - 100 Employees || <br />
-              150+ Product Variations || <br />
-              300+ Active Distributors ||
-            </Text>
-          </div>
-          <div className="flex flex-row justify-start w-full gap-px">
-            <input name="email" placeholder="Email here.." className="w-[74%]" />
-            <Button size="10xl" className="!text-yellow-100 tracking-[-0.50px] font-bold min-w-[157px]">
-              Email Us
-            </Button>
-          </div>
-        </div>
-        <Img src="images/blend.png" alt="pexelsphotoby" className="w-[20%] object-cover mx-40" />
-      </div>
+      
       <div className="flex flex-row justify-end w-full mt-[100px]  p-12 bg-black-900">
         <div className="flex flex-col items-center justify-start w-full gap-[148px] mx-auto max-w-[1301px]">
           <div className="flex flex-row justify-between items-start w-full">

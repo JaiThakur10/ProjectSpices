@@ -61,13 +61,14 @@ export default function Header({ ...props }) {
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3   ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-4xl cursor-pointer hover:text-orange-700 "
                 >Buy</div>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52 bg-orange-50">
                   <li><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="w-30 h-14" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li><NavLink to={"https://blinkit.com/"}><img className="w-30 h-14" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li><a><img className="w-30 h-14" src="images/meesho.svg" alt="" /></a></li>
                 </ul>
               </div>
 
+              <div>
               <NavLink
                 to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
                 className={({ isActive }) =>
@@ -75,12 +76,15 @@ export default function Header({ ...props }) {
                   }  font-rubik text-4xl   hover:text-orange-700 `
                 }
               >
+                
                 <Img
                   src="./images/Distribution.png"
                   alt="list_one"
-                  className="w-14 h-16"
+                  className="w-14 h-16 "
                 />
+                
               </NavLink>
+              </div>
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
