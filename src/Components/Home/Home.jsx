@@ -109,44 +109,12 @@ export default function HomepagePage() {
         </div>
         <div className="flex flex-col items-center justify-center w-full gap-11 p-[41px] bg-black-900 ">
           <Text
-            size="lg"
+            size="2xl"
             as="p"
             className="!text-gray-50_01 tracking-[-0.50px] text-center"
           >
             Variety of Spices From every culture
           </Text>
-          <div className="flex flex-row justify-start w-full gap-[50px] max-w-[1094px]">
-            <Img
-              src="images/img_search_gray_50_01.svg"
-              alt="search_three"
-              className="h-12"
-            />
-            <Img
-              src="images/img_company_logo_company109.svg"
-              alt="companylogo_one"
-              className="h-12"
-            />
-            <Img
-              src="images/img_company_logo_company109_gray_50_01.svg"
-              alt="companylogo"
-              className="h-12"
-            />
-            <Img
-              src="images/img_company_logo_company109_gray_50_01_48x141.svg"
-              alt="companylogo"
-              className="h-12"
-            />
-            <Img
-              src="images/img_company_logo_company109_gray_50_01_48x134.svg"
-              alt="companylogo"
-              className="h-12"
-            />
-            <Img
-              src="images/img_company_logo_company109_gray_50_01_48x132.svg"
-              alt="companylogo"
-              className="h-12"
-            />
-          </div>
         </div>
         <div className="flex flex-row w-full gap-5 max-w-[1290px]">
           <div className="flex flex-row justify-between items-center w-1/2 p-6 bg-gradient">
