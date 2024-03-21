@@ -34,13 +34,13 @@ function Blend() {
 
   return (
     <>
-      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-3 md:gap-6 md:space-y-0 lg:grid-cols-4 min-[320px]:grid-cols-2">
         {info.map((info, i) => (
           <div key={i} className="rounded-md border">
             <img
               src={info.image}
               alt="Laptop"
-              className="w-full aspect-auto   md:aspect-auto md:h-[300px] lg:h-[320px]"
+              className="w-full aspect-auto md:aspect-auto md:h-[300px] lg:h-[320px] "
             />
             <div className="p-4">
               <h1 className="inline-flex items-center text-lg font-semibold">
