@@ -1,91 +1,73 @@
-import React from 'react'
-import HomepageCardproduct from '../HomepageCardproduct/HomepageCardproduct'
+import React from "react";
+import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 
 function Blend() {
+  const info = [
+    {
+      image: "images/drymango.jpg",
+      name: "Amchoor Powder",
+      price1: 20,
+      price2: 40,
+    },
+    { image: "images/chat.jpg", name: "Channa Masala", price1: 40, price2: 80 },
+    { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
+    { image: "images/garam.jpg", name: "Garma Masala", price1: 50, price2: 100 },
+    { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
+    { image: "images/chat.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
+    { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
+    { image: "images/chicken.jpg", name: "Meat Masala", price1: 50, price2: 100 },
+    { image: "images/chat.jpg", name: "Paubhaji Masala", price1: 40, price2: 80 },
+    { image: "images/chat.jpg", name: "Raita Masala", price1: 35, price2: 70 },
+    { image: "images/chat.jpg", name: "Sabji Masala", price1: 35, price2: 70 },
+    { image: "images/sambar.jpg", name: "Sambhar Masala", price1: 35, price2: 70 },
+    { image: "images/saunth.jpg", name: "Sauth Powder", price1: 40, price2: 80 },
+    { image: "images/garam.jpg", name: "SPL. Garam Masala", price1: 30, price2: 60 },
+    { image: "images/chat.jpg", name: "SPL. Meat Masala", price1: 30, price2: 60 },
+    { image: "images/chat.jpg", name: "Shahi Panner", price1: 40, price2: 80 },
+    { image: "images/jeera.jpg", name: "Jeera Powder", price1: 45, price2: 90 },
+    { image: "images/chat.jpg", name: "Pudina Powder", price1: 36, price2: "-" },
+    { image: "images/chat.jpg", name: "Pani Puri Powder", price1: "10 gm 10", price2: "-" },
+    { image: "images/blackpeper.jpg", name: "Kali Mirch Powder", price1: "-", price2: 160 },
+    { image: "images/sauf.jpg", name: "Sonf Powder", price1: "-", price2: 50 },
+    { image: "images/anardana.jpg", name: "Anardana Powder", price1: "-", price2: 100 },
+  ];
 
-  
-  const info =[
-    {image :'images/blend.png',
-     name : "amchoor"},
-    {image : "https://pikwizard.com/pw/small/88cc56cd5b3d622adf44f50881d83d0d.jpg",
-     name : "day"}
-  ]
-  
-
-  
   return (
     <>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
-      {info.map((info, i) => (
-        <div key={i} className="rounded-md border h-500px ">
-          
-          <img 
-            src={info.image}
-            alt="Laptop"
-            className="w-full aspect-auto  md:aspect-auto md:h-[300px] lg:h-[200px]"
-          />
-          <div className="p-4">
-            <h1 className="inline-flex items-center text-lg font-semibold">{info.name}</h1>
-           
-            
-            
-            <div className="mt-5 flex items-center space-x-2">
-              <span className="block text-sm font-semibold">Size : </span>
-              <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
-                50gm : MRP 20 
-              </span>
-              <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
-                100gm : MRP 40
-              </span>
-              
-              
+      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+        {info.map((info, i) => (
+          <div key={i} className="rounded-md border">
+            <img
+              src={info.image}
+              alt="Laptop"
+              className="w-full aspect-auto   md:aspect-auto md:h-[300px] lg:h-[320px]"
+            />
+            <div className="p-4">
+              <h1 className="inline-flex items-center text-lg font-semibold">
+                {info.name}
+              </h1>
+
+              <div className="mt-5 flex items-center space-x-2">
+                <span className="block text-sm font-semibold">Size : </span>
+                <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
+                  50gm : MRP {info.price1}
+                </span>
+                <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
+                  100gm : MRP {info.price2}
+                </span>
+              </div>
+              <button
+                type="button"
+                className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black bg-black-900 text-white-A700"
+              >
+                Add to Cart
+              </button>
             </div>
-            <button
-              type="button"
-              className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black bg-black-900 text-white-A700"
-            >
-              Add to Cart
-            </button>
           </div>
-        </div>
-      ))}
-    </div>
-
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
-      {info.map((info, i) => (
-        <div
-          key={i}
-          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px]"
-        >
-          <img
-            src={info.image}
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">{info.name}</h1>
-            <p className="mt-2 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-            </p>
-            <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-              Shop Now &rarr;
-            </button>
-          </div>
-        </div>
-      ))}
-    </div>
-    
+        ))}
+      </div>
     </>
-  )
-
+  );
 }
 
-export default Blend
-
-
-
-
-
-
-
+export default Blend;

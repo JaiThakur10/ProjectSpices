@@ -4,11 +4,20 @@ import { Text } from "../Text";
 import { Img } from "../Img";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
-
-
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
+
+const info =[
+  {image :'images/blend.png',
+   name : "amchoor"},
+  {image : "https://pikwizard.com/pw/small/88cc56cd5b3d622adf44f50881d83d0d.jpg",
+   name : "day"},
+   {image : 'images/blackpeper.jpg',
+    name : "yes"},
+    {image : 'images/blackpeper.jpg',
+    name : "yes"},
+]
 
 export default function HomepagePage() {
   return (
@@ -233,46 +242,33 @@ export default function HomepagePage() {
             <div className="flex flex-col gap-[50px] mx-auto">
               <div className="flex flex-row justify-start w-full gap-[19px]">
                 <Link to="/blend">
-                  <HomepageCardproduct
-                    
-                    imageOne="images/blend.png"
-                    category="Blended"
-                    centretext="Blended"
-                    bxheartoneOne=""
-                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                  />
+                <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+      {info.map((info, i) => (
+        <div
+          key={i}
+          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px]"
+        >
+          <img
+            src={info.image}
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <h1 className="text-lg font-semibold text-white">{info.name}</h1>
+            
+            <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+              Shop Now &rarr;
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
                 </Link>
-                <Link to="/blend">
-                  <HomepageCardproduct
-                  
-                    imageOne="images/blend.png"
-                    category="Basic"
-                    centretext="Basic"
-                    bxheartoneOne=""
-                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                  />
-                </Link>
+                
 
-                <Link to="/blend">
-                  <HomepageCardproduct
-                    
-                    imageOne="images/blend.png"
-                    category="Blended"
-                    centretext="Mixed"
-                    bxheartoneOne=""
-                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                  />
-                </Link>
-                <Link to="/blend">
-                  <HomepageCardproduct
-                    
-                    imageOne="images/blend.png"
-                    category="Blended"
-                    centretext="Salts & Others"
-                    bxheartoneOne=""
-                    className="flex flex-col items-center justify-start w-80 gap-[15px]  p-4 hover:bg-red-300 transition-colors duration-300 "
-                  />
-                </Link>
+                
+                
                 
               </div>
             </div>
