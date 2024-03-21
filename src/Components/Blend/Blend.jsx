@@ -34,7 +34,7 @@ function Blend() {
 
   return (
     <>
-      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-3 md:gap-6 md:space-y-0 lg:grid-cols-4 min-[320px]:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-3 md:gap-6 md:space-y-0 lg:grid-cols-4 min-[320px]:grid-cols-2 min-[320px]:gap-3 min-[320px]:space-y-0">
         {info.map((info, i) => (
           <div key={i} className="rounded-md border">
             <img
@@ -47,12 +47,12 @@ function Blend() {
                 {info.name}
               </h1>
 
-              <div className="mt-5 flex items-center space-x-2">
+              <div className="mt-5 flex items-center space-x-2 min-[320px]:w-50">
                 <span className="block text-sm font-semibold">Size : </span>
-                <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
+                <span className="block cursor-pointer rounded-md border border-black-400 p-1 px-2 text-xs font-medium min-[320px]:text-xxs">
                   50gm : MRP {info.price1}
                 </span>
-                <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
+                <span className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium min-[320px]:text-xxs">
                   100gm : MRP {info.price2}
                 </span>
               </div>
