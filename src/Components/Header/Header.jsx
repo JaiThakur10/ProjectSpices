@@ -14,11 +14,11 @@ export default function Header({ ...props }) {
     <header {...props} >
       <div className="flex flex-row justify-between items-center w-full mx-auto max-w-[1290px] ">
         <div className="flex items-center">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 max-[450px]:hidden">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
           <div className="hidden md:block ">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 ">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -103,7 +103,14 @@ export default function Header({ ...props }) {
 
 
         {/* button ki div */}
-        <div className="-mr-2 flex md:hidden">
+        <div className=" flex md:hidden items-center justify-between">
+        {isOpen ? null : (
+         <img
+          src="images/ypgold.png" 
+          alt="Company Logo"
+          className="h-10 w-auto ml-2" 
+          />
+          )}
           <button onClick={toggleNavbar} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (
@@ -116,14 +123,13 @@ export default function Header({ ...props }) {
               </svg>
             )}
           </button>
+          
         </div>
-
-
-      </div>
+    </div>
 
  {/* function for responsive design  */}
       {isOpen && (
-        <div className="md:hidden" id="mobile-menu">
+        <div className=" md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <NavLink
               to="/"

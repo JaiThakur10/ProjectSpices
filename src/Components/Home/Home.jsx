@@ -36,16 +36,16 @@ export default function HomepagePage() {
               <div className="lg:w-[48%] max-w-lg mx-auto lg:mr-4 mb-8 lg:mb-0">
                 <div className="mb-8">
                   <Text
-                    size="lg"
+                    size="xl"
                     as="p"
-                    className="!text-black-900 tracking-[-0.50px]"
+                    className="!text-black-900 tracking-[-0.50px] max-[450px]:text-xl"
                   >
                     Our Philosphy
                   </Text>
                   <Text
                     size="2xl"
                     as="p"
-                    className="!text-black-900 tracking-[-0.50px] !font-pollerone"
+                    className="!text-black-900 tracking-[-0.50px] !font-pollerone max-[450px]:text-lg"
                   >
                     <span className="text-black-900 font-raleway font-bold">
                       We{" "}
