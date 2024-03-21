@@ -30,11 +30,11 @@ export default function HomepagePage() {
         />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-yellow-50">
-        <div className="flex flex-col items-center justify-start w-full max-h-full">
-          <div className="flex flex-row justify-center w-full px-14 py-[75px] bg-orange-50">
-            <div className="flex flex-row justify-between items-center w-full my-[5px] max-w-[1290px]">
-              <div className="flex flex-col items-start justify-start w-[48%] gap-[30px]">
-                <div className="flex flex-col items-start justify-start w-full gap-[26px]">
+        <div className="flex flex-col items-center justify-start w-full">
+          <div className="flex flex-row justify-center w-full  bg-orange-50">
+            <div className="flex flex-col lg:flex-row  justify-between items-center w-full px-4 lg:px-0 max-w-[1290px]">
+              <div className="lg:w-[48%] max-w-lg mx-auto lg:mr-4 mb-8 lg:mb-0">
+                <div className="mb-8">
                   <Text
                     size="lg"
                     as="p"
