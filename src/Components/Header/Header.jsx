@@ -12,12 +12,12 @@ export default function Header({ ...props }) {
 
   return (
     <header {...props} >
-      <div className="flex flex-row justify-between items-center w-full mx-auto max-w-[1290px] ">
+      <div className="flex flex-row   items-center w-full mx-auto max-w-[1290px] ">
         <div className="flex items-center">
           <div className="flex-shrink-0 max-[450px]:hidden">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
-          <div className="hidden md:block ">
+          <div className="hidden md:block justify-right">
             <div className="ml-10 flex items-baseline space-x-4 ">
               <NavLink
                 to="/"
@@ -103,15 +103,18 @@ export default function Header({ ...props }) {
 
 
         {/* button ki div */}
-        <div className=" flex md:hidden items-center justify-between">
-        {isOpen ? null : (
+        <div className="  md:hidden items-center">
+        <div>
+          {isOpen ? null : (
          <img
           src="images/ypgold.png" 
           alt="Company Logo"
-          className="h-10 w-auto ml-2" 
+          className="h-10 w-auto ml-2 " 
           />
           )}
-          <button onClick={toggleNavbar} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          </div>
+          <div className="">
+          <button onClick={toggleNavbar} type="button" className="bg-black-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (
               <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -123,6 +126,7 @@ export default function Header({ ...props }) {
               </svg>
             )}
           </button>
+          </div>
           
         </div>
     </div>
@@ -130,8 +134,9 @@ export default function Header({ ...props }) {
  {/* function for responsive design  */}
       {isOpen && (
         <div className=" md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <NavLink
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+           <div className="flex flex-col max-[450px]:flex-row">
+           <NavLink
               to="/"
               className={({ isActive }) =>
                 `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
@@ -160,7 +165,9 @@ export default function Header({ ...props }) {
             >
               About
             </NavLink>
-            <NavLink
+           </div>
+           <div className="flex flex-col max-[450px]:flex-row">
+           <NavLink
               to="/contact"
               className={({ isActive }) =>
                 `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
@@ -205,6 +212,7 @@ export default function Header({ ...props }) {
               B2B
 
             </NavLink>
+           </div>
           </div>
         </div>
       )}
