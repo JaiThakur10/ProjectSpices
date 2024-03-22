@@ -64,7 +64,7 @@ export default function Header({ ...props }) {
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52 bg-orange-50">
                   <li><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="w-30 h-14" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li><NavLink to={"https://blinkit.com/"}><img className="w-30 h-14" src="images/blinkit.svg" alt="" /></NavLink></li>
-                  <li><a><img className="w-30 h-14" src="images/meesho.svg" alt="" /></a></li>
+                  <li><NavLink to={"https://www.meesho.com/"}><img className="w-30 h-14" src="images/meesho.svg" alt="" /></NavLink></li>
                 </ul>
               </div>
 
@@ -109,12 +109,12 @@ export default function Header({ ...props }) {
          <img
           src="images/ypgold.png" 
           alt="Company Logo"
-          className="h-10 w-auto ml-2 " 
+          className="h-20 w-auto ml-2 " 
           />
           )}
           </div>
           <div className="">
-          <button onClick={toggleNavbar} type="button" className="bg-black-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button onClick={toggleNavbar} type="button" className="bg-black-900 inline-flex items-center justify-center p-2 rounded-md text-white-A700 hover:text-white hover:bg-black-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-900 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (
               <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -178,14 +178,15 @@ export default function Header({ ...props }) {
             </NavLink>
 
 
-            <div className="dropdown dropdown-hover  ">
-              <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-4xl cursor-pointer hover:text-orange-700 "
+            <div className=" relative  ">
+              <div  className=" block py-2 pr-4 duration-200 font-rubik text-4xl cursor-pointer hover:text-orange-700 "
               >Buy</div>
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52">
-                <li><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="w-30 h-14" src="images/flipkartlogo.png" alt="" /></NavLink></li>
-                <li><NavLink to={"https://blinkit.com/"}><img className="w-30 h-14" src="images/blinkit.svg" alt="" /></NavLink></li>
-                <li><a><img className="w-30 h-14" src="images/meesho.svg" alt="" /></a></li>
-              </ul>
+              {isOpen &&(
+              <ul className="absolute dropdown-content z-10 top-full left-0 w-52 bg-white border border-gray-300 shadow rounded-box p-2">
+                <li><a href="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="w-30 h-14" src="images/flipkartlogo.png" alt="" /></a></li>
+                <li><a href="https://blinkit.com/"><img className="w-30 h-14" src="images/blinkit.svg" alt="" /></a></li>
+                <li><a href="https://www.meesho.com/"><img className="w-30 h-14" src="images/meesho.svg" alt="" /></a></li>
+              </ul>)}
 
             </div>
             <NavLink
@@ -198,7 +199,7 @@ export default function Header({ ...props }) {
               <Img
                 src="./images/Distribution.png"
                 alt="list_one"
-                className="w-14 h-16 "
+                className="w-auto h-auto "
               />
             </NavLink>
             <NavLink
