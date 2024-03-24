@@ -8,15 +8,27 @@ import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
 
-const info =[
-  {image :'images/blend.png',
-   name : "amchoor"},
-  {image : "https://pikwizard.com/pw/small/88cc56cd5b3d622adf44f50881d83d0d.jpg",
-   name : "day"},
-   {image : 'images/blend.png',
-    name : "yes"},
-    {image : 'images/blend.png',
-    name : "yes"},
+const info = [
+  {
+    image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
+    name: "Blend",
+    link:"/Blend"
+  },
+  {
+    image: "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
+    name: "Basic",
+    link:"/Basic"
+  },
+  {
+    image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
+    name: "Mixed",
+    link:"/Blend"
+  },
+  {
+    image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
+    name: "Others",
+    link:"/Blend"
+  },
 ]
 
 export default function HomepagePage() {
@@ -209,36 +221,37 @@ export default function HomepagePage() {
             </div>
             <div className="flex flex-col gap-[50px] mx-auto">
               <div className="flex flex-row justify-start w-full gap-[19px]">
-                <Link to="/blend">
-                <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4 ">
-      {info.map((info, i) => (
-        <div
-          key={i}
-          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] hover:bg-red-300 transition-colors duration-300"
-        >
-          <img
-            src={info.image}
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
+                
+                  <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4 ">
+                    {info.map((info, i) => (
+                      <div
+                        key={i}
+                        className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] hover:bg-red-300 transition-colors duration-300"
+                      >
+                         <Link to={info.link}>
+                        <img
+                          src={info.image}
+                          alt="info.image"
+                          className="z-0 h-full w-full rounded-md object-cover"
+                        />
+                        <div className="absolute inset-0 rounded-md bg-gradient-to-t from-blue-900 to-transparent"></div>
+                       
+                        <div className="absolute bottom-4 left-4 text-left">
+                          <p className="text-green-100  text-4xl translate-y-4 opacity-0 transition-all duration-300 hover:translate-y-0 hover:opacity-100 w-full h-full flex flex-col items-center justify-center cursor-pointer ">{info.name}</p>
 
-          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-blue-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <p className="text-green-100  text-4xl translate-y-4 opacity-0 transition-all duration-300 hover:translate-y-0 hover:opacity-100 w-full h-full flex flex-col items-center justify-center cursor-pointer ">{info.name}</p>
-            
-            <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-              Shop Now &rarr;
-            </button>
-          </div>
-        </div>
-      ))}
-    </div>
-                </Link>
+                          <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                            Shop Now &rarr;
+                          </button>
+                        </div>
+                        </Link> 
+                      </div>
+                    ))}
+                  </div>
                 
 
-                
-                
-                
+
+
+
               </div>
             </div>
           </div>
@@ -279,15 +292,6 @@ export default function HomepagePage() {
         </div>
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start w-full gap-[67px] max-w-[1290px]"></div>
-        </div>
-        <div>
-          <Heading
-            size="xl"
-            as="h2"
-            className="tracking-[-0.50px] text-center !font-semibold"
-          >
-            Instagram Posts
-          </Heading>
         </div>
 
         <div className="flex flex-row justify-center w-full">
