@@ -10,27 +10,15 @@ export default function About() {
           <div className="flex flex-row justify-between w-full max-w-[1290px]">
             <div className="flex flex-col items-center justify-start w-[47%] gap-[50px]">
               <Heading size="xl" as="h2" className="tracking-[-0.50px]">
-                OUR STRENGTHS
+                OUR STORY
               </Heading>
               <div className="justify-center w-full gap-[50px] grid-cols-2 grid min-h-[auto]">
                 <div className="flex flex-col items-start justify-start w-full gap-10">
-                  <Img
-                    src="images/img_icon.svg"
-                    alt="fast_shipping"
-                    className="h-[60px]"
-                  />
-                  <div className="flex flex-col items-start justify-start w-full gap-[9px]">
-                    <Heading as="h3" className="tracking-[-0.50px]">
-                      Efficient production
-                    </Heading>
-                    <Text
-                      as="p"
-                      className="!text-gray-500 tracking-[-0.50px] leading-[25px]"
-                    >
-                      Every order placed right now is ready and dispatched in
-                      less than 2 days. No waiting for you is our rule.{" "}
-                    </Text>
-                  </div>
+                  <span> Our journey starts from Ghaziabad around 18 years ago. Coming
+                from a small town named Hapur, we starting with selling turmeric
+                and chilli. But with all the hard word, we have expanded our
+                boundries over different states now and have a brand name, well
+                established.</span>
                 </div>
                 <div className="flex flex-col items-start justify-start w-full gap-10">
                   <Img

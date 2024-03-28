@@ -43,90 +43,21 @@ export default function HomepagePage() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-yellow-50">
+      <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-[#FFFFFF]">
 
         {/* carousel */}
        
        <ImageSlider/>
        
         {/* carousel end */}
-        <div className="flex flex-col items-center justify-center w-full gap-11 p-[41px] bg-black-900 ">
-          <Text
-            size="2xl"
-            as="p"
-            className="!text-gray-50_01 tracking-[-0.50px] text-center"
-          >
-            Variety of Spices From every culture
-          </Text>
+        
+        {/* philosophy */}
+        <div className="text-[#1D7DA3] text-4xl flex flex-col items-center mt-[-5rem]">
+        <span>We believe spices are the backbone of Indian kitchens and to preserve this, we are satisfied</span>
+            <span >with nothing but perfect ingredients only.</span>
         </div>
-        <div className="flex flex-row w-full gap-5 max-w-[1290px]">
-          <div className="flex flex-row justify-between items-center w-1/2 p-6 bg-gradient">
-            <div className="flex flex-col items-start justify-start w-[55%] ml-1.5 gap-6">
-              <div className="flex flex-col items-start justify-start w-full gap-7">
-                <Text
-                  size="md"
-                  as="p"
-                  className="!text-gray-50_01 tracking-[-0.50px]"
-                >
-                  Degi Mirich
-                </Text>
-                <Heading
-                  size="lg"
-                  as="h1"
-                  className="!text-gray-50_01 tracking-[-0.50px]"
-                >
-                  Degi mirich ka tadka aang aang bhadka!!
-                </Heading>
-              </div>
-              <Button
-                color="gray_50"
-                size="6xl"
-                variant="outline"
-                className="tracking-[-0.50px] font-medium min-w-[155px]"
-              >
-                Shop Now
-              </Button>
-            </div>
-            <Img
-              src="https://tiimg.tistatic.com/fp/1/007/181/dried-strong-kashmiri-degi-mirch-red-chilli-powder-581.jpg"
-              alt="image"
-              className="w-[31%] mr-1.5 object-cover"
-            />
-          </div>
-          <div className="flex flex-row justify-between items-center w-1/2 p-[30px] bg-gradient">
-            <div className="flex flex-col items-start justify-start w-[54%] gap-6">
-              <div className="flex flex-col items-start justify-start w-full gap-7">
-                <Text
-                  size="md"
-                  as="p"
-                  className="!text-gray-50_01 tracking-[-0.50px]"
-                >
-                  Haldi
-                </Text>
-                <Heading
-                  size="lg"
-                  as="h2"
-                  className="!text-gray-50_01 tracking-[-0.50px]"
-                >
-                  Haldi Ram se bhi bhaiter haldi
-                </Heading>
-              </div>
-              <Button
-                color="gray_50"
-                size="6xl"
-                variant="outline"
-                className="tracking-[-0.50px] font-medium min-w-[155px]"
-              >
-                Shop Now
-              </Button>
-            </div>
-            <Img
-              src="https://www.forestessentialsindia.com/blog/wp-content/uploads/2020/02/Turmeric.png"
-              alt="phildesforges"
-              className="w-[34%] my-[22px] object-cover"
-            />
-          </div>
-        </div>
+
+      
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start w-full gap-[45px] max-w-[1290px]">
             <div className="flex flex-col items-center justify-center w-full gap-[21px]">

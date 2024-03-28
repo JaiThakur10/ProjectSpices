@@ -62,10 +62,10 @@ export default function Header({ ...props }) {
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#1D7DA3] "
                 >Buy</div>
                 
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[22rem] bg-white-A700 flex flex-wrap flex-col ">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
-                  <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[6rem]" src="images/meesho.svg" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
                 
               </div>
