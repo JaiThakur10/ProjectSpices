@@ -7,27 +7,29 @@ import { Heading } from "../Heading";
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
+import ImageSlider from "../ImageSlider/ImageSlider";
+
 
 const info = [
   {
     image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
     name: "Blend",
-    link:"/Blend"
+    link: "/Blend"
   },
   {
     image: "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
     name: "Basic",
-    link:"/Basic"
+    link: "/Basic"
   },
   {
     image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
     name: "Mixed",
-    link:"/Blend"
+    link: "/Blend"
   },
   {
     image: 'https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png',
     name: "Others",
-    link:"/Blend"
+    link: "/Blend"
   },
 ]
 
@@ -42,83 +44,12 @@ export default function HomepagePage() {
         />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-yellow-50">
-        <div className="flex flex-col items-center justify-start w-full">
-          <div className="flex flex-row justify-center w-full  bg-orange-50">
-            <div className="flex flex-col lg:flex-row  justify-between items-center w-full px-4 lg:px-0 max-w-[1290px]">
-              <div className="lg:w-[48%] max-w-lg mx-auto lg:mr-4 mb-8 lg:mb-0">
-                <div className="mb-8">
-                  <Text
-                    size="xl"
-                    as="p"
-                    className="!text-black-900 tracking-[-0.50px] max-[450px]:text-xl"
-                  >
-                    Our Philosphy
-                  </Text>
-                  <Text
-                    size="2xl"
-                    as="p"
-                    className="!text-black-900 tracking-[-0.50px] !font-pollerone max-[450px]:text-lg"
-                  >
-                    <span className="text-black-900 font-raleway font-bold">
-                      We{" "}
-                    </span>
-                    <span className="text-blue_gray-900_01 font-raleway font-bold">
-                      believe spices are the{" "}
-                    </span>
-                    <span className="text-black-900 font-raleway font-bold">
-                      backbone of Indian kitchens and to presere this,we are
-                      satisfied with nothing but perfect ingredients only.
-                    </span>
-                  </Text>
-                </div>
-              </div>
-              <div className="carousel carousel-center max-w-2xl p-4 space-x-7 bg-organe-50 ">
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-                    className="rounded-box "
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-                    className="rounded-box"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        {/* carousel */}
+       
+       <ImageSlider/>
+       
+        {/* carousel end */}
         <div className="flex flex-col items-center justify-center w-full gap-11 p-[41px] bg-black-900 ">
           <Text
             size="2xl"
@@ -221,21 +152,21 @@ export default function HomepagePage() {
             </div>
             <div className="flex flex-col gap-[50px] mx-auto">
               <div className="flex flex-row justify-start w-full gap-[19px]">
-                
-                  <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4 ">
-                    {info.map((info, i) => (
-                      <div
-                        key={i}
-                        className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] hover:bg-red-300 transition-colors duration-300"
-                      >
-                         <Link to={info.link}>
+
+                <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4 ">
+                  {info.map((info, i) => (
+                    <div
+                      key={i}
+                      className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] hover:bg-red-300 transition-colors duration-300"
+                    >
+                      <Link to={info.link}>
                         <img
                           src={info.image}
                           alt="info.image"
                           className="z-0 h-full w-full rounded-md object-cover"
                         />
                         <div className="absolute inset-0 rounded-md bg-gradient-to-t from-blue-900 to-transparent"></div>
-                       
+
                         <div className="absolute bottom-4 left-4 text-left">
                           <p className="text-green-100  text-4xl translate-y-4 opacity-0 transition-all duration-300 hover:translate-y-0 hover:opacity-100 w-full h-full flex flex-col items-center justify-center cursor-pointer ">{info.name}</p>
 
@@ -243,11 +174,11 @@ export default function HomepagePage() {
                             Shop Now &rarr;
                           </button>
                         </div>
-                        </Link> 
-                      </div>
-                    ))}
-                  </div>
-                
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+
 
 
 
