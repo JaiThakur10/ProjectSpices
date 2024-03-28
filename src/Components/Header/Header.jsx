@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Text } from "../Text";
 import { Img } from "../Img";
 import { NavLink } from "react-router-dom";
+import { Button } from "../Button";
+
 
 export default function Header({ ...props }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,18 +13,32 @@ export default function Header({ ...props }) {
 
   return (
     <header {...props} >
-      <div className="flex flex-row   items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
+      <div className="flex flex-row  items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
         <div className="flex justify-between min-[450px]:w-full"> 
           <div className="flex-shrink-0 max-[450px]:hidden">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
-          <div className="hidden md:flex pb-0 py-0 items-end">
-            <div className="ml-10 flex items-baseline space-x-4 mb-0">
+          <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">
+          <div className="flex justify-end gap-2 w-1/2 m-auto">
+            <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] p-2">Online order &darr;</button>
+            <Button color="yellow_100" shape="circle" className="w-10">
+                  <Img src="images/img_bxl_instagram.svg" />
+                </Button>
+                <Button color="yellow_100" shape="circle" className="w-10">
+                  <Img src="images/img_bxl_facebook.svg" />
+                </Button>
+                <Button color="yellow_100" shape="circle" className="w-10">
+                  <Img src="images/img_bxl_twitter.svg" />
+                </Button>
+                <Button color="yellow_100" shape="circle" className="w-10">
+                  <Img src="images/img_bxl_tiktok.svg" />
+                </Button></div>
+            <div className="ml-10 flex items-baseline space-x-4 mb-0 ">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#0097CC] `
                 }
               >
                 Home
@@ -32,8 +47,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC]`
                 }
               >
                 Blog
@@ -42,8 +57,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#0097CC] `
                 }
               >
                 About
@@ -51,15 +66,15 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl  hover:text-[#1D7DA3]`
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl  hover:text-[#0097CC]`
                 }
               >
                 Contact
               </NavLink>
 
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#1D7DA3] "
+                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
                 >Buy</div>
                 
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
@@ -74,14 +89,14 @@ export default function Header({ ...props }) {
                 <NavLink
                   to="/B2B"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                    }  font-rubik text-2xl   hover:text-[#1D7DA3] `
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                    }  font-rubik text-2xl   hover:text-[#0097CC] `
                   }
                 >
 
                   <button
                     type="button"
-                    className="bg-[#1D7DA3] text-white-A700 px-2 rounded-full"
+                    className="bg-[#0097CC] text-white-A700 px-2 rounded-full"
                   >
                     Get Distribution?
                   </button>
@@ -91,8 +106,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC] `
                 }
               >
 
@@ -142,8 +157,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC]`
                 }
               >
                 Home
@@ -152,8 +167,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC] `
                 }
               >
                 Blog
@@ -162,8 +177,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#0097CC] `
                 }
               >
                 About
@@ -173,8 +188,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl  hover:text-[#1D7DA3] `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl  hover:text-[#0097CC] `
                 }
               >
                 Contact
@@ -182,7 +197,7 @@ export default function Header({ ...props }) {
 
 
               <div className=" relative  ">
-                <div className=" block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#1D7DA3] "
+                <div className=" block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
                 >Buy</div>
                 {isOpen && (
                   <ul className="absolute dropdown-content z-10 top-full left-0 w-52 bg-white border border-gray-300 shadow rounded-box p-2">
@@ -195,14 +210,14 @@ export default function Header({ ...props }) {
               <NavLink
                   to="/B2B"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                    }  font-rubik text-2xl   hover:text-[#1D7DA3] `
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                    }  font-rubik text-2xl   hover:text-[#0097CC] `
                   }
                 >
 
                   <button
                     type="button"
-                    className="bg-[#1D7DA3] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
+                    className="bg-[#0097CC] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
                   >
                     Get Distribution?
                   </button>
@@ -211,8 +226,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC]`
                 }
               >
 
