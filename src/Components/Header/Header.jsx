@@ -12,18 +12,18 @@ export default function Header({ ...props }) {
 
   return (
     <header {...props} >
-      <div className="flex flex-row   items-center w-full mx-auto max-w-[12500px]">
-        <div className="flex items-center">
+      <div className="flex flex-row   items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
+        <div className="flex justify-between min-[450px]:w-full"> 
           <div className="flex-shrink-0 max-[450px]:hidden">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4 ">
+          <div className="hidden md:flex pb-0 py-0 items-end">
+            <div className="ml-10 flex items-baseline space-x-4 mb-0">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
                 }
               >
                 Home
@@ -32,8 +32,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
                 }
               >
                 Blog
@@ -42,8 +42,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
                 }
               >
                 About
@@ -51,18 +51,18 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-2xl  hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl  hover:text-[#1D7DA3]`
                 }
               >
                 Contact
               </NavLink>
 
-              <div className="dropdown dropdown-hover py-2 pr-4 pl-3   ">
-                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-orange-700 "
+              <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#1D7DA3] "
                 >Buy</div>
                 
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow   rounded-box w-[40rem] h-[8rem] bg-white-A700 grid grid-cols-3 justify-center mx-auto">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[22rem] bg-white-A700 flex flex-wrap flex-col ">
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[6rem]" src="images/meesho.svg" alt="" /></NavLink></li>
@@ -74,14 +74,14 @@ export default function Header({ ...props }) {
                 <NavLink
                   to="/B2B"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                    }  font-rubik text-2xl   hover:text-orange-700 `
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                    }  font-rubik text-2xl   hover:text-[#1D7DA3] `
                   }
                 >
 
                   <button
                     type="button"
-                    className="bg-yellow-400 text-white-A700 px-2 rounded"
+                    className="bg-[#1D7DA3] text-white-A700 px-2 rounded-full"
                   >
                     Get Distribution?
                   </button>
@@ -91,8 +91,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#1D7DA3] `
                 }
               >
 
@@ -106,7 +106,7 @@ export default function Header({ ...props }) {
 
 
         {/* button ki div */}
-        <div className="  md:hidden items-center">
+        <div className="  md:hidden items-centre w-full flex justify-between">
           <div>
             {isOpen ? null : (
               <img
@@ -116,7 +116,7 @@ export default function Header({ ...props }) {
               />
             )}
           </div>
-          <div className="">
+          <div className=" mr-2 mt-2">
             <button onClick={toggleNavbar} type="button" className="bg-black-900 inline-flex items-center justify-center p-2 rounded-md text-white-A700 hover:text-white hover:bg-black-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-900 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
@@ -142,8 +142,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl    hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
                 }
               >
                 Home
@@ -152,8 +152,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl   hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#1D7DA3] `
                 }
               >
                 Blog
@@ -162,8 +162,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl    hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl    hover:text-[#1D7DA3] `
                 }
               >
                 About
@@ -173,8 +173,8 @@ export default function Header({ ...props }) {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl  hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl  hover:text-[#1D7DA3] `
                 }
               >
                 Contact
@@ -182,7 +182,7 @@ export default function Header({ ...props }) {
 
 
               <div className=" relative  ">
-                <div className=" block py-2 pr-4 duration-200 font-rubik text-4xl cursor-pointer hover:text-orange-700 "
+                <div className=" block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#1D7DA3] "
                 >Buy</div>
                 {isOpen && (
                   <ul className="absolute dropdown-content z-10 top-full left-0 w-52 bg-white border border-gray-300 shadow rounded-box p-2">
@@ -193,23 +193,26 @@ export default function Header({ ...props }) {
 
               </div>
               <NavLink
-                to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
-                className={({ isActive }) =>
-                  `block py-0 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl   hover:text-orange-700 `
-                }
-              >
-                <Img
-                  src="./images/Distribution.png"
-                  alt="list_one"
-                  className="w-auto h-auto "
-                />
-              </NavLink>
+                  to="/B2B"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                    }  font-rubik text-2xl   hover:text-[#1D7DA3] `
+                  }
+                >
+
+                  <button
+                    type="button"
+                    className="bg-[#1D7DA3] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
+                  >
+                    Get Distribution?
+                  </button>
+
+                </NavLink>
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-black-900"
-                  }  font-rubik text-4xl   hover:text-orange-700 `
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#1D7DA3]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#1D7DA3]`
                 }
               >
 
