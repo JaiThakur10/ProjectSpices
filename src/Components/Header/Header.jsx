@@ -3,7 +3,6 @@ import { Img } from "../Img";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 
-
 export default function Header({ ...props }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,25 +13,31 @@ export default function Header({ ...props }) {
   return (
     <header {...props} >
       <div className="flex flex-row  items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
-        <div className="flex justify-between min-[450px]:w-full"> 
+        <div className="flex justify-between min-[450px]:w-full">
           <div className="flex-shrink-0 max-[450px]:hidden">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
           <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">
-          <div className="flex justify-end gap-2 w-1/2 m-auto">
-            <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] p-2">Online order &darr;</button>
-            <Button color="yellow_100" shape="circle" className="w-10">
-                  <Img src="images/img_bxl_instagram.svg" />
-                </Button>
-                <Button color="yellow_100" shape="circle" className="w-10">
-                  <Img src="images/img_bxl_facebook.svg" />
-                </Button>
-                <Button color="yellow_100" shape="circle" className="w-10">
-                  <Img src="images/img_bxl_twitter.svg" />
-                </Button>
-                <Button color="yellow_100" shape="circle" className="w-10">
-                  <Img src="images/img_bxl_tiktok.svg" />
-                </Button></div>
+            {/* upper div */}
+            <div className="flex justify-end gap-2 w-1/2 m-auto">
+
+              <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Online order &darr;</button>
+
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[10rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                </ul>
+
+              </div>
+
+              <a href="https://www.instagram.com/"><Img src="images/instagram.png" /></a>
+              <a href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
+              <a href="https://twitter.com/?lang=en" ><Img src="images/twitter.png" /></a>
+
+            </div>
+            {/* upper div closed */}
             <div className="ml-10 flex items-baseline space-x-4 mb-0 ">
               <NavLink
                 to="/"
@@ -76,13 +81,13 @@ export default function Header({ ...props }) {
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
                 >Buy</div>
-                
+
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
-                
+
               </div>
 
               <div>
@@ -208,21 +213,21 @@ export default function Header({ ...props }) {
 
               </div>
               <NavLink
-                  to="/B2B"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                    }  font-rubik text-2xl   hover:text-[#0097CC] `
-                  }
+                to="/B2B"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC] `
+                }
+              >
+
+                <button
+                  type="button"
+                  className="bg-[#0097CC] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
                 >
+                  Get Distribution?
+                </button>
 
-                  <button
-                    type="button"
-                    className="bg-[#0097CC] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
-                  >
-                    Get Distribution?
-                  </button>
-
-                </NavLink>
+              </NavLink>
               <NavLink
                 to="/B2B"
                 className={({ isActive }) =>
