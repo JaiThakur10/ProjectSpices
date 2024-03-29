@@ -1,9 +1,11 @@
 import React from "react";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
+import { NavLink } from "react-router-dom";
 
 function Blend() {
   const info = [
     {
+      color: `bg-white`,
       image: "images/drymango.jpg",
       name: "Amchoor Powder",
       price1: 20,
@@ -34,34 +36,37 @@ function Blend() {
 
   return (
     <>
-      <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-3 md:gap-6 md:space-y-0 lg:grid-cols-4 min-[320px]:grid-cols-2 min-[320px]:gap-3 min-[320px]:space-y-0">
+      <div className="mx-auto grid w-full items-center  ">
         {info.map((info, i) => (
-          <div key={i} className="rounded-md border">
-            <img
-              src={info.image}
-              alt="Laptop"
-              className="w-full aspect-auto md:aspect-auto md:h-[300px] lg:h-[320px] "
-            />
-            <div className="p-4">
-              <h1 className="inline-flex items-center text-lg font-semibold">
-                {info.name}
-              </h1>
+          <div key={i} className={`w-full h-[550px] ${i % 2 === 0 ? 'bg-[#F0F0F0] ' : 'bg-[white]' } `}>
+            <div key={i} className={`relative w-full flex justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
+              <div className="justify-start w-1/3 mt-[6.5rem]">
+                <div className="text-3xl"><h1>{info.name}</h1></div>
+                <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="flex mt-3">
+                  <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
+                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border border-[#0097CC] mx-2 h-10 px-1 text-xs font-medium min-[320px]:text-xxs">
+                      <h3>50gm : MRP {info.price1}</h3>
+                    </div>
+                    <div className="flex items-center cursor-pointer rounded-md border border-[#0097CC]  px-1 h-10 text-xs font-medium min-[320px]:text-xxs">
+                      100gm : MRP {info.price2}
+                    </div>
+                  </div>
 
-              <div className="mt-5 flex items-center space-x-2 min-[320px]:w-50">
-                <div className="block text-sm font-semibold">Size : </div>
-                <div className="block cursor-pointer rounded-md border border-black-400 p-1 px-2 text-xs font-medium min-[320px]:text-xxs">
-                  50gm : MRP {info.price1}
-                </div>
-                <div className="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium min-[320px]:text-xxs">
-                  100gm : MRP {info.price2}
+                  <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                    <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 border-t ">Online order &darr;</button>
+
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                    </ul>
+
+                  </div>
+
                 </div>
               </div>
-              <button
-                type="button"
-                className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black bg-black-900 text-white-A700"
-              >
-                Add to Cart
-              </button>
+              <div className="mt-[6.5rem]"><img className="h-72 w-72" src={info.image} alt="" /></div>
             </div>
           </div>
         ))}
