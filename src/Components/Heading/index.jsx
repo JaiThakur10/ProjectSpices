@@ -1,7 +1,7 @@
 import React from "react";
 
 const sizes = {
-  xl: "text-[40px] font-bold leading-[60px]",
+  xl: "text-[40px]  leading-[60px]",
   s: "text-2xl font-bold",
   md: "text-[32px] font-bold",
   xs: "text-xl font-semibold",

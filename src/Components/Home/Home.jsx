@@ -8,6 +8,7 @@ import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { Link } from "react-router-dom";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import { NavLink } from "react-router-dom";
 
 
 const info = [
@@ -57,57 +58,128 @@ export default function HomepagePage() {
           <span >with nothing but perfect ingredients only.</span>
         </div>
 
-        <div className="flex flex-col gap-[50px] mx-auto">
-          <div className="flex flex-row justify-start w-full gap-[19px]">
 
-            <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4 ">
-              {info.map((info, i) => (
-                <div
-                  key={i}
-                  className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] hover:bg-red-300 transition-colors duration-300"
-                >
-                  <Link to={info.link}>
-                    <img
-                      src={info.image}
-                      alt="info.image"
-                      className="z-0 h-full w-full rounded-md object-cover"
-                    />
-                    <div className="absolute inset-0 rounded-md bg-gradient-to-t from-blue-900 to-transparent"></div>
+        <div className="carousel w-full h-[550px] bg-[#F0F0F0]">
+          <div id="slide1" className="carousel-item relative w-full flex justify-center gap-8">
+            <div className="justify-start w-1/3 mt-[6.5rem]">
+              <div className="text-3xl"><h1>Blend Spices</h1></div>
+              <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+              <div className="flex mt-3">
+                <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                  <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Online order &darr;</button>
 
-                    <div className="absolute bottom-4 left-4 text-left">
-                      <p className="text-green-100  text-4xl translate-y-4 opacity-0 transition-all duration-300 hover:translate-y-0 hover:opacity-100 w-full h-full flex flex-col items-center justify-center cursor-pointer ">{info.name}</p>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                  </ul>
 
-                      <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-                        Shop Now &rarr;
-                      </button>
-                    </div>
-                  </Link>
                 </div>
-              ))}
+                <a href="/Blend">
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Get Details</button>
+                </a>
+              </div>
             </div>
+            <div className="mt-[6.5rem]"><img className="h-72 w-72" src="images/blend.png" alt="" /></div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="bg-[#0097CC] btn btn-circle ">❮</a>
+              <a href="#slide2" className=" bg-[#0097CC] btn btn-circle ">❯</a>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full flex justify-center gap-8">
+            <div className="justify-start w-1/3 mt-[6.5rem]">
+              <div className="text-3xl"><h1>Mixed Spices</h1></div>
+              <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+              <div className="flex mt-3">
+                <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                  <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Online order &darr;</button>
 
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                  </ul>
 
+                </div>
+                <a href="/Blend">
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Get Details</button>
+                </a>
+              </div>
+            </div>
+            <div className="mt-[6.5rem]"><img className="h-72 w-72" src="images/blend.png" alt="" /></div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="bg-[#0097CC] btn btn-circle ">❮</a>
+              <a href="#slide3" className=" bg-[#0097CC] btn btn-circle ">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full flex justify-center gap-8">
+            <div className="justify-start w-1/3 mt-[6.5rem]">
+              <div className="text-3xl"><h1>Others Spices</h1></div>
+              <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+              <div className="flex mt-3">
+                <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                  <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Online order &darr;</button>
 
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                  </ul>
 
+                </div>
+                <a href="/Blend">
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Get Details</button>
+                </a>
+              </div>
+            </div>
+            <div className="mt-[6.5rem]"><img className="h-72 w-72" src="images/blend.png" alt="" /></div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" className="bg-[#0097CC] btn btn-circle ">❮</a>
+              <a href="#slide4" className=" bg-[#0097CC] btn btn-circle ">❯</a>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full flex justify-center gap-8">
+            <div className="justify-start w-1/3 mt-[6.5rem]">
+              <div className="text-3xl"><h1>Whole Spices</h1></div>
+              <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+              <div className="flex mt-3">
+                <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
+                  <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Online order &darr;</button>
 
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                    <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                  </ul>
+
+                </div>
+                <a href="/Blend">
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">Get Details</button>
+                </a>
+              </div>
+            </div>
+            <div className="mt-[6.5rem]"><img className="h-72 w-72" src="images/blend.png" alt="" /></div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="bg-[#0097CC] btn btn-circle ">❮</a>
+              <a href="#slide1" className=" bg-[#0097CC] btn btn-circle ">❯</a>
+            </div>
           </div>
         </div>
 
-
-        <div className="flex flex-row justify-center w-full border-t border-gray-300 pt-8">
+        <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
             <div className="flex flex-col items-center justify-start w-full gap-4 p-1">
               <Heading
                 size="xl"
                 as="h2"
-                className="tracking-[-0.50px] text-center !font-semibold"
+                className="tracking-[-0.50px] text-center "
               >
                 Our Videos
               </Heading>
               <Text
                 size=""
                 as="p"
-                className="text-[black]  text-2xl tracking-[-0.50px] text-center"
+                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center"
               >
                 We write various things related to spices, from tips and what
                 things I need to pay attention to when choosing right spices
