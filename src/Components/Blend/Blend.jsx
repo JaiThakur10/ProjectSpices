@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Blend() {
   const info = [
     {
-      color: `bg-white`,
+      
       image: "images/drymango.jpg",
       name: "Amchoor Powder",
       price1: 20,
@@ -45,16 +45,18 @@ function Blend() {
                 <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex mt-3">
                   <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
-                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border border-[#0097CC] mx-2 h-10 px-1 text-xs font-medium min-[320px]:text-xxs">
+                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-1 text-xs font-medium min-[320px]:text-xxs">
                       <h3>50gm : MRP {info.price1}</h3>
                     </div>
-                    <div className="flex items-center cursor-pointer rounded-md border border-[#0097CC]  px-1 h-10 text-xs font-medium min-[320px]:text-xxs">
+                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-1 h-10 text-xs font-medium min-[320px]:text-xxs">
                       100gm : MRP {info.price2}
                     </div>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                    <button className=" text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 border-t ">Online order &darr;</button>
+                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+  Online order <img  src="images/img_arrow_down.svg" alt="" class="ml-2 "/>
+</button>
 
                     <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
                       <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
