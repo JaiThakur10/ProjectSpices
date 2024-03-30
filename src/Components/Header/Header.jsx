@@ -14,7 +14,7 @@ export default function Header({ ...props }) {
     <header {...props}>
       <div className="flex flex-row items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
         <div className="flex justify-between min-[450px]:w-full">
-          <div className="flex-shrink-0 max-[450px]:hidden">
+          <div className="flex-shrink-0 max-[450px]:hidden m-auto">
             <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
           </div>
           <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">

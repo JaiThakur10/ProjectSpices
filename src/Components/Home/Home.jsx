@@ -52,6 +52,13 @@ export default function HomepagePage() {
 
         {/* carousel end */}
 
+        <div className="fixed bottom-0 right-0 p-3" style={{ zIndex: 6 }}>
+      <a href="http://wa.me/7051368588?text=Hello! I want to buy some Masala" target="_blank">
+        <img src="images/whatsapp.png" width="80" alt="" />
+      </a>
+    </div>
+
+
         {/* philosophy */}
         <div className="text-[#1D7DA3] text-4xl flex flex-col items-center mt-[-5rem]">
           <span>
@@ -147,7 +154,7 @@ export default function HomepagePage() {
               </div>
               <div className="mt-3 ">
                 <p>
-                  Catch Whole spices give you the best of taste, flavour and
+                   Whole spices give you the best of taste, flavour and
                   aroma as they are sourced from the prime spice growing
                   regions. Whole spices do not go through the grounding process
                   and retain most of their original qualities, they are cleaned
