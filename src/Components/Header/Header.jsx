@@ -19,20 +19,21 @@ export default function Header({ ...props }) {
           </div>
           <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">
             {/* upper div */}
-            <div className="flex justify-end gap-2 w-1/2 m-auto items-baseline">
+            <div className="flex justify-end gap-2 w-1/2 m-auto  items-center">
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative items-baseline">
-                <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700  w-auto">
-                  Online order <img src="images/img_arrow_down.svg" alt="" class="ml-2" />
-                </button>
+              <Button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-1 w-auto mt-8">
+                    Online order{" "}
+                    <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
+                  </Button>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[10rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4  ">
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
               </div >
-              <a className=" mt-4" href="https://www.instagram.com/"><Img  src="images/instagram.png" /></a>
-              <a href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
-              <a href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
+              <a className=" mt-6" href="https://www.instagram.com/"><Img  src="images/instagram.png" /></a>
+              <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
+              <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
             </div>
             {/* upper div closed */}
             <div className=" flex items-baseline space-x-4 mb-0 m-auto ">

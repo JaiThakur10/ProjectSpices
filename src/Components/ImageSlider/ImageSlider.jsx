@@ -19,7 +19,7 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <div className="w-screen h-[500px] overflow-hidden">
+    <div className="w-full h-[500px] overflow-hidden">
       <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((imageUrl, index) => (
           <div key={index} className="w-screen h-screen flex-shrink-0">
