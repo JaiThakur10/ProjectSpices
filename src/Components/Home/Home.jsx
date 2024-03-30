@@ -48,15 +48,11 @@ export default function HomepagePage() {
       <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-[#FFFFFF]">
         {/* carousel */}
 
-        <ImageSlider />
+       <ImageSlider />
 
         {/* carousel end */}
 
-        <div className="fixed bottom-0 right-0 p-3" style={{ zIndex: 6 }}>
-      <a href="http://wa.me/7051368588?text=Hello! I want to buy some Masala" target="_blank">
-        <img src="images/whatsapp.png" width="80" alt="" />
-      </a>
-    </div>
+       
 
 
         {/* philosophy */}
@@ -125,11 +121,14 @@ export default function HomepagePage() {
                     </li>
                   </ul>
                 </div>
-                <a href="/Blend">
-                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                <NavLink
+                to="/Blend"
+                
+              >
+                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-                </a>
+              </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -154,7 +153,7 @@ export default function HomepagePage() {
               </div>
               <div className="mt-3 ">
                 <p>
-                   Whole spices give you the best of taste, flavour and
+                  Whole spices give you the best of taste, flavour and
                   aroma as they are sourced from the prime spice growing
                   regions. Whole spices do not go through the grounding process
                   and retain most of their original qualities, they are cleaned
@@ -200,11 +199,14 @@ export default function HomepagePage() {
                     </li>
                   </ul>
                 </div>
-                <a href="/Blend">
-                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                <NavLink
+                to="/Blend"
+                
+              >
+                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-                </a>
+              </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -275,11 +277,14 @@ export default function HomepagePage() {
                     </li>
                   </ul>
                 </div>
-                <a href="/Blend">
-                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                <NavLink
+                to="/Blend"
+                
+              >
+                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-                </a>
+              </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -300,7 +305,7 @@ export default function HomepagePage() {
           >
             <div className="justify-start w-1/3 mt-[6.5rem]">
               <div className="text-3xl">
-                <h1>Whole Spices</h1>
+                <h1>Basic Spices</h1>
               </div>
               <div className="mt-3 ">
                 <p>
@@ -350,11 +355,14 @@ export default function HomepagePage() {
                     </li>
                   </ul>
                 </div>
-                <a href="/Blend">
-                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                <NavLink
+                to="/Basic"
+                
+              >
+                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-                </a>
+              </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
