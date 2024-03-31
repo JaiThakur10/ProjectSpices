@@ -4,7 +4,7 @@ import { Text } from "../Text";
 
 import { Heading } from "../Heading";
 import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
-
+import { Button } from "../Button"
 import ImageSlider from "../ImageSlider/ImageSlider";
 import { NavLink } from "react-router-dom";
 import VideoSlider from "../VideoSlider/VideoSlider";
@@ -64,7 +64,7 @@ export default function HomepagePage() {
 
 
         {/* philosophy */}
-        <div className="text-[#1D7DA3] text-4xl flex flex-col items-center mt-[-5rem]">
+        <div className="text-[#0097CD] text-4xl flex flex-col items-center mt-[-5rem]">
           <span>
             We believe spices are the backbone of Indian kitchens and to
             preserve this, we are satisfied
@@ -95,7 +95,7 @@ export default function HomepagePage() {
               </div>
               <div className="flex mt-3">
                 <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                     Online order{" "}
                     <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                   </button>
@@ -173,7 +173,7 @@ export default function HomepagePage() {
               </div>
               <div className="flex mt-3">
                 <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                     Online order{" "}
                     <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                   </button>
@@ -251,7 +251,7 @@ export default function HomepagePage() {
               </div>
               <div className="flex mt-3">
                 <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                  <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                     Online order{" "}
                     <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                   </button>
@@ -329,10 +329,7 @@ export default function HomepagePage() {
               </div>
               <div className="flex mt-3">
                 <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
-                    Online order{" "}
-                    <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
-                  </button>
+                  <Button/>
 
                   <ul
                     tabIndex={0}

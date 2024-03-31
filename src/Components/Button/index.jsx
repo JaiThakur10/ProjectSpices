@@ -52,14 +52,10 @@ const Button = ({
   ...restProps
 }) => {
   return (
-    <button
-      className={`${className} flex items-center justify-center text-center cursor-pointer ${(shape && shapes[shape]) || ""} ${(size && sizes[size]) || ""} ${(variant && variants[variant]?.[color]) || ""}`}
-      {...restProps}
-    >
-      {!!leftIcon && leftIcon}
-      {children}
-      {!!rightIcon && rightIcon}
-    </button>
+    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                    Online order{" "}
+                    <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
+                  </button>
   );
 };
 

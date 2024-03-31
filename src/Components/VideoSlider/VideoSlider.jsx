@@ -27,10 +27,10 @@ const nextSlide = () => {
   };
 
   return (
-    <div className="w-full h-[30rem] overflow-hidden relative"> 
+    <div className="w-full h-[46rem] overflow-hidden relative mt-[-8rem]"> 
       <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {downloadedVideos.map((videoPath, index) => (
-          <div key={index} className="w-full h-[30rem] flex-shrink-0">
+          <div key={index} className="w-full h-[46rem] flex-shrink-0">
             <video controls className="object-cover w-full h-full">
               <source src={videoPath} type="video/mp4" />
               Your browser does not support the video tag.
