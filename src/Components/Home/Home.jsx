@@ -7,6 +7,7 @@ import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
 
 import ImageSlider from "../ImageSlider/ImageSlider";
 import { NavLink } from "react-router-dom";
+import VideoSlider from "../VideoSlider/VideoSlider";
 
 const info = [
   {
@@ -35,6 +36,13 @@ const info = [
   },
 ];
 
+const videoPaths = [
+  'images/video_1.mp4',
+  'images/video_2.mp4',
+
+];
+
+
 export default function HomepagePage() {
   return (
     <>
@@ -48,11 +56,11 @@ export default function HomepagePage() {
       <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-[#FFFFFF]">
         {/* carousel */}
 
-       <ImageSlider />
+        <ImageSlider />
 
         {/* carousel end */}
 
-       
+
 
 
         {/* philosophy */}
@@ -122,13 +130,13 @@ export default function HomepagePage() {
                   </ul>
                 </div>
                 <NavLink
-                to="/Blend"
-                
-              >
-                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                  to="/Blend"
+
+                >
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-              </NavLink>
+                </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -200,13 +208,13 @@ export default function HomepagePage() {
                   </ul>
                 </div>
                 <NavLink
-                to="/Blend"
-                
-              >
-                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                  to="/Blend"
+
+                >
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-              </NavLink>
+                </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -278,13 +286,13 @@ export default function HomepagePage() {
                   </ul>
                 </div>
                 <NavLink
-                to="/Blend"
-                
-              >
-                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                  to="/Blend"
+
+                >
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-              </NavLink>
+                </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -356,13 +364,13 @@ export default function HomepagePage() {
                   </ul>
                 </div>
                 <NavLink
-                to="/Basic"
-                
-              >
-                <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                  to="/Basic"
+
+                >
+                  <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                     Get Details
                   </button>
-              </NavLink>
+                </NavLink>
               </div>
             </div>
             <div className="mt-[6.5rem]">
@@ -379,7 +387,17 @@ export default function HomepagePage() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center w-full">
+        {/* video slider */}
+
+        {/* <div className="container mx-auto">
+          <h1 className="text-2xl font-bold">Video Carousel</h1>
+         <VideoSlider videoPaths={videoPaths} />
+        </div> */}
+        <VideoSlider/>
+        {/* video slider closed */}
+
+
+        <div className="flex flex-row justify-center w-full ">
           <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
             <div className="flex flex-col items-center justify-start w-full gap-4 p-1">
               <Heading
