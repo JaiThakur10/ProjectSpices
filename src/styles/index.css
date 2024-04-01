@@ -45,13 +45,3 @@ input:focus {
 .alice-carousel__dots-item {
   cursor: pointer;
 }
-<<<<<<< HEA
-=======
-
-.dropdown-content li:focus,
-.dropdown-content li:hover {
-    background-color: transparent; /* or any other color you prefer */
-    outline: none; /* Remove the default focus outline */
-}
-
->>>>>>> b732e957ef5b40ea4a442ae4a31db39b0bebc6c9
