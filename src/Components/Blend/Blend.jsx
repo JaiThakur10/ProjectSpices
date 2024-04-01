@@ -12,24 +12,24 @@ function Blend() {
       price1: 20,
       price2: 40,
     },
-    { image: "images/chat.jpg", name: "Channa Masala", price1: 40, price2: 80 },
+    { image: "images/img_chana.jpeg", name: "Channa Masala", price1: 40, price2: 80 },
     { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
     { image: "images/garam.jpg", name: "Garma Masala", price1: 50, price2: 100 },
     { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
     { image: "images/chat.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
     { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
     { image: "images/chicken.jpg", name: "Meat Masala", price1: 50, price2: 100 },
-    { image: "images/chat.jpg", name: "Paubhaji Masala", price1: 40, price2: 80 },
+    { image: "images/img_pavBhaji.jpeg", name: "Paubhaji Masala", price1: 40, price2: 80 },
     { image: "images/chat.jpg", name: "Raita Masala", price1: 35, price2: 70 },
-    { image: "images/chat.jpg", name: "Sabji Masala", price1: 35, price2: 70 },
+    { image: "images/img_sabji.jpeg", name: "Sabji Masala", price1: 35, price2: 70 },
     { image: "images/sambar.jpg", name: "Sambhar Masala", price1: 35, price2: 70 },
     { image: "images/saunth.jpg", name: "Sauth Powder", price1: 40, price2: 80 },
     { image: "images/garam.jpg", name: "SPL. Garam Masala", price1: 30, price2: 60 },
     { image: "images/chat.jpg", name: "SPL. Meat Masala", price1: 30, price2: 60 },
-    { image: "images/chat.jpg", name: "Shahi Panner", price1: 40, price2: 80 },
+    { image: "images/img_sahipaneer.jpeg", name: "Shahi Panner", price1: 40, price2: 80 },
     { image: "images/jeera.jpg", name: "Jeera Powder", price1: 45, price2: 90 },
     { image: "images/chat.jpg", name: "Pudina Powder", price1: 36, price2: "-" },
-    { image: "images/chat.jpg", name: "Pani Puri Powder", price1: "10 gm 10", price2: "-" },
+    { image: "images/img_golgappe.jpeg", name: "Pani Puri Powder", price1: "10 gm 10", price2: "-" },
     { image: "images/blackpeper.jpg", name: "Kali Mirch Powder", price1: "-", price2: 160 },
     { image: "images/sauf.jpg", name: "Sonf Powder", price1: "-", price2: 50 },
     { image: "images/anardana.jpg", name: "Anardana Powder", price1: "-", price2: 100 },
@@ -67,7 +67,7 @@ function Blend() {
 
                 </div>
               </div>
-              <div className="mt-[6.5rem]"><img className="h-72 w-72" src={info.image} alt="" /></div>
+              <div className="mt-[6.5rem]"><img className="h-72 w-72 mix-blend-multiply" src={info.image} alt="" /></div>
             </div>
           </div>
         ))}

@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 import Nav from './Components/nav/Nav'
 import Whatsapp from './Components/Whatsapp/Whatsapp'
 
+
 function Layout() {
   return (
     <div>
@@ -13,6 +14,7 @@ function Layout() {
       <Whatsapp/>
       <Outlet />
       <Footer className="flex flex-col items-center justify-center w-full" />
+      
     </div>
   )
 }

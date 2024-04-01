@@ -46,3 +46,9 @@ input:focus {
   cursor: pointer;
 }
 
+.dropdown-content li:focus,
+.dropdown-content li:hover {
+    background-color: transparent; /* or any other color you prefer */
+    outline: none; /* Remove the default focus outline */
+}
+

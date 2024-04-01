@@ -1,82 +1,30 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Text } from "../Text";
-import Category from "../Category/Category";
-import { Heading } from "../Heading";
-import HomepageCardblog from "../HomepageCardblog/HomepageCardblog";
-import { Button } from "../Button"
-import ImageSlider from "../ImageSlider/ImageSlider";
-import { NavLink } from "react-router-dom";
-import VideoSlider from "../VideoSlider/VideoSlider";
+import React from 'react'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Button } from '../Button';
 
-const info = [
-  {
-    image:
-      "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
-    name: "Blend",
-    link: "/Blend",
-  },
-  {
-    image:
-      "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
-    name: "Basic",
-    link: "/Basic",
-  },
-  {
-    image:
-      "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
-    name: "Mixed",
-    link: "/Blend",
-  },
-  {
-    image:
-      "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
-    name: "Others",
-    link: "/Blend",
-  },
-];
+function Category() {
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-const videoPaths = [
-  'images/video_1.mp4',
-  'images/video_2.mp4',
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+  };
 
-];
-
-
-export default function HomepagePage() {
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+  };
+  const slides = [
+    <div key={1}>slide 1</div>,
+    <div key={2}>slide 2</div>,
+    <div key={3}></div>,
+    <div key={4}></div>,
+  ];
   return (
-    <>
-      <Helmet>
-        <title>YP GOLD</title>
-        <meta
-          name="description"
-          content="Web site created using create-react-app"
-        />
-      </Helmet>
-      <div className="flex flex-col items-center justify-start w-full gap-[99px] bg-[#FFFFFF]">
-        {/* carousel */}
-
-        <ImageSlider />
-
-        {/* carousel end */}
-
-
-
-
-        {/* philosophy */}
-        <div className="text-[#0097CD] text-4xl flex flex-col items-center mt-[-5rem]">
-          <span>
-            We believe spices are the backbone of Indian kitchens and to
-            preserve this, we are satisfied
-          </span>
-          <span>with nothing but perfect ingredients only.</span>
-        </div>
-
-        <div className="carousel w-full h-[550px] bg-[#F0F0F0]">
-          <div
-            id="slide1"
+    <div>
+      <div className="carousel w-full h-[550px] bg-[#F0F0F0]">
+          <div key={1}
             className="carousel-item relative w-full flex justify-center gap-8"
-          >
+          >{slides[currentSlide]}
             <div className="justify-start w-1/3 mt-[6.5rem]">
               <div className="text-3xl">
                 <h1>Blend Spices</h1>
@@ -143,18 +91,17 @@ export default function HomepagePage() {
               <img className="h-72 w-72" src="images/blend.png" alt="" />
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="bg-[#0097CC] btn btn-circle ">
+            <button className="bg-[#0097CC] btn btn-circle " onClick={prevSlide}>Previous</button>
                 ❮
-              </a>
-              <a href="#slide2" className=" bg-[#0097CC] btn btn-circle ">
-                ❯
-              </a>
+                <button className="bg-[#0097CC] btn btn-circle " onClick={nextSlide}>Next</button>
             </div>
           </div>
+
+
           <div
-            id="slide2"
+            key={2}
             className="carousel-item relative w-full flex justify-center gap-8"
-          >
+          >{slides[currentSlide]}
             <div className="justify-start w-1/3 mt-[6.5rem]">
               <div className="text-3xl">
                 <h1>Mixed Spices</h1>
@@ -221,18 +168,17 @@ export default function HomepagePage() {
               <img className="h-72 w-72" src="images/blend.png" alt="" />
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="bg-[#0097CC] btn btn-circle ">
+            <button className="bg-[#0097CC] btn btn-circle " onClick={prevSlide}>Previous</button>
                 ❮
-              </a>
-              <a href="#slide3" className=" bg-[#0097CC] btn btn-circle ">
-                ❯
-              </a>
+                <button className="bg-[#0097CC] btn btn-circle " onClick={nextSlide}>Next</button>
             </div>
           </div>
+
+
           <div
-            id="slide3"
+           key={3}
             className="carousel-item relative w-full flex justify-center gap-8"
-          >
+          >{slides[currentSlide]}
             <div className="justify-start w-1/3 mt-[6.5rem]">
               <div className="text-3xl">
                 <h1>Others Spices</h1>
@@ -299,18 +245,16 @@ export default function HomepagePage() {
               <img className="h-72 w-72" src="images/blend.png" alt="" />
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="bg-[#0097CC] btn btn-circle ">
+            <button className="bg-[#0097CC] btn btn-circle " onClick={prevSlide}>Previous</button>
                 ❮
-              </a>
-              <a href="#slide4" className=" bg-[#0097CC] btn btn-circle ">
-                ❯
-              </a>
+                <button className="bg-[#0097CC] btn btn-circle " onClick={nextSlide}>Next</button>
             </div>
           </div>
+
+
           <div
-            id="slide4"
             className="carousel-item relative w-full flex justify-center gap-8"
-          >
+          >{slides[currentSlide]}
             <div className="justify-start w-1/3 mt-[6.5rem]">
               <div className="text-3xl">
                 <h1>Basic Spices</h1>
@@ -374,53 +318,16 @@ export default function HomepagePage() {
               <img className="h-72 w-72" src="images/blend.png" alt="" />
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="bg-[#0097CC] btn btn-circle ">
+              <button className="bg-[#0097CC] btn btn-circle " onClick={prevSlide}>Previous</button>
                 ❮
-              </a>
-              <a href="#slide1" className=" bg-[#0097CC] btn btn-circle ">
-                ❯
-              </a>
+                <button className="bg-[#0097CC] btn btn-circle " onClick={nextSlide}>Next</button>
+              
             </div>
           </div>
         </div>
 
-        {/*blend basic slider */}
-
-        
-
-        {/* video slider */}
-
-        {/* <div className="container mx-auto">
-          <h1 className="text-2xl font-bold">Video Carousel</h1>
-         <VideoSlider videoPaths={videoPaths} />
-        </div> */}
-        <VideoSlider/>
-        {/* video slider closed */}
-
-
-        <div className="flex flex-row justify-center w-full ">
-          <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
-            <div className="flex flex-col items-center justify-start w-full gap-4 p-1">
-              <Heading
-                size="xl"
-                as="h2"
-                className="tracking-[-0.50px] text-center "
-              >
-                Our Videos
-              </Heading>
-              <Text
-                size=""
-                as="p"
-                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center"
-              >
-                We write various things related to spices, from tips and what
-                things I need to pay attention to when choosing right spices
-              </Text>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    </div>
+  )
 }
+
+export default Category
