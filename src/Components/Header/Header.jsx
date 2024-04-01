@@ -68,7 +68,7 @@ export default function Header({ ...props }) {
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
                 >Buy</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
-                  <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 "><NavLink to={"/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"/Blend"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
