@@ -2,11 +2,16 @@ import React from 'react'
 import { Heading } from "../Heading";
 import { Text } from "../Text";
 import { Img } from "../Img";
+import { Helmet } from "react-helmet";
 
 
 export default function About() {
   return (
     <section className="">
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="Web site created using create-react-app" />
+      </Helmet>
       <div className="  md:flex-row items-center">
         {/* Image Section */}
         <div className=" md:w-full mb-6 md:mb-0">

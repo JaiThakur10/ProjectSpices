@@ -26,7 +26,7 @@ const info = [
     image:
       "https://www.freeiconspng.com/thumbs/spices-png/spices-png-photo-3.png",
     name: "Mixed",
-    link: "/Blend",
+    link: "/Mixed",
   },
   {
     image:
@@ -208,7 +208,7 @@ export default function HomepagePage() {
                   </ul>
                 </div>
                 <NavLink
-                  to="/Blend"
+                  to="/Mixed"
 
                 >
                   <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">

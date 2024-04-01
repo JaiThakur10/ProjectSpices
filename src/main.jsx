@@ -11,6 +11,7 @@ import Blend from './Components/Blend/Blend.jsx'
 import Blog from './Components/Blog/Blog.jsx'
 import B2B from './Components/B2B/B2B.jsx'
 import Basic from './Components/Basic/Basic.jsx'
+import Mixed from './Components/MIxed/Mixed.jsx'
 
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='blog' element={<Blog/>} />
       <Route path='B2B' element={<B2B/>} />
       <Route path='Basic' element={<Basic/>} />
+      <Route path='Mixed' element={<Mixed/>} />
 
     </Route>
   )
