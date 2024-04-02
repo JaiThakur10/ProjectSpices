@@ -9,6 +9,7 @@ import ImageSlider from "../ImageSlider/ImageSlider";
 import { NavLink } from "react-router-dom";
 import VideoSlider from "../VideoSlider/VideoSlider";
 import OurVideos from "../OurVideos/OurVideos";
+import CVideos from "../CVideos/CVideos";
 
 const info = [
   {
@@ -111,7 +112,7 @@ export default function HomepagePage() {
             
           </div>
         </div>
-       
+       <CVideos/>
       </div>
     </>
   );
