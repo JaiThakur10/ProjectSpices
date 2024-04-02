@@ -48,7 +48,7 @@ function Basic() {
 
                 </div>
               </div>
-              <div className="mt-[6.5rem]"><img className="h-72 w-72" src={info.image} alt="" /></div>
+              <div className="mt-[6.5rem]"><img className="h-72 w-72 mix-blend-multiply" src={info.image} alt="" /></div>
             </div>
           </div>
         ))}
