@@ -26,6 +26,7 @@ const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? downloadedVideos.length - 1 : prevIndex - 1));
   };
 
+
   return (
     <div className="w-full h-[46rem] overflow-hidden relative mt-[-8rem]"> 
       <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

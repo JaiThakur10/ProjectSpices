@@ -8,6 +8,7 @@ import { Button } from "../Button"
 import ImageSlider from "../ImageSlider/ImageSlider";
 import { NavLink } from "react-router-dom";
 import VideoSlider from "../VideoSlider/VideoSlider";
+import OurVideos from "../OurVideos/OurVideos";
 
 const info = [
   {
@@ -110,6 +111,7 @@ export default function HomepagePage() {
             
           </div>
         </div>
+       
       </div>
     </>
   );
