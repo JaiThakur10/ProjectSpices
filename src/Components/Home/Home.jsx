@@ -90,7 +90,7 @@ export default function HomepagePage() {
         {/* video slider closed */}
 
 
-        <div className="flex flex-row justify-center w-full ">
+        <div className="flex flex-row justify-center  w-screen ">
           <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
             <div className="flex flex-col items-center justify-start w-full gap-4 p-1">
               <Heading
@@ -108,11 +108,16 @@ export default function HomepagePage() {
                 We write various things related to spices, from tips and what
                 things I need to pay attention to when choosing right spices
               </Text>
+              <div className=" w-screen">
+              <CVideos/>
+              </div>
+               
             </div>
-            
           </div>
         </div>
-       <CVideos/>
+    \
+        
+
       </div>
     </>
   );
