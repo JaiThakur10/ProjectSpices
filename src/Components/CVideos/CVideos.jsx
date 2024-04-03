@@ -31,7 +31,7 @@ function CVideos() {
         {data.map((d) => (
           <div key={d.id} className="h-[250px]">
             <div className="flex justify-center items-center">
-              <img src={d.imageurl} alt="" className="h-60 w-64" />
+              <img src={d.imageurl} alt="" className="h-60 w-64" loading="lazy"/>
             </div>
           </div>
         ))}

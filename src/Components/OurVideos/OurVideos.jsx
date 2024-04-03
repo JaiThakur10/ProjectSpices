@@ -30,8 +30,8 @@ function OurVideos() {
       <Slider {...settings} >
         {data.map((d) => (
           <div key={d.id} className="h-[150px]">
-            <div className="flex justify-center items-center">
-              <video controls className="h-54 w-64" src={d.imageurl} type="video/mp4"   />
+            <div className="flex justify-center items-center ">
+              <video controls className="h-54 w-64" src={d.imageurl} type="video/mp4"  loading="lazy" />
             </div>
           </div>
         ))}
