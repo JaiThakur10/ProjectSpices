@@ -20,6 +20,12 @@ function Category() {
     { name: "Salts", bg_image:"images/category_background.jpg",link:"/Blend",content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/blend.png" },
     { name: "Others",bg_image:"images/category_background.jpg",link:"/Blend", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/hawan.jpeg" },
   ];
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: '' // This enables smooth scrolling
+    });
+  };
 
   return (
     <div className='w-full h-[550px] bg-[#F0F0F0]'>
@@ -74,7 +80,7 @@ function Category() {
                       </li>
                     </ul>
                   </div>
-                  <NavLink
+                  <NavLink onClick={scrollToTop}
                     to={slides.link}
 
                   >
