@@ -23,7 +23,7 @@ function Category() {
 
   return (
     <div className='w-full h-[550px] bg-[#F0F0F0]'>
-      <div className=" h-[32rem] overflow-hidden relative" style={{ backgroundImage: `url(${slides[currentSlide].bg_image})`, backgroundSize: 'cover', backgroundRepeat: '', mixblendmode:'multiply',}}>
+      <div className=" h-[32rem] overflow-hidden relative" style={{ backgroundImage: `url(${slides[currentSlide].bg_image})`, backgroundSize: 'cover', backgroundRepeat: '', mixblendmode:'multiply'}}>
         <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {slides.map((slides, index) => (
             <div
