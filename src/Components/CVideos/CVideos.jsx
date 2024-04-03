@@ -1,34 +1,45 @@
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function CVideos() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000 
+    slidesToShow: 5, // Adjust number of slides to show
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: null,
+    nextArrow: null,
+    responsive: [
+      {
+        breakpoint: 600, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
   return (
-    <div className='w-full'>
-      <div className="">
-      <Slider {...settings} style={{ padding: 0, margin: 0 }}>
+    <div className="w-full">
+      <Slider {...settings} >
         {data.map((d) => (
-          <div key={d.id} className=" h-[250px] gap-10  ">
-            <div className=' flex justify-center items-center'>
-              <img src={d.imageurl} alt="" className="h-60 w-64"/>
+          <div key={d.id} className="h-[250px]">
+            <div className="flex justify-center items-center">
+              <img src={d.imageurl} alt="" className="h-60 w-64" />
             </div>
           </div>
         ))}
       </Slider>
-      </div>
-      
     </div>
   );
 }
+
 
 const data = [
     {

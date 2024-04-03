@@ -108,14 +108,45 @@ export default function HomepagePage() {
                 We write various things related to spices, from tips and what
                 things I need to pay attention to when choosing right spices
               </Text>
-              <div className=" w-screen">
-              <CVideos/>
+              <div className=" w-screen ">
+              <OurVideos/>
+              
+              
               </div>
-               
+              
+              
             </div>
           </div>
         </div>
-    \
+
+        <div className="flex flex-row justify-center  w-screen ">
+          <div className="flex flex-col items-center justify-start w-full gap-[50px] max-w-[1290px]">
+            <div className="flex flex-col items-center justify-start w-full gap-4 p-1">
+              <Heading
+                size="xl"
+                as="h2"
+                className="tracking-[-0.50px] text-center "
+              >
+                Our Photos
+              </Heading>
+              <Text
+                size=""
+                as="p"
+                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center"
+              >
+                We write various things related to spices, from tips and what
+                things I need to pay attention to when choosing right spices
+              </Text>
+              <div className=" w-screen ">
+              <CVideos/>
+              
+              
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
         
 
       </div>
