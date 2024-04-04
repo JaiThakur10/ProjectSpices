@@ -43,7 +43,7 @@ function Blend() {
             <div key={i} className={`relative w-full flex justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="mt-3 "><p>YP Gold Blend spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Blend spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex mt-3">
                   <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
                     <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">

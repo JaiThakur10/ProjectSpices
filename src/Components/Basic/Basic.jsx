@@ -1,16 +1,16 @@
 import React from "react";
 import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { NavLink } from "react-router-dom";
-
+import { Button } from "../Button";
 function Basic() {
   const info = [
-    { image: "images/chat.jpg", name: "Channa Masala", price1: 40, price2: 80 },
+    { image: "images/Chana Masala.jpg", name: "Channa Masala", price1: 40, price2: 80 },
     { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
-    { image: "images/garam.jpg", name: "Garma Masala", price1: 50, price2: 100 },
+    { image: "images/garam.jpg", name: "Garam Masala", price1: 50, price2: 100 },
     { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
-    { image: "images/chat.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
+    { image: "images/Kashmiri mirch.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
     { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
-    { image: "images/chicken.jpg", name: "Meat Masala", price1: 50, price2: 100 },
+    { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 50, price2: 100 },
   
   ];
 
@@ -22,21 +22,21 @@ function Basic() {
             <div key={i} className={`relative w-full flex justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="mt-3 "><p>YP Gold Basic spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Basic spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex mt-3">
                   <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
-                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-1 text-xs font-medium min-[320px]:text-xxs">
-                      <h3>50gm : MRP {info.price1}</h3>
+                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">
+                      <h3>50gm </h3>
                     </div>
-                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-1 h-10 text-xs font-medium min-[320px]:text-xxs">
-                      100gm : MRP {info.price2}
+                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-3 h-10 text-xs font-medium min-[320px]:text-xxs">
+                      100gm 
                     </div>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                  <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                  <Button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
   Online order <img  src="images/img_arrow_down.svg" alt="" class="ml-2 "/>
-</button>
+</Button>
 
                     <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
                       <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
