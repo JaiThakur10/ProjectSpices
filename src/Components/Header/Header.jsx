@@ -69,9 +69,9 @@ export default function Header({ ...props }) {
                 >Product Range</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
                   <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>Blend Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>Basic Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>Others Spices</p>
+                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white]" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
+                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white]" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
+                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
                 </ul>
               </div>
               <div>
