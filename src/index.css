@@ -8,3 +8,7 @@
   .slick-dots li.slick-active button:before {
     color:orange !important;
   }
+
+:root{
+  font-family: serif;
+}

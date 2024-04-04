@@ -1,154 +1,51 @@
 import React from 'react'
+import { Helmet } from "react-helmet";
 
-export default function Contact() {
-    return (
-        <div className="relative flex items-top justify-center min-h-[400px] bg-white sm:items-center sm:pt-0 mb-20">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid md:grid-cols-2">
-                        <div className="p-6 mr-2  sm:rounded-lg float-left">
-                            <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
-                                Get in touch: 
-                            </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
-                            </p>
 
-                            <div className="flex items-center mt-8 text-gray-600">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-black-900"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                    />
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md text-black-900 font-serif tracking-wide font-semibold w-40">
-                                Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad
-                                </div>
-                            </div>
-
-                            <div className="flex items-center mt-4 text-black-900">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-black-900"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md tracking-wide font-serif font-semibold w-40">
-                                    +91 9599261209
-                                </div>
-                            </div>
-
-                            <div className="flex items-center mt-2 text-gray-600">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-black-900"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md text-black-900 tracking-wide font-semibold font-serif w-40">
-                                    gargabhinav505@gmail.com
-                                </div>
-                            </div>
-                        </div>
-
-                        <form className="p-6 flex flex-col justify-center mt-4 ">
-                            <div className="flex flex-col">
-                                <label for="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-black-900 text-black-900 font-semibold focus:border-blue-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-black-900 text-black-900 font-semibold focus:border-blue-500 focus:outline-none"
-                                />
-                            </div>
-                            <div className="flex flex-col mt-2">
-                                <label for="inquiry" className="hidden">
-                                    Inquiry
-                                </label>
-                                <input
-                                    type="text"
-                                    name="inquiry"
-                                    id="inquiry"
-                                    placeholder="Inquiry"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-black-900 text-black-900 font-semibold focus:border-blue-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Phone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-black-900 text-black-900 font-semibold focus:border-blue-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-blue-500 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+export default function About() {
+  return (
+    <section className="">
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="Web site created using create-react-app" />
+      </Helmet>
+      <div className="  md:flex-row items-center">
+        {/* Image Section */}
+        <div className=" md:w-full mb-6 md:mb-0">
+          <img
+            src="images/image_slider_1.jpeg"
+            alt="About Image"
+            className="w-full h-[30rem] object-conatiner  shadow-lg"
+          />
         </div>
-    );
+        {/* Content Section */}
+        <div className=' w-full h-full flex py-20'>
+        <div className=' flex flex-col-2 w-[75%] max-h-[300px]  m-auto   md:h-[50rem] shadow-lg  px-5 py-3 '>
+        <div className=' w-1/2 border-r-2 m-6'> 
+        <h2 className=' font-bold text-xl font-serif'>YP GOLD</h2>
+        <p className='mt-2 font-serif'>Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
+        <h4 className=' text-[#0097CD] mt-4 font-serif'>Office</h4>
+        <p className=' font-serif'>+91 9599261209</p>
+        <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
+        <p className=' font-serif'>gargabhinav505@gmail.com</p>
+        </div>
+        <div className=' w-1/2 m-6 mt-2'> 
+        <h4 className='text-[#0097CD] mt-3'>Consumer Care Helpline Number</h4>
+        <p className='mt-2'>+91 9599261209</p>
+        <button onClick={ () => {window.open ('http://wa.me/9599261209?text=Hello!%20I%20want%20to%20buy%20Masala in Bulk!!!!', '_blank');}} className=" mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
+        
+                      Bulk Buy &rarr;
+                    </button>
+                    <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  );
 }
+
+
+
+
+

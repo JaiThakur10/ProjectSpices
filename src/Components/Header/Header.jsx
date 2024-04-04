@@ -36,7 +36,7 @@ export default function Header({ ...props }) {
               <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
               <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
               <NavLink
-                  to="/B2B"
+                  to="/Contact"
                   className={({ isActive }) =>
                     `block mt-8 ml-4 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
                     }  font-rubik text-2xl   hover:text-[#0097CC] `

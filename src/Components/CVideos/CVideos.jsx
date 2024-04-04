@@ -36,9 +36,7 @@ function CVideos() {
     setSelectedImage(null);
   };
 
-  const handleExit = () => {
-    window.location.reload(); // Reload the page
-  };
+  
 
   return (
     <div className="w-full">
