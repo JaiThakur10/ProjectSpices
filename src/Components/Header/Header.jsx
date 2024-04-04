@@ -21,34 +21,34 @@ export default function Header({ ...props }) {
             {/* upper div */}
             <div className="flex justify-end gap-2 w-1/2 m-auto  items-center">
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative items-baseline">
-              <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-1 w-auto mt-8">
-                    Online order{" "}
-                    <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
-                  </button>
+                <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-1 w-auto mt-8">
+                  Online order{" "}
+                  <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
+                </button>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[10rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4  ">
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="" src="images/flipkartlogo.png" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
-      
+
               </div >
-              <a className=" mt-6" href="https://www.instagram.com/"><Img  src="images/instagram.png" /></a>
+              <a className=" mt-6" href="https://www.instagram.com/"><Img src="images/instagram.png" /></a>
               <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
               <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
               <NavLink
-                  to="/Contact"
-                  className={({ isActive }) =>
-                    `block mt-8 ml-4 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                    }  font-rubik text-2xl   hover:text-[#0097CC] `
-                  }
+                to="/Contact"
+                className={({ isActive }) =>
+                  `block mt-8 ml-4 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                  }  font-rubik text-2xl   hover:text-[#0097CC] `
+                }
+              >
+                <button
+                  type="button"
+                  className="bg-[#B8A064] text-white-A700 px-2 rounded-full"
                 >
-                  <button
-                    type="button"
-                    className="bg-[#B8A064] text-white-A700 px-2 rounded-full"
-                  >
-                    CONTACT US
-                  </button>
-                </NavLink>
+                  CONTACT US
+                </button>
+              </NavLink>
             </div>
             {/* upper div closed */}
             <div className=" flex items-baseline space-x-4 mb-0 m-auto ">
@@ -81,11 +81,12 @@ export default function Header({ ...props }) {
               </NavLink>
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
-                >Buy</div>
+                >Product range</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
-                  <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>
-                  <li className="w-28 h-[6rem] border border-solid border-gray-500 "><NavLink to={"/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
-                  <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"/Blend"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Blend Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white] mix-blend-multiply" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
                 </ul>
               </div>
               <div>
