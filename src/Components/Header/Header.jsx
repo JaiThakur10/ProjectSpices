@@ -30,10 +30,25 @@ export default function Header({ ...props }) {
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://blinkit.com/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
                   <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"https://www.meesho.com/"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
+      
               </div >
               <a className=" mt-6" href="https://www.instagram.com/"><Img  src="images/instagram.png" /></a>
               <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
               <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
+              <NavLink
+                  to="/B2B"
+                  className={({ isActive }) =>
+                    `block mt-8 ml-4 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
+                    }  font-rubik text-2xl   hover:text-[#0097CC] `
+                  }
+                >
+                  <button
+                    type="button"
+                    className="bg-[#B8A064] text-white-A700 px-2 rounded-full"
+                  >
+                    CONTACT US
+                  </button>
+                </NavLink>
             </div>
             {/* upper div closed */}
             <div className=" flex items-baseline space-x-4 mb-0 m-auto ">
@@ -66,12 +81,11 @@ export default function Header({ ...props }) {
               </NavLink>
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
-                >Product Range</div>
+                >Buy</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>Blend Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white]" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white]" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
-                  <p className="font-rubik "><li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
+                  <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white]" src="images/img_turmeric.jpeg" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500 "><NavLink to={"/"}><img className="" src="images/blinkit.svg" alt="" /></NavLink></li>
+                  <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]"><NavLink to={"/Blend"}><img className="w-60 h-[4rem]" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" alt="" /></NavLink></li>
                 </ul>
               </div>
               <div>

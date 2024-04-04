@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from "../Heading";
 import { Text } from "../Text";
-import { Img } from "../Img";
+
 import { Helmet } from "react-helmet";
 
 

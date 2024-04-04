@@ -15,9 +15,9 @@ function Category() {
   };
   const slides = [
     { name: "Blend spices",bg_image:"images/category_background.jpg", link:"/Blend", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/blend.png" },
-    { name: "Mixed Spices",bg_image:"images/category_background.jpg",link:"/Mixed", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/mixed.jpeg" },
-    { name: "Basic Spices",bg_image:"images/category_background.jpg",link:"/Basic", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/basic.jpeg" },
-    { name: "Salts", bg_image:"images/category_background.jpg",link:"/Blend",content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/salts.jpeg" },
+    { name: "Mixed Spices",bg_image:"images/redchilly.avif",link:"/Mixed", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/mixed.jpeg" },
+    { name: "Basic Spices",bg_image:"",link:"/Basic", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/basic.jpeg" },
+    { name: "Salts", bg_image:"images/saltsbg.avif",link:"/Blend",content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/salts.jpeg" },
     { name: "Others",bg_image:"images/category_background.jpg",link:"/Blend", content: "Catch Whole spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Whole spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/others.jpeg" },
   ];
   const scrollToTop = () => {
@@ -90,15 +90,15 @@ function Category() {
                   </NavLink>
                 </div>
               </div>
-              <div className="mt-[6.5rem]">
-                <img className="h-72 w-72 mix-blend-multiply" src={slides.img} alt="" />
+              <div className=" mt-[-1.5rem] bg-[#F0F0F0]">
+                <img className="h-[500px] w-[500px] mix-blend-multiply" src={slides.img} alt="" />
               </div>
             </div>
        
         ))}
       </div>
-      <button className=" bg-[#0097CC] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2" onClick={prevSlide}> ❮</button>
-      <button className=" bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2" onClick={nextSlide}>❯ </button>
+      <button className=" hover:bg-[#0097CC] bg-[#F0F0F0] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2" onClick={prevSlide}> ❮</button>
+      <button className=" hover:bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2" onClick={nextSlide}>❯ </button>
     </div>
     </div>
 

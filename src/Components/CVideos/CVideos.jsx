@@ -2,10 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 
 function CVideos() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5, // Adjust number of slides to show
@@ -25,17 +26,39 @@ function CVideos() {
     ]
   };
 
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const enlargeImage = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const handleClose = () => {
+    setSelectedImage(null);
+  };
+
+  const handleExit = () => {
+    window.location.reload(); // Reload the page
+  };
+
   return (
     <div className="w-full">
       <Slider {...settings} >
         {data.map((d) => (
-          <div key={d.id} className="h-[250px]">
+          <div key={d.id} className="h-[250px]" onClick={() => enlargeImage(d.imageurl)}>
             <div className="flex justify-center items-center">
               <img src={d.imageurl} alt="" className="h-60 w-64" loading="lazy"/>
             </div>
           </div>
         ))}
       </Slider>
+      {selectedImage && (
+        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75">
+          <div className="relative">
+            <button className="absolute  top-2 right-2 text-white z-10" onClick={handleClose}><img className=" h-9 w-9" src="images/cross.png" alt="" /></button>
+            <img src={selectedImage} alt="" className="max-w-[600px] max-h-[600px]" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
