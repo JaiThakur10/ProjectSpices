@@ -66,7 +66,7 @@ export default function HomepagePage() {
 
 
         {/* philosophy */}
-        <div className="text-[#0097CD] text-4xl flex flex-col items-center mt-[-5rem]">
+        <div className="text-[#0097CD] text-4xl flex flex-col items-center mt-[-5rem] max-[450px]:items-start max-[450px]:flex max-[450px]:flex-col max-[450px]:text-xl">
           <span>
             We believe spices are the backbone of Indian kitchens and to
             preserve this, we are satisfied

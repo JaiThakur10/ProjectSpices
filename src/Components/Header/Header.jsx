@@ -129,14 +129,14 @@ export default function Header({ ...props }) {
             )}
           </div>
           <div className="mr-2 mt-2">
-            <button onClick={toggleNavbar} type="button" className="bg-black-900 inline-flex items-center justify-center p-2 rounded-md text-white-A700 hover:text-white hover:bg-black-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-900 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <button onClick={toggleNavbar} type="button" className="bg-[#0097CD] mt-3 inline-flex items-center justify-center p-2 rounded-md text-white-A700 hover:text-white hover:bg-[#0097CD] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-900 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg className="block h-6 w-6  bg-[#0098CD]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               ) : (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg className="block h-6 w-6  " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               )}
@@ -146,76 +146,67 @@ export default function Header({ ...props }) {
       </div>
       {/* function for responsive design  */}
       {isOpen && (
-        <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-            <div className="flex flex-col max-[450px]:flex-row">
+        <div className="md:hidden top-0 right-0 bottom-0 left-0  flex justify-center items-center">
+          <div className="  p-4 w-80">
+            <div className="flex flex-col space-y-4">
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#0097CC]`
-                }
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/blog"
-                className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#0097CC] `
-                }
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
               >
                 Blog
               </NavLink>
               <NavLink
                 to="/about"
-                className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                  }  font-rubik text-2xl    hover:text-[#0097CC] `
-                }
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
               >
                 About
               </NavLink>
-            </div>
-            <div className="flex flex-col max-[450px]:flex-row">
-
-              <div className="relative">
-                <div className="block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC]">Buy</div>
-                {isOpen && (
-                  <ul className="absolute dropdown-content z-10 top-full left-0 w-52 bg-white border border-gray-300 shadow rounded-box p-2">
-                    <li><a href="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img className="w-30 h-14" src="images/flipkartlogo.png" alt="" /></a></li>
-                    <li><a href="https://blinkit.com/"><img className="w-30 h-14" src="images/blinkit.svg" alt="" /></a></li>
-                    <li><a href="https://www.meesho.com/"><img className="w-30 h-14" src="images/meesho.svg" alt="" /></a></li>
-                  </ul>
-                )}
-              </div>
+              
               <NavLink
                 to="/B2B"
-                className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#0097CC] `
-                }
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
               >
                 <button
                   type="button"
-                  className="bg-[#0097CC] text-white-A700 px-2 rounded-full sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
+                  className=" text-black-900  sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
                 >
-                  Get Distribution?
+                Get Distribution?
                 </button>
               </NavLink>
               <NavLink
                 to="/B2B"
-                className={({ isActive }) =>
-                  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
-                  }  font-rubik text-2xl   hover:text-[#0097CC]`
-                }
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
               >
                 B2B
+              </NavLink>
+              <div className="dropdown dropdown-hover relative ">
+                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
+                >Product range</div>
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Blend Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white] mix-blend-multiply" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
+                </ul>
+              </div>
+              <NavLink
+                to="/Contact"
+                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
+              >
+                Contact Us
               </NavLink>
             </div>
           </div>
         </div>
       )}
+    
+
     </header>
   );
 }
