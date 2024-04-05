@@ -12,6 +12,9 @@ import Blog from './Components/Blog/Blog.jsx'
 import B2B from './Components/B2B/B2B.jsx'
 import Basic from './Components/Basic/Basic.jsx'
 import Mixed from './Components/MIxed/Mixed.jsx'
+import Others from './Components/Others/Others.jsx'
+import Salts from './Components/Salts/Salts.jsx'
+import Pooja from './Components/Pooja/Pooja.jsx'
 
 
 
@@ -26,6 +29,9 @@ const router = createBrowserRouter(
       <Route path='B2B' element={<B2B/>} />
       <Route path='Basic' element={<Basic/>} />
       <Route path='Mixed' element={<Mixed/>} />
+      <Route path='Others' element={<Others/>} />
+      <Route path='Salts' element={<Salts/>} />
+      <Route path='Pooja' element={<Pooja/>} />
 
     </Route>
   )
