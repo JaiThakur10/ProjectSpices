@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button } from '../Button';
-import { Link } from 'react-router-dom';
+
 
 function Category() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -82,14 +81,14 @@ function Category() {
                       </li>
                     </ul>
                   </div>
-                  <Link onClick={scrollToTop}
+                  <NavLink onClick={scrollToTop}
                     to={slides.link}
 
                   >
                     <button className=" mt-2 mb-2 text-[#0097CC]   max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
               <div className=" mt-[-1.5rem] bg-[#F0F0F0] order-1 md:order-2  md:w-1/2 lg:w-1/3 p-4">
