@@ -81,14 +81,14 @@ function Category() {
                       </li>
                     </ul>
                   </div>
-                  <NavLink onClick={scrollToTop}
+                  <Link onClick={scrollToTop}
                     to={slides.link}
 
                   >
                     <button className=" mt-2 mb-2 text-[#0097CC]   max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
-                  </NavLink>
+                  </Link>
                 </div>
               </div>
               <div className=" mt-[-1.5rem] bg-[#F0F0F0] order-1 md:order-2  md:w-1/2 lg:w-1/3 p-4">
