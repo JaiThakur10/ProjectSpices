@@ -17,10 +17,12 @@ function CVideos() {
     nextArrow: null,
     responsive: [
       {
-        breakpoint: 600, // Adjust breakpoint as needed
+        breakpoint: 450, // Adjust breakpoint as needed
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
+
         }
       }
     ]
