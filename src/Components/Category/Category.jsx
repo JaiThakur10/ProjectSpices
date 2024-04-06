@@ -41,7 +41,7 @@ function Category() {
                   <h1 className='max-[450px]:text-black-900'>{slides.name}</h1>
                 </div>
                 <div className="mt-3 max-[450px]:mt-5 max-[450px]:w-full">
-                  <p className=' max-[450px]:text-xs'>
+                  <p className=' max-[450px]:text-xs max-[450px]:text-black-900'>
                     {slides.content}
                   </p>
                 </div>
@@ -98,8 +98,8 @@ function Category() {
        
         ))}
       </div>
-      <button className=" hover:bg-[#0097CC] bg-[#F0F0F0] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2" onClick={prevSlide}> ❮</button>
-      <button className=" hover:bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2" onClick={nextSlide}>❯ </button>
+      <button className=" hover:bg-[#0097CC] bg-[#F0F0F0] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2 max-[450px]:hover:bg-[#0097CD] max-[450px]:hover:bg-[#F0F0F0]" onClick={prevSlide}> ❮</button>
+      <button className=" hover:bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2 max-[450px]:hover:bg-[#0097CD] max-[450px]:bg-[#F0F0F0]" onClick={nextSlide}>❯ </button>
     </div>
     </div>
 

@@ -103,7 +103,7 @@ export default function HomepagePage() {
               <Text
                 size=""
                 as="p"
-                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center"
+                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center max-[450px]:text-black-900"
               >
                 We write various things related to spices, from tips and what
                 things I need to pay attention to when choosing right spices
@@ -125,7 +125,7 @@ export default function HomepagePage() {
               <Heading
                 size="xl"
                 as="h2"
-                className="tracking-[-0.50px] text-center "
+                className="tracking-[-0.50px] text-center max-[450px]:text-black-900"
               >
                 Our Photos
               </Heading>
