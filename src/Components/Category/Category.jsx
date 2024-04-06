@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../Button';
+import { Link } from 'react-router-dom';
 
 function Category() {
   const [currentSlide, setCurrentSlide] = useState(0);
