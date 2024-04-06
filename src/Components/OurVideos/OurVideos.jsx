@@ -22,7 +22,15 @@ function OurVideos() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-        }
+        },
+        
+      },
+      {
+        breakpoint: 1450, // Adjust breakpoint as needed
+        settings: {
+          
+          arrows: false,
+        },
       }
     ]
   };

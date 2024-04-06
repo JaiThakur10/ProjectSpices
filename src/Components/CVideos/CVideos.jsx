@@ -25,6 +25,13 @@ function CVideos() {
           arrows: false,
 
         }
+      },
+      {
+        breakpoint: 1450, // Adjust breakpoint as needed
+        settings: {
+          
+          arrows: false,
+        },
       }
     ]
   };
