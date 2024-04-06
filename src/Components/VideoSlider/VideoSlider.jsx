@@ -39,8 +39,8 @@ const nextSlide = () => {
           </div>
         ))}
       </div>
-      <button className=" bg-[#0097CC] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2" onClick={prevSlide}> ❮</button>
-      <button className=" bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2" onClick={nextSlide}>❯ </button>
+      <button className=" bg-transparent btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2" onClick={prevSlide}> ❮</button>
+      <button className=" bg-transparent  btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2" onClick={nextSlide}>❯ </button>
     </div>
   );
 };

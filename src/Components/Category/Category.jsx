@@ -85,7 +85,7 @@ function Category() {
                     to={slides.link}
 
                   >
-                    <button className=" mt-2 mb-2 text-[#0097CC]  max-[450px]:pr-6  max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                    <button className=" mt-2 mb-2 text-[#0097CC]   max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
                   </NavLink>

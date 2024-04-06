@@ -41,8 +41,8 @@ select {
 [multiple]:focus,
 textarea:focus,
 select:focus {
-  --tw-ring-color: "#23292e";
-  border-color: "#23292e";
+  --tw-ring-color: "";
+  border-color: "";
 }
 
 
