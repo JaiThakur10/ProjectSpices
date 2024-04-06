@@ -34,10 +34,10 @@ function Category() {
         <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {slides.map((slides, index) => (
             <div
-              key={index} className="carousel-item relative w-full flex justify-center gap-8" 
+              key={index} className="carousel-item relative w-full flex justify-center gap-8 flex-col md:flex-row max-[450px]:gap-0 " 
             >
-              <div className="max-[450px]:w-1/2 w-1/3 mt-[4rem]">
-                <div className="text-3xl font-bold">
+              <div className="max-[450px]:w-full w-1/3 lg:mt-[4rem]   order-2 md:order-1 md:w-1/2 lg:w-1/3 md:mt-[0] p-4">
+                <div className="text-3xl font-bold max-[450px]:ml-20">
                   <h1>{slides.name}</h1>
                 </div>
                 <div className="mt-3 max-[450px]:mt-5 max-[450px]:w-full">
@@ -45,35 +45,35 @@ function Category() {
                     {slides.content}
                   </p>
                 </div>
-                <div className="flex items-center mt-3  ">
-                  <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative">
-                    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full max-[450px]:pr-6 max-[450px]:mt-6 max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid border-solid max-[450px]:p-2 border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                <div className="flex items-center mt-3    ">
+                  <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:dropup">
+                    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full max-[450px]:pr-6    max-[450px]:rounded-full max-[450px]:border-solid border-solid max-[450px]:p-2 border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                       Online order{" "}
                       <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                     </button>
 
                     <ul
                       tabIndex={0}
-                      className="dropdown-content z-[1] menu shadow h-[8rem] max-[450px]:w-[26rem] max-[450px]:h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 "
+                      className="dropdown-content z-[1] max-[450px]:z-[1] menu shadow h-[8rem] max-[450px]:w-[18rem] max-[450px]:h-[4rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 max-[450px]:bg-[#F0F0F0] max-[450px]:shadow-none "
                     >
-                      <li className="w-28 h-[6rem] max-[450px]:w-28 max-[450px]:h-[6rem] max-[450px]:border max-[450px]:border-solid border border-solid border-gray-500 hover:bg-[#0097CC]">
+                      <li className="w-28 h-[6rem] max-[450px]:w-18 max-[450px]:h-[2.5rem] max-[450px]:border  border border-solid border-gray-500 hover:bg-[#0097CC] max-[450px]:border-none">
                         <NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
                           <img
-                            className=" max-[450px]:h-[4rem]"
+                            className=" max-[450px]:h-[2rem]"
                             src="images/flipkartlogo.png"
                             alt=""
                           />
                         </NavLink>
                       </li>
-                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]">
+                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC] max-[450px]:border-none">
                         <NavLink to={"https://blinkit.com/"}>
-                          <img className="" src="images/blinkit.svg" alt="" />
+                          <img className=" max-[450px]:h-[2rem]" src="images/blinkit.svg" alt="" />
                         </NavLink>
                       </li>
-                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]">
+                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC] max-[450px]:border-none">
                         <NavLink to={"https://www.meesho.com/"}>
                           <img
-                            className="w-60 h-[4rem]"
+                            className="w-60 h-[4rem] max-[450px]:h-[2rem] max-[450px]:w-[2rem]"
                             src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png"
                             alt=""
                           />
@@ -85,14 +85,14 @@ function Category() {
                     to={slides.link}
 
                   >
-                    <button className=" mt-2 mb-2 text-[#0097CC]  max-[450px]:pr-6 max-[450px]:mt-8 max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                    <button className=" mt-2 mb-2 text-[#0097CC]  max-[450px]:pr-6  max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
                   </NavLink>
                 </div>
               </div>
-              <div className=" mt-[-1.5rem] bg-[#F0F0F0]">
-                <img className="h-[500px] w-[500px] mix-blend-multiply  max-[450px]:h-[300px]  max-[450px]:mt-28" src={slides.img} alt="" />
+              <div className=" mt-[-1.5rem] bg-[#F0F0F0] order-1 md:order-2  md:w-1/2 lg:w-1/3 p-4">
+                <img className="h-[500px] w-[500px] mix-blend-multiply  max-[450px]:h-[200px]  " src={slides.img} alt="" />
               </div>
             </div>
        
@@ -107,6 +107,10 @@ function Category() {
 }
 
 export default Category
+
+
+
+
 
 
 
