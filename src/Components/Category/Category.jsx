@@ -29,37 +29,37 @@ function Category() {
   };
 
   return (
-    <div className='w-full h-[550px] bg-[#F0F0F0]'>
+    <div className='w-full h-[550px] bg-[#F0F0F0] max-[450px]:h-[600px]'>
       <div className=" h-[32rem] overflow-hidden relative" style={{ backgroundImage: `url(${slides[currentSlide].bg_image})`, backgroundSize: 'cover', backgroundRepeat: '', mixblendmode:'multiply'}}>
         <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {slides.map((slides, index) => (
             <div
-              key={index} className="carousel-item relative w-full flex justify-center gap-8 "
+              key={index} className="carousel-item relative w-full flex justify-center gap-8" 
             >
-              <div className="justify-start w-1/3 mt-[4rem]">
+              <div className="max-[450px]:w-1/2 w-1/3 mt-[4rem]">
                 <div className="text-3xl font-bold">
                   <h1>{slides.name}</h1>
                 </div>
-                <div className="mt-3 ">
-                  <p>
+                <div className="mt-3 max-[450px]:mt-5 max-[450px]:w-full">
+                  <p className=' max-[450px]:text-xs'>
                     {slides.content}
                   </p>
                 </div>
-                <div className="flex mt-3">
-                  <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
-                    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                <div className="flex items-center mt-3  ">
+                  <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative">
+                    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full max-[450px]:pr-6 max-[450px]:mt-6 max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid border-solid max-[450px]:p-2 border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                       Online order{" "}
                       <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                     </button>
 
                     <ul
                       tabIndex={0}
-                      className="dropdown-content z-[1] menu shadow h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 "
+                      className="dropdown-content z-[1] menu shadow h-[8rem] max-[450px]:w-[26rem] max-[450px]:h-[8rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 "
                     >
-                      <li className="w-28 h-[6rem] border border-solid border-gray-500 hover:bg-[#0097CC]">
+                      <li className="w-28 h-[6rem] max-[450px]:w-28 max-[450px]:h-[6rem] max-[450px]:border max-[450px]:border-solid border border-solid border-gray-500 hover:bg-[#0097CC]">
                         <NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
                           <img
-                            className=""
+                            className=" max-[450px]:h-[4rem]"
                             src="images/flipkartlogo.png"
                             alt=""
                           />
@@ -85,14 +85,14 @@ function Category() {
                     to={slides.link}
 
                   >
-                    <button className=" mt-2 mb-2 text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                    <button className=" mt-2 mb-2 text-[#0097CC]  max-[450px]:pr-6 max-[450px]:mt-8 max-[450px]:pl-3 max-[450px]:py-0 max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
                   </NavLink>
                 </div>
               </div>
               <div className=" mt-[-1.5rem] bg-[#F0F0F0]">
-                <img className="h-[500px] w-[500px] mix-blend-multiply" src={slides.img} alt="" />
+                <img className="h-[500px] w-[500px] mix-blend-multiply  max-[450px]:h-[300px]  max-[450px]:mt-28" src={slides.img} alt="" />
               </div>
             </div>
        
