@@ -148,7 +148,7 @@ export default function Header({ ...props }) {
       </div>
       {/* function for responsive design  */}
       {isOpen && (
-        <div className="md:hidden top-0 right-0 bottom-0 left-0  flex justify-center items-center">
+        <div className="md:hidden top-0 right-0 bottom-0 left-0  flex justify-center items-center bg-white-A700">
           <div className="  p-4 w-full">
             <div className="flex flex-row m-auto justify-center items-center">
               <div className="flex flex-col space-y-4 border-r-2 px-4 border-solid border-[#0097CD]">
