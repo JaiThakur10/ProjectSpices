@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "../Text";
-
+import { Img } from "../Img";
 import { Button } from "../Button";
 import { Heading } from "../Heading";
 

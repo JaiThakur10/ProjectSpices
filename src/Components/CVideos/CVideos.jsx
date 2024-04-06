@@ -50,7 +50,7 @@ function CVideos() {
         ))}
       </Slider>
       {selectedImage && (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75">
+        <div className="fixed top-0 left-0 w-full h-full  flex justify-center items-center bg-black bg-opacity-75">
           <div className="relative">
             <button className="absolute  top-2 right-2 text-white z-10" onClick={handleClose}><img className=" h-9 w-9" src="images/cross.png" alt="" /></button>
             <img src={selectedImage} alt="" className="max-w-[600px] max-h-[600px]" />
