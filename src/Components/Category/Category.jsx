@@ -82,7 +82,7 @@ function Category() {
                     </ul>
                   </div>
                   <NavLink onClick={scrollToTop}
-                    to={slides.link}
+                    to="/Blend"
 
                   >
                     <button className=" mt-2 mb-2 text-[#0097CC]   max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
