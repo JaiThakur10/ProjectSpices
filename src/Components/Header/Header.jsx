@@ -149,65 +149,74 @@ export default function Header({ ...props }) {
       {/* function for responsive design  */}
       {isOpen && (
         <div className="md:hidden top-0 right-0 bottom-0 left-0  flex justify-center items-center">
-          <div className="  p-4 w-80">
-            <div className="flex flex-col space-y-4">
-              <NavLink
-                to="/"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to="/blog"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                Blog
-              </NavLink>
-              <NavLink
-                to="/about"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                About
-              </NavLink>
-              
-              <NavLink
-                to="/B2B"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                <button
-                  type="button"
-                  className=" text-black-900  sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
+          <div className="  p-4 w-full">
+            <div className="flex flex-row m-auto justify-center items-center">
+              <div className="flex flex-col space-y-4 border-r-2 px-4 border-solid border-[#0097CD]">
+                <NavLink
+                  to="/"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
                 >
-                Get Distribution?
-                </button>
-              </NavLink>
-              <NavLink
-                to="/B2B"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                B2B
-              </NavLink>
-              <div className="dropdown dropdown-hover relative ">
-                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
-                >Product range</div>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[22rem] bg-white-A700 grid grid-cols-2 gap-10 p-4 ">
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Blend Spices</p>
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white] mix-blend-multiply" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
-                </ul>
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
+                >
+                  Blog
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
+                >
+                  About
+                </NavLink>
+
+                <NavLink
+                  to="/B2B"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
+                >
+                  <button
+                    type="button"
+                    className=" text-black-900  sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
+                  >
+                    Distribution?
+                  </button>
+                </NavLink>
+                <NavLink
+                  to="/B2B"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
+                >
+                  B2B
+                </NavLink>
+
+                <NavLink
+                  to="/Contact"
+                  className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
+                >
+                  Contact Us
+                </NavLink>
               </div>
-              <NavLink
-                to="/Contact"
-                className="text-black-900 font-rubik text-2xl hover:text-[#0097CC] duration-200"
-              >
-                Contact Us
-              </NavLink>
+              {/* product range */}
+              <div className="flex flex-col space-y-4 ml-9">
+
+                <p className="text-2xl text-[#0097CD] font-rubik ">Product Range</p>
+                <div className="mt-0 flex flex-col py-0 p-2 m-auto">
+                <NavLink to="/Blend" className="text-black-900 mb-2 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
+                <NavLink to="/Basic" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
+                <NavLink to="/Mixed" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Mixed</NavLink>
+                <NavLink to="/Salts" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Salts</NavLink>
+                <NavLink to="/Pooja" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Pooja Samagri</NavLink>
+                <NavLink to="/Others" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Others</NavLink>
+                </div>
+
+
+              </div>
+
             </div>
           </div>
         </div>
       )}
-    
+
 
     </header>
   );
