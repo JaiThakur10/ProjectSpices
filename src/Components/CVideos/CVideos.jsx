@@ -15,6 +15,7 @@ function CVideos() {
     autoplaySpeed: 2000,
     prevArrow: null,
     nextArrow: null,
+    arrows: false,
     responsive: [
       {
         breakpoint: 450, // Adjust breakpoint as needed
