@@ -20,7 +20,7 @@ export default function About() {
         {/* Content Section */}
         <div className='w-full h-full  flex py-20'>
           <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[75%] max-h-[300px] max-[700px]:max-h-[650px] m-auto shadow-lg px-5 py-3 '>
-            <div className='w-1/2 md:w-1/2 max-[700px]:border-b-2 md:m-6 border-r-2 '> 
+            <div className='w-1/2 md:w-1/2 max-[700px]:border-b-2 md:m-6 border-r-2 max-[700px]:border-r-0 '> 
               <h2 className='font-bold text-xl font-serif'>YP GOLD</h2>
               <p className='mt-2 font-serif'>Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Office</h4>
