@@ -1,6 +1,5 @@
-import React from 'react'
-import { Helmet } from "react-helmet";
-
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
   return (
@@ -19,31 +18,31 @@ export default function About() {
           />
         </div>
         {/* Content Section */}
-        <div className=' w-full h-full flex py-20'>
-        <div className=' flex flex-col-2 w-[75%] max-h-[300px]  m-auto   md:h-[50rem] shadow-lg  px-5 py-3 '>
-        <div className=' w-1/2 border-r-2 m-6'> 
-        <h2 className=' font-bold text-xl font-serif'>YP GOLD</h2>
-        <p className='mt-2 font-serif'>Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
-        <h4 className=' text-[#0097CD] mt-4 font-serif'>Office</h4>
-        <p className=' font-serif'>+91 9599261209</p>
-        <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
-        <p className=' font-serif'>gargabhinav505@gmail.com</p>
-        </div>
-        <div className=' w-1/2 m-6 mt-2'> 
-        <h4 className='text-[#0097CD] mt-3'>Consumer Care Helpline Number</h4>
-        <p className='mt-2'>+91 9599261209</p>
-        <button onClick={ () => {window.open ('http://wa.me/9599261209?text=Hello!%20I%20want%20to%20buy%20Masala in Bulk!!!!', '_blank');}} className=" mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
-        
-                      Bulk Buy &rarr;
-                    </button>
-                    <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
-        </div>
-        </div>
+        <div className='w-full h-full  flex py-20'>
+          <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[75%] max-h-[300px] max-[700px]:max-h-[650px] m-auto shadow-lg px-5 py-3 '>
+            <div className='w-1/2 md:w-1/2 max-[700px]:border-b-2 md:m-6 border-r-2 '> 
+              <h2 className='font-bold text-xl font-serif'>YP GOLD</h2>
+              <p className='mt-2 font-serif'>Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
+              <h4 className='text-[#0097CD] mt-4 font-serif'>Office</h4>
+              <p className='font-serif'>+91 9599261209</p>
+              <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
+              <p className='font-serif'>gargabhinav505@gmail.com</p>
+            </div>
+            <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
+              <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
+              <p className='mt-2'>+91 9599261209</p>
+              <button onClick={() => { window.open('http://wa.me/9599261209?text=Hello!%20I%20want%20to%20buy%20Masala in Bulk!!!!', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
+                Bulk Buy &rarr;
+              </button>
+              <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 
 
