@@ -22,15 +22,16 @@ export default function About() {
           <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[75%] max-h-[300px] max-[700px]:max-h-[650px] m-auto shadow-lg px-5 py-3 '>
             <div className='w-1/2 md:w-1/2 max-[700px]:border-b-2 md:m-6 border-r-2 max-[700px]:border-r-0 '> 
               <h2 className='font-bold text-xl font-serif'>YP GOLD</h2>
-              <p className='mt-2 font-serif'>Radhika International 8/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
+              <p className='mt-2 font-serif font-bold'>Radhika International </p>
+             <p className='mt-2 font-serif'> 18/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Office</h4>
-              <p className='font-serif'>+91 9599261209</p>
+              <p className='font-serif'>+91 9599261209 / 0120-2801554</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
-              <p className='font-serif'>gargabhinav505@gmail.com</p>
+              <p className='font-serif'>radhikainternationalgzb@gmail.com</p>
             </div>
             <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
               <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
-              <p className='mt-2'>+91 9599261209</p>
+              <p className='mt-2'>+91 9599261209 / 0120-2801554</p>
               <button onClick={() => { window.open('http://wa.me/9599261209?text=Hello!%20I%20want%20to%20buy%20Masala in Bulk!!!!', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
                 Bulk Buy &rarr;
               </button>

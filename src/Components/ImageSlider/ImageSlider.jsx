@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const images = [
 'images/image_slider_1.jpeg',
-  'images/image_slider_2.jpeg',
+  'images/image_slider_3.jpeg',
 'images/image_slider_4.jpeg'
   // Add more image URLs as needed
 ];

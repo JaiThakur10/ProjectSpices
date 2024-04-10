@@ -15,7 +15,7 @@ export default function Header({ ...props }) {
       <div className="flex flex-row items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
         <div className="flex justify-between min-[450px]:w-full">
           <div className="flex-shrink-0 max-[450px]:hidden m-auto">
-            <Img src="images/ypgold.png" alt="image" className="h-[150px]" />
+           <NavLink to="/"> <Img src="images/ypgold.png" alt="image" className="h-[150px]" /> </NavLink>
           </div>
           <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">
             {/* upper div */}
@@ -59,29 +59,29 @@ export default function Header({ ...props }) {
                   }  font-rubik text-2xl    hover:text-[#0097CC] `
                 }
               >
-                Home
+                HOME
               </NavLink>
               <NavLink
-                to="/blog"
+                to="/BLOG"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
                   }  font-rubik text-2xl   hover:text-[#0097CC]`
                 }
               >
-                Blog
+                BLOG
               </NavLink>
               <NavLink
-                to="/about"
+                to="/ABOUT"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-[#0097CC]" : "text-black-900"
                   }  font-rubik text-2xl    hover:text-[#0097CC] `
                 }
               >
-                About
+                ABOUT
               </NavLink>
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
-                >Product range</div>
+                >PRODUCT RANGE</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[30rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Blend Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
@@ -156,19 +156,19 @@ export default function Header({ ...props }) {
                   to="/"
                   className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
                 >
-                  Home
+                  HOME
                 </NavLink>
                 <NavLink
-                  to="/blog"
+                  to="/BLOG"
                   className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
                 >
-                  Blog
+                  BLOG
                 </NavLink>
                 <NavLink
-                  to="/about"
+                  to="/ABOUT"
                   className="text-black-900 font-rubik text-2xl hover:text-[#0097CD] duration-200"
                 >
-                  About
+                  ABOUT
                 </NavLink>
 
                 <NavLink
@@ -196,10 +196,10 @@ export default function Header({ ...props }) {
                   Contact Us
                 </NavLink>
               </div>
-              {/* product range */}
+              {/* PRODUCT RANGE */}
               <div className="flex flex-col space-y-4 ml-9">
 
-                <p className="text-2xl text-[#0097CD] font-rubik ">Product Range</p>
+                <p className="text-2xl text-[#0097CD] font-rubik ">PRODUCT RANGE</p>
                 <div className="mt-0 flex flex-col py-0 p-2 m-auto">
                 <NavLink to="/Blend" className="text-black-900 mb-2 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
                 <NavLink to="/Basic" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
