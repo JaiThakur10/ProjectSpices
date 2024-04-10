@@ -4,13 +4,11 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Others() {
   const info = [
-    { image: "images/Chana Masala.jpg", name: "Channa Masala", price1: 40, price2: 80 },
-    { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
-    { image: "images/garam.jpg", name: "Garam Masala", price1: 50, price2: 100 },
-    { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
-    { image: "images/Kashmiri mirch.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
-    { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
-    { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 50, price2: 100 },
+    { image: "images/sauf.jpg", name: "Saunf Powder", price1: 40, price2: 80 },
+    { image: "images/img_peeli_mirch.jpeg", name: "Mirchi Pili Powder", price1: 35, price2: 70 },
+    { image: "images/jeera.jpg", name: "jeera Powder", price1: 50, price2: 100 },
+    { image: "images/saunth.jpg", name: "Sonth Powder", price1: 35, price2: 70 },
+    { image: "images/others.jpeg", name: "Daliya", price1: 50, price2: 100 },
   
   ];
 
@@ -22,7 +20,7 @@ function Others() {
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>YP Gold Basic spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Basic spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="mt-3 "><p>YP Gold others spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. These spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                   <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
                     <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">

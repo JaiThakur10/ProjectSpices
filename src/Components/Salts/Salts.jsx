@@ -4,10 +4,8 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Salts() {
   const info = [
-    { image: "images/Chana Masala.jpg", name: "Channa Masala", price1: 40, price2: 80 },
-    { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
-    { image: "images/garam.jpg", name: "Garam Masala", price1: 50, price2: 100 },
-  
+    { image: "images/salts.jpeg", name: "Sainda Namak", price1: 40, price2: 80 },
+    { image: "images/salts.jpeg", name: "kala Namak", price1: 35, price2: 70 },
   ];
 
   return (

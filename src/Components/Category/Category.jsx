@@ -14,7 +14,7 @@ function Category() {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
   };
   const slides = [
-    { name: "Blend spices",bg_image:"", link:"/Blend", content: "YP Gold spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. We do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/blend.png" },
+    { name: "Blend spices",bg_image:"", link:"/Blend", content: "YP Gold spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. We do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/blend_1.jpeg" },
     { name: "Mixed Spices",bg_image:"",link:"/Mixed", content: "YP Gold spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. We do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/mixed.jpeg" },
     { name: "Basic Spices",bg_image:"",link:"/Basic", content: "YP Gold spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. We do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/basic.jpeg" },
     { name: "Salts", bg_image:"",link:"/Salts",content: "YP Gold spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. We do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.", img: "images/salts.jpeg" },
@@ -91,14 +91,14 @@ function Category() {
                   </NavLink>
                 </div>
               </div>
-              <div className=" mt-[-1.5rem] bg-[#F0F0F0] order-1 md:order-2  md:w-1/2 lg:w-1/3 p-4">
-                <img className="h-[500px] w-[500px] mix-blend-multiply  max-[450px]:h-[200px]  " src={slides.img} alt="" />
+              <div className={`mt-[-1.5rem] bg-[#F0F0F0] order-1 md:order-2 md:w-1/2 lg:w-1/3 p-4 `}>
+                <img className={`h-[500px] w-[500px] mix-blend-multiply  max-[450px]:h-[200px] ` } src={slides.img} alt="" />
               </div>
             </div>
        
         ))}
       </div>
-      <button className=" hover:bg-[#0097CC] bg-[#F0F0F0] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2 max-[450px]:hover:bg-[#0097CD] max-[450px]:hover:bg-[#F0F0F0]" onClick={prevSlide}> ❮</button>
+      <button className=" hover:bg-[#0097CC] bg-[#F0F0F0] btn btn-circle absolute top-1/2 left-0 transform -translate-y-1/2 max-[450px]:hover:bg-[#0097CD] " onClick={prevSlide}> ❮</button>
       <button className=" hover:bg-[#0097CC] btn btn-circle absolute top-1/2 right-0 transform -translate-y-1/2 max-[450px]:hover:bg-[#0097CD] max-[450px]:bg-[#F0F0F0]" onClick={nextSlide}>❯ </button>
     </div>
     </div>
