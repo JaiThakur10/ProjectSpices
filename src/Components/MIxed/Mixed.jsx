@@ -5,14 +5,14 @@ import { Button } from "../Button";
 function Mixed() {
     const info = [
         { image: "images/garam.jpg", name: "Garam Powder Special", price1: 70, price2: 160,size1:200,size2:500},
-        { image: "images/chat.jpg", name: "Mirch Pili Powder", price1: 45, price2: 90,size1:100,size2:200 },
-        { image: "images/sauf.jpg", name: "Sauf Powder", price1: 50, price2: 200,size1:100,size2:500 },
-        { image: "images/jeera.jpg", name: "Jeera Powder", price1: 90, price2: 400,size1:100,size2:500 },
-        { image: "images/saunth.jpg", name: "Saunth Powder", price1: 70, price2: 320,size1:100,size2:500 },
-        { image: "images/others.jpeg", name: "Daliya Packing", price1: 12, price2: 24 ,size1:120,size2:300},
-        { image: "images/mixed.jpeg", name: "Kasuri Methi", price1: 55, price2: 400 ,size1:50,size2:500},
-        { image: "images/chat.jpg", name: "Chat Masala", price1: 40, price2: 90 ,size1:200,size2:500},
-        { image: "images/Pudhina.jpg", name: "Podana Chathi", price1: 180, price2: "" ,size1:1000,size2:""},
+        { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 45, price2: 90,size1:100,size2:200 },
+        { image: "images/chicken.jpg", name: "Chicken Masala", price1: 50, price2: 200,size1:100,size2:500 },
+        { image: "images/kitchen.jpg", name: "Kitchen King", price1: 90, price2: 400,size1:100,size2:500 },
+        { image: "images/sabji.jpg", name: "Sabzi Masala", price1: 70, price2: 320,size1:100,size2:500 },
+        { image: "images/chat.jpg", name: "Chat Masala", price1: 12, price2: 24 ,size1:120,size2:300},
+        { image: "images/mixed.jpeg", name: "Chhole Masala", price1: 55, price2: 400 ,size1:50,size2:500},
+        { image: "images/Chana Masala.jpg", name: "Chana Masala", price1: 40, price2: 90 ,size1:200,size2:500},
+        { image: "images/Shahi paneer.jpg", name: "Shahi Paneer Masala", price1: 180, price2: "" ,size1:1000,size2:""},
       
       ];
   return (
@@ -23,7 +23,7 @@ function Mixed() {
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>YP Gold Basic spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Basic spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="mt-3 "><p>YP Gold Mixed spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Mixed spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                   <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
                     <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">

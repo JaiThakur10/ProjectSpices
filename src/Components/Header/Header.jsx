@@ -12,14 +12,14 @@ export default function Header({ ...props }) {
 
   return (
     <header {...props}>
-      <div className="flex flex-row items-center w-full mx-auto max-w-[12500px] bg-[#FFFFFF]">
+      <div className="flex flex-row items-center w-full max-w-[12500px] bg-[#FFFFFF]">
         <div className="flex justify-between min-[450px]:w-full">
           <div className="flex-shrink-0 max-[450px]:hidden m-auto">
-           <NavLink to="/"> <Img src="images/ypgold.png" alt="image" className="h-[150px]" /> </NavLink>
+            <NavLink to="/"> <Img src="images/ypgold.png" alt="image" className="h-[150px]" /> </NavLink>
           </div>
           <div className="hidden md:flex pb-0 py-0 items-end relative flex-wrap">
             {/* upper div */}
-            <div className="flex justify-end gap-2 w-1/2 m-auto  items-center">
+            <div className="flex justify-end gap-2 w-1/2 ml-auto  items-center">
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative items-baseline">
                 <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-1 w-auto mt-8">
                   Online order{" "}
@@ -51,7 +51,7 @@ export default function Header({ ...props }) {
               </NavLink>
             </div>
             {/* upper div closed */}
-            <div className=" flex items-baseline space-x-4 mb-0 m-auto ">
+            <div className=" flex items-baseline space-x-4 mb-0 ml-auto ">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -201,12 +201,12 @@ export default function Header({ ...props }) {
 
                 <p className="text-2xl text-[#0097CD] font-rubik ">PRODUCT RANGE</p>
                 <div className="mt-0 flex flex-col py-0 p-2 m-auto">
-                <NavLink to="/Blend" className="text-black-900 mb-2 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
-                <NavLink to="/Basic" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
-                <NavLink to="/Mixed" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Mixed</NavLink>
-                <NavLink to="/Salts" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Salts</NavLink>
-                <NavLink to="/Pooja" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Pooja Samagri</NavLink>
-                <NavLink to="/Others" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Others</NavLink>
+                  <NavLink to="/Blend" className="text-black-900 mb-2 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
+                  <NavLink to="/Basic" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
+                  <NavLink to="/Mixed" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Mixed</NavLink>
+                  <NavLink to="/Salts" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Salts</NavLink>
+                  <NavLink to="/Pooja" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Pooja Samagri</NavLink>
+                  <NavLink to="/Others" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Others</NavLink>
                 </div>
 
 

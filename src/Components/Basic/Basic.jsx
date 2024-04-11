@@ -4,13 +4,11 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Basic() {
   const info = [
-    { image: "images/Chana Masala.jpg", name: "Channa Masala", price1: 40, price2: 80 },
-    { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
-    { image: "images/garam.jpg", name: "Garam Masala", price1: 50, price2: 100 },
-    { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
-    { image: "images/Kashmiri mirch.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
-    { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
-    { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 50, price2: 100 },
+    { image: "images/turmeric.jpg", name: "Haldi Powder", price1: 40, price2: 80 },
+    { image: "images/coriander.jpg", name: "Dhaniya Powder", price1: 35, price2: 70 },
+    { image: "images/garam.jpg", name: "Mirch Powder Gold", price1: 50, price2: 100 },
+    { image: "images/jaljeera.jpg", name: "Mirch Powder/PR", price1: 35, price2: 70 },
+    { image: "images/drymango.jpg", name: "Mirch Powder Jwala", price1: 50, price2: 100 },
 
   ];
 

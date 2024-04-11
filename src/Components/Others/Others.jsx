@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Others() {
   const info = [
+    { image: "images/drymango.jpg", name: "Amchoor Powder", price1: 40, price2: 80 },
     { image: "images/sauf.jpg", name: "Saunf Powder", price1: 40, price2: 80 },
     { image: "images/img_peeli_mirch.jpeg", name: "Mirchi Pili Powder", price1: 35, price2: 70 },
     { image: "images/jeera.jpg", name: "jeera Powder", price1: 50, price2: 100 },
