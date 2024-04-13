@@ -8,7 +8,7 @@ function Mixed() {
         { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 45, price2: 90,size1:100,size2:200 },
         { image: "images/chicken.jpg", name: "Chicken Masala", price1: 50, price2: 200,size1:100,size2:500 },
         { image: "images/kitchen.jpg", name: "Kitchen King", price1: 90, price2: 400,size1:100,size2:500 },
-        { image: "images/sabji.jpg", name: "Sabzi Masala", price1: 70, price2: 320,size1:100,size2:500 },
+        { image: "images/Sabji Masala.jpg", name: "Sabzi Masala", price1: 70, price2: 320,size1:100,size2:500 },
         { image: "images/chat.jpg", name: "Chat Masala", price1: 12, price2: 24 ,size1:120,size2:300},
         { image: "images/Chana Masala.jpg", name: "Chana Masala", price1: 40, price2: 90 ,size1:200,size2:500},
         { image: "images/Shahi paneer.jpg", name: "Shahi Paneer Masala", price1: 180, price2: "" ,size1:1000,size2:""},

@@ -36,8 +36,8 @@ export default function Footer({ ...props }) {
               <div className="!text-[#0097CD] tracking-[-0.50px] border-b-2 border-[[#E5E5E5] w-full ">MEDIA</div>
               <div className="flex flex-row items-start justify-start gap-6">
                 <a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Img src="images/instagram.png" /></a>
-                <a className="inline-block transition-transform  hover:scale-110" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
-                <a className="inline-block transition-transform  hover:scale-110" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
+                <a className="inline-block transition-transform  hover:scale-110" href="https://m.facebook.com/ypspices?mibextid=LQQJ4d"><Img src="images/facebook.png" /></a>
+                <a className="inline-block transition-transform  hover:scale-110" href="https://twitter.com/?lang=en"><Img src="images/youtube.png" /></a>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@ function Blend() {
     { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 50, price2: 100 },
     { image: "images/Pav Bhaji.jpg", name: "Paubhaji Masala", price1: 40, price2: 80 },
     { image: "images/Raita Masala.jpg", name: "Raita Masala", price1: 35, price2: 70 },
-    { image: "images/img_sabji.jpeg", name: "Sabji Masala", price1: 35, price2: 70 },
+    { image: "images/Sabji Masala.jpg", name: "Sabji Masala", price1: 35, price2: 70 },
     { image: "images/sambar.jpg", name: "Sambhar Masala", price1: 35, price2: 70 },
     { image: "images/saunth.jpg", name: "Sauth Powder", price1: 40, price2: 80 },
     { image: "images/garam.jpg", name: "SPL. Garam Masala", price1: 30, price2: 60 },

@@ -15,7 +15,7 @@ import Mixed from './Components/MIxed/Mixed.jsx'
 import Others from './Components/Others/Others.jsx'
 import Salts from './Components/Salts/Salts.jsx'
 import Pooja from './Components/Pooja/Pooja.jsx'
-
+import Hing from './Components/Hing/Hing.jsx'
 
 
 const router = createBrowserRouter(
@@ -32,6 +32,7 @@ const router = createBrowserRouter(
       <Route path='Others' element={<Others/>} />
       <Route path='Salts' element={<Salts/>} />
       <Route path='Pooja' element={<Pooja/>} />
+      <Route path='Hing' element={<Hing/>} />
 
     </Route>
   )

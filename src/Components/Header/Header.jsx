@@ -33,8 +33,8 @@ export default function Header({ ...props }) {
 
               </div >
               <a className=" mt-6" href="https://www.instagram.com/ypgold_spices/"><Img src="images/instagram.png" /></a>
-              <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
-              <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
+              <a className=" mt-6" href="https://m.facebook.com/ypspices?mibextid=LQQJ4d"><Img src="images/facebook.png" /></a>
+              <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/youtube.png" /></a>
               <NavLink
                 to="/Contact"
                 className={({ isActive }) =>
@@ -82,13 +82,14 @@ export default function Header({ ...props }) {
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative ">
                 <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-2xl cursor-pointer hover:text-[#0097CC] "
                 >PRODUCT RANGE</div>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[18rem] w-[30rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow h-[28rem] w-[30rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ">
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Blend Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Basic"}><img className="bg-[white] mix-blend-multiply" src="images/basic.jpeg" alt="" /></NavLink></li>Basic Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white] mix-blend-multiply" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Others"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Salts"}><img className="bg-[white] mix-blend-multiply" src="images/salts.jpeg" alt="" /></NavLink></li>Salts</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Pooja"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hawan.jpeg" alt="" /></NavLink></li>Pooja Samagri</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Hing"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hing.jpeg" alt="" /></NavLink></li>Hing (asafoetida)</p>
                 </ul>
               </div>
               <div>
@@ -200,13 +201,14 @@ export default function Header({ ...props }) {
               <div className="flex flex-col space-y-4 ml-9">
 
                 <p className="text-2xl text-[#0097CD] font-rubik ">PRODUCT RANGE</p>
-                <div className="mt-0 flex flex-col py-0 p-2 m-auto">
-                  <NavLink to="/Blend" className="text-black-900 mb-2 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
-                  <NavLink to="/Basic" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
-                  <NavLink to="/Mixed" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Mixed</NavLink>
-                  <NavLink to="/Salts" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Salts</NavLink>
-                  <NavLink to="/Pooja" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Pooja Samagri</NavLink>
-                  <NavLink to="/Others" className="text-black-900 mb-2 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Others</NavLink>
+                <div className="mt-[0px] flex flex-col py-0 p-2 m-auto">
+                  <NavLink to="/Blend" className="text-black-900 mb-1 font-rubik  hover:text-[#0097CD] duration-200 text-2xl" >Blended</NavLink>
+                  <NavLink to="/Basic" className="text-black-900 mb-1 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Basic</NavLink>
+                  <NavLink to="/Mixed" className="text-black-900 mb-1 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Mixed</NavLink>
+                  <NavLink to="/Salts" className="text-black-900 mb-1 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Salts</NavLink>
+                  <NavLink to="/Pooja" className="text-black-900 mb-1 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Pooja Samagri</NavLink>
+                  <NavLink to="/Others" className="text-black-900 mb-1  font-rubik text-2xl hover:text-[#0097CD] duration-200" >Others</NavLink>
+                  <NavLink to="/Hing" className="text-black-900 mb-1 font-rubik text-2xl hover:text-[#0097CD] duration-200" >Hing(asafoetida)</NavLink>
                 </div>
 
 
