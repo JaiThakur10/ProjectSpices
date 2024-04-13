@@ -32,7 +32,7 @@ export default function Header({ ...props }) {
                 </ul>
 
               </div >
-              <a className=" mt-6" href="https://www.instagram.com/"><Img src="images/instagram.png" /></a>
+              <a className=" mt-6" href="https://www.instagram.com/ypgold_spices/"><Img src="images/instagram.png" /></a>
               <a className=" mt-6" href="https://www.facebook.com/"><Img src="images/facebook.png" /></a>
               <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/twitter.png" /></a>
               <NavLink

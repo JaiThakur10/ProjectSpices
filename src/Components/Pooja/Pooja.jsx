@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Pooja() {
   const info = [
-    { image: "images/hawan.jpeg", name: "Hawan Samagri", price1: 40, price2: 80 },
+    { image: "images/hawan_2.jpeg", name: "Hawan Samagri", price1: 40, price2: 80 },
   ];
 
   return (

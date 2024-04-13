@@ -10,6 +10,7 @@ function Others() {
     { image: "images/jeera.jpg", name: "jeera Powder", price1: 50, price2: 100 },
     { image: "images/saunth.jpg", name: "Sonth Powder", price1: 35, price2: 70 },
     { image: "images/others.jpeg", name: "Daliya", price1: 50, price2: 100 },
+    { image: "images/samosa.jpeg", name: "Salad Samosa Masala", price1: 50, price2: 100 },
   
   ];
 

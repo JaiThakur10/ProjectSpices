@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Basic() {
   const info = [
-    { image: "images/turmeric.jpg", name: "Haldi Powder", price1: 40, price2: 80 },
-    { image: "images/coriander.jpg", name: "Dhaniya Powder", price1: 35, price2: 70 },
+    { image: "images/turmeric_2.jpg", name: "Haldi Powder", price1: 40, price2: 80 },
+    { image: "images/coriander_2.jpeg", name: "Dhaniya Powder", price1: 35, price2: 70 },
     { image: "images/garam.jpg", name: "Mirch Powder Gold", price1: 50, price2: 100 },
-    { image: "images/jaljeera.jpg", name: "Mirch Powder/PR", price1: 35, price2: 70 },
-    { image: "images/drymango.jpg", name: "Mirch Powder Jwala", price1: 50, price2: 100 },
+    { image: "images/redchilli.jpeg", name: "Mirch Powder/PR", price1: 35, price2: 70 },
+    { image: "images/jwala.jpeg", name: "Mirch Powder Jwala", price1: 50, price2: 100 },
 
   ];
 

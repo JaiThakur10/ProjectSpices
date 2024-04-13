@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Salts() {
   const info = [
-    { image: "images/salts.jpeg", name: "Sainda Namak", price1: 40, price2: 80 },
+    { image: "images/rocksalt.jpeg", name: "Sainda Namak", price1: 40, price2: 80 },
     { image: "images/blacksalt.jpg", name: "Kala Namak", price1: 35, price2: 70 },
   ];
 
