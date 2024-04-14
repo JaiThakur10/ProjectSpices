@@ -34,7 +34,7 @@ export default function Header({ ...props }) {
               </div >
               <a className=" mt-6" href="https://www.instagram.com/ypgold_spices/"><Img src="images/instagram.png" /></a>
               <a className=" mt-6" href="https://m.facebook.com/ypspices?mibextid=LQQJ4d"><Img src="images/facebook.png" /></a>
-              <a className=" mt-6" href="https://twitter.com/?lang=en"><Img src="images/youtube.png" /></a>
+              <a className=" mt-6" href="https://youtube.com/@radhikainternational2594?si=2hhqSq4N7gEpfI1y"><Img src="images/youtube.png" /></a>
               <NavLink
                 to="/Contact"
                 className={({ isActive }) =>
@@ -89,7 +89,7 @@ export default function Header({ ...props }) {
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Others"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Salts"}><img className="bg-[white] mix-blend-multiply" src="images/salts.jpeg" alt="" /></NavLink></li>Salts</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Pooja"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hawan.jpeg" alt="" /></NavLink></li>Pooja Samagri</p>
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Hing"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hing.jpeg" alt="" /></NavLink></li>Hing (asafoetida)</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Hing"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hing_2.jpeg" alt="" /></NavLink></li>Hing (asafoetida)</p>
                 </ul>
               </div>
               <div>
