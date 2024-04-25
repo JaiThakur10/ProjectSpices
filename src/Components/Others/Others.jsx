@@ -9,12 +9,12 @@ function Others() {
     { image: "", name: "Mirchi Pili Powder", s1: '100gm |200gm |500 gm'},
     { image: "images/jeera.jpg", name: "Jeera Powder", s1: '50gm |100gm |500 gm' },
     { image: "images/saunth.jpg", name: "Saunth Powder", s1: '50gm |100gm |500 gm'},
-    { image: "images/others.jpeg", name: "Dalia",s1: '120gm |300 gm'},
-    { image: "", name: "Kasuri Methi",s1: '20gm |500 gm' },
+    { image: "images/dalia.jpeg", name: "Dalia",s1: '120gm |300 gm'},
+    { image: "images/kasoori.jpeg", name: "Kasoori Methi",s1: '20gm |50gm |500 gm' },
     { image: "", name: "Podana Chathi",s1: '1kg' },
     { image: "images/chat.jpg", name: "Chat Masala",s1: '500gm |200 gm |1kg' },
-    { image: "images/soya.jpeg", name: "Soyabari Moti",s1: '45gm' },
-    { image: "images/mini_soya.jpeg", name: "Soyabari Mini",s1: '45gm' },
+    { image: "images/soya.jpeg", name: "SoyaChunks Moti",s1: 'Rs 10/-' },
+    { image: "images/mini_soya.jpeg", name: "SoyaChunks Mini",s1: 'Rs 10/-' },
    
   
   ];
