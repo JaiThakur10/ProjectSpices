@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Salts() {
   const info = [
-    { image: "images/rocksalt.jpeg", name: "Rock Salt",s1:'100|200|500 gm|(1kg)' },
-    { image: "images/blacksalt.jpg", name: "Black Salt",s1:'100|200|500 gm' },
+    { image: "images/rocksalt.jpeg", name: "Rock Salt",s1:'100gm |200gm |500 gm |1kg' },
+    { image: "images/blacksalt.jpg", name: "Black Salt",s1:'100gm |200gm |500 gm' },
   ];
 
   return (

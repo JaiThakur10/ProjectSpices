@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Basic() {
   const info = [
-    { image: "images/turmeric_2.jpg", name: "Haldi Powder", s1: '50|100|200|500 gm|(1kg)'},
-    { image: "images/coriander_2.jpeg", name: "Coriander Powder",s1: '50|100|200|500 gm|(1kg)' },
-    { image: "images/chilligold.jpeg", name: "Mirch Powder Gold", s1: '100|200|500 gm|(1kg)'},
-    { image: "images/redchilli.jpeg", name: "Mirch Powder/PR", s1: '50|100|200|500 gm' },
-    { image: "images/jwala.jpeg", name: "Mirch Powder Jwala", s1: '100|200|500 gm|(1kg)' },
+    { image: "images/turmeric_2.jpg", name: "Haldi Powder", s1: '50gm |100gm |200gm |500 gm |1kg'},
+    { image: "images/coriander_2.jpeg", name: "Coriander Powder",s1: '50gm |100gm |200gm |500 gm |1kg' },
+    { image: "images/chilligold.jpeg", name: "Mirch Powder Gold", s1: '100gm |200gm |500 gm |1kg'},
+    { image: "images/redchilli.jpeg", name: "Mirch Powder/PR", s1: '50gm |100gm |200gm |500 gm' },
+    { image: "images/jwala.jpeg", name: "Mirch Powder Jwala", s1: '100gm |200gm |500 gm |1kg' },
 
   ];
 

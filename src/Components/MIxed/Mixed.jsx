@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Mixed() {
     const info = [
-        { image: "images/garam.jpg", name: "Garam Masala Special", s1: '200|500 gm|(1kg)'},
+        { image: "images/garam.jpg", name: "Garam Masala Special", s1: '200gm |500 gm |1kg'},
         { image: "images/samosa.jpeg", name: "Salad Samosa Masala", s1: '500gm'},
       
       ];
