@@ -4,13 +4,18 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Others() {
   const info = [
-    { image: "images/drymango.jpg", name: "Amchoor Powder", price1: 40, price2: 80 },
-    { image: "images/sauf.jpg", name: "Saunf Powder", price1: 40, price2: 80 },
-    { image: "images/img_peeli_mirch.jpeg", name: "Mirchi Pili Powder", price1: 35, price2: 70 },
-    { image: "images/jeera.jpg", name: "jeera Powder", price1: 50, price2: 100 },
-    { image: "images/saunth.jpg", name: "Sonth Powder", price1: 35, price2: 70 },
-    { image: "images/others.jpeg", name: "Daliya", price1: 50, price2: 100 },
-    { image: "images/samosa.jpeg", name: "Salad Samosa Masala", price1: 50, price2: 100 },
+    { image: "images/drymango.jpg", name: "Amchoor Powder",s1: '100|200|500 gm|(1kg)' },
+    { image: "images/sauf.jpg", name: "Saunf Powder", s1: '100|500 gm' },
+    { image: "images/img_peeli_mirch.jpeg", name: "Mirchi Pili Powder", s1: '100|200|500 gm'},
+    { image: "images/jeera.jpg", name: "Jeera Powder", s1: '50|100|500 gm' },
+    { image: "images/saunth.jpg", name: "Saunth Powder", s1: '50|100|500 gm'},
+    { image: "images/others.jpeg", name: "Dalia",s1: '120|300 gm'},
+    { image: "", name: "Kasuri Methi",s1: '20|500 gm' },
+    { image: "", name: "Podana Chathi",s1: '1kg' },
+    { image: "images/chat.jpg", name: "Chat Masala",s1: '500|200 gm|(1kg)' },
+    { image: "", name: "Soyabari Moti",s1: '45gm' },
+    { image: "", name: "Soyabari Mini",s1: '45gm' },
+   
   
   ];
 
@@ -24,13 +29,9 @@ function Others() {
                 <div className="text-3xl"><h1>{info.name}</h1></div>
                 <div className="mt-3 "><p>YP Gold others spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. These spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
-                  <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
-                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">
-                      <h3>50gm </h3>
-                    </div>
-                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-3 h-10 text-xs font-medium min-[320px]:text-xxs">
-                      100gm
-                    </div>
+                <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
+                      <h3 className="text-bold text-black-900">Available Sizes</h3>
+                      <h4 className="text-bold">{info.s1}</h4>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">

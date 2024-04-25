@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Hing() {
   const info = [
-    { image: "images/hing_2.jpeg", name: "Hing(asafoetida)", price1: 40, price2: 80 }
+    { image: "images/hing_2.jpeg", name: "Hing(asafoetida)", s1:'8|20|50|100 gm'}
   ];
 
   return (
@@ -17,13 +17,9 @@ function Hing() {
                 <div className="text-3xl"><h1>{info.name}</h1></div>
                 <div className="mt-3 "><p>YP Gold Hing give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Hing do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
-                  <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
-                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">
-                      <h3>50gm </h3>
-                    </div>
-                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-3 h-10 text-xs font-medium min-[320px]:text-xxs">
-                      100gm
-                    </div>
+                <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
+                      <h3 className="text-bold text-black-900">Available Sizes</h3>
+                      <h4 className="text-bold">{info.s1}</h4>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">

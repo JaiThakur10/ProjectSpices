@@ -9,30 +9,29 @@ function Blend() {
       
       image: "images/drymango.jpg",
       name: "Amchoor Powder",
-      price1: 20,
-      price2: 40,
+      s1: '50|100 gm'
     },
-    { image: "images/Chana Masala.jpg", name: "Channa Masala", price1: 40, price2: 80 },
-    { image: "images/chat.jpg", name: "Chat Masala", price1: 35, price2: 70 },
-    { image: "images/garam.jpg", name: "Garma Masala", price1: 50, price2: 100 },
-    { image: "images/jaljeera.jpg", name: "Jaljeera", price1: 35, price2: 70 },
-    { image: "images/Kashmiri mirch.jpg", name: "Kashmiri Mirch", price1: 50, price2: 100 },
-    { image: "images/kitchen.jpg", name: "Kitchen King", price1: "-", price2: 80 },
-    { image: "images/Meat Masala.jpg", name: "Meat Masala", price1: 50, price2: 100 },
-    { image: "images/Pav Bhaji.jpg", name: "Paubhaji Masala", price1: 40, price2: 80 },
-    { image: "images/Raita Masala.jpg", name: "Raita Masala", price1: 35, price2: 70 },
-    { image: "images/Sabji Masala.jpg", name: "Sabji Masala", price1: 35, price2: 70 },
-    { image: "images/sambar.jpg", name: "Sambhar Masala", price1: 35, price2: 70 },
-    { image: "images/saunth.jpg", name: "Sauth Powder", price1: 40, price2: 80 },
-    { image: "images/garam.jpg", name: "SPL. Garam Masala", price1: 30, price2: 60 },
-    { image: "images/Meat Masala.jpg", name: "SPL. Meat Masala", price1: 30, price2: 60 },
-    { image: "images/Shahi paneer.jpg", name: "Shahi Panner", price1: 40, price2: 80 },
-    { image: "images/jeera.jpg", name: "Jeera Powder", price1: 45, price2: 90 },
-    { image: "images/Pudhina.jpg", name: "Pudina Powder", price1: 36, price2: "-" },
-    { image: "images/Pani Puri.jpg", name: "Pani Puri Powder", price1: "10 gm 10", price2: "-" },
-    { image: "images/blackpeper.jpg", name: "Kali Mirch Powder", price1: "-", price2: 160 },
-    { image: "images/sauf.jpg", name: "Sonf Powder", price1: "-", price2: 50 },
-    { image: "images/anardana.jpg", name: "Anardana Powder", price1: "-", price2: 100 },
+    { image: "images/Chana Masala.jpg", name: "Channa Masala", s1: '50|100 gm' },
+    { image: "images/chat.jpg", name: "Chat Masala", s1: '50|100 gm'},
+    { image: "images/garam.jpg", name: "PRI Garma Masala", s1: '50|100 gm'},
+    { image: "images/jaljeera.jpg", name: "Jaljeera", s1: '50|100 gm'},
+    { image: "images/Kashmiri mirch.jpg", name: "Kashmiri Mirch", s1: '50|100 gm'},
+    { image: "images/kitchen.jpg", name: "Kitchen King", s1: '50|100 gm'},
+    { image: "images/Meat Masala.jpg", name: "PRI Meat Masala", s1: '50|100 gm' },
+    { image: "images/Pav Bhaji.jpg", name: "Paubhaji Masala",s1: '50|100 gm' },
+    { image: "images/Raita Masala.jpg", name: "Raita Masala", s1: '50|100 gm' },
+    { image: "images/Sabji Masala.jpg", name: "Sabji Masala",s1: '50|100 gm'},
+    { image: "images/sambar.jpg", name: "Sambhar Masala", s1: '50|100 gm' },
+    { image: "images/saunth.jpg", name: "Sauth Powder", s1: '50|100 gm' },
+    { image: "images/garam.jpg", name: "SPL. Garam Masala", s1: '50|100 gm'},
+    { image: "images/Meat Masala.jpg", name: "SPL. Meat Masala", s1: '50|100 gm' },
+    { image: "images/Shahi paneer.jpg", name: "Shahi Panner", s1: '50|100 gm'},
+    { image: "images/jeera.jpg", name: "Jeera Powder", s1: '50|100 gm' },
+    { image: "images/Pudhina.jpg", name: "Pudina Powder", s1: '50 gm' },
+    { image: "images/Pani Puri.jpg", name: "Pani Puri Powder",s1: '50 gm'  },
+    { image: "images/blackpeper.jpg", name: "Kali Mirch Powder", s1: '100 gm'  },
+    { image: "images/sauf.jpg", name: "Sonf Powder", s1: '100 gm' },
+    { image: "images/anardana.jpg", name: "Anardana Powder", s1: '100 gm'  },
   ];
 
   return (
@@ -45,13 +44,9 @@ function Blend() {
                 <div className="text-3xl"><h1>{info.name}</h1></div>
                 <div className="mt-3 "><p>YP Gold Blend spices give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Blend spices do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
-                  <div className="mt-2.5 flex  space-x-2 min-[320px]:w-70">
-                    <div className="  flex cursor-pointer justify-center items-center text-center rounded-md border-solid border-2 border-[#0097CC] mx-2 h-10 px-3 text-xs font-medium min-[320px]:text-xxs">
-                      <h3>50gm </h3>
-                    </div>
-                    <div className="flex items-center cursor-pointer rounded-md border-solid border-2 border-[#0097CC]  px-3 h-10 text-xs font-medium min-[320px]:text-xxs">
-                      100gm
-                    </div>
+                  <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
+                      <h3 className="text-bold text-black-900">Available Sizes</h3>
+                      <h4 className="text-bold">{info.s1}</h4>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">
