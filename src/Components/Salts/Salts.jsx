@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Salts() {
   const info = [
-    { image: "images/rocksalt_2.png", name: "Rock Salt",s1:'1kg |500gm |200gm |100gm' },
-    { image: "images/blacksalt.jpg", name: "Black Salt",s1:'100gm |200gm |500 gm' },
+    { image: "images/rocksalt_2.png", name: "Rock Salt",s1:'1kg |500gm |200gm |100gm',content:"Experience the purity of YPGold's Rock Salt. Harvested from pristine sources, our Rock Salt adds natural flavor to your dishes. With its distinct taste and mineral richness, YPGold's Rock Salt enhances the essence of every meal, ensuring a wholesome and flavorful culinary experience." },
+    { image: "images/blacksalt.jpg", name: "Black Salt",s1:'100gm |200gm |500 gm',content:"Enhance your dishes with the unique flavor of YPGold's Black Salt. Harvested from mineral-rich deposits, our Black Salt adds a distinctive savory taste to your culinary creations. Perfect for seasoning salads, snacks, and chaats, YPGold's Black Salt elevates the flavor profile of every dish, ensuring a delightful dining experience." },
   ];
 
   return (
@@ -16,7 +16,7 @@ function Salts() {
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>YP Gold Salts give you the best of taste, flavour and aroma as they are sourced from the prime spice growing regions. Salts do not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality spices in India, guaranteed not only to be pure but also to delight your palate with their taste and aroma.</p></div>
+                <div className="mt-3 "><p>{info.content}</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                 <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
                       <h3 className="text-bold text-black-900">Available Sizes</h3>

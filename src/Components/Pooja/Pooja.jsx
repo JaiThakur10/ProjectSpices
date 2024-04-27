@@ -15,7 +15,7 @@ function Pooja() {
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
                 <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>YP Gold Hawan Samagri give you the best aroma as they are sourced from the prime sources. It does not go through the grounding process and retain most of their original qualities, they are cleaned using stringent processes to make them free from impurities. With this, we ensure that you receive only the best quality samagri in India.</p></div>
+                <div className="mt-3 "><p>Immerse yourself in the sacred tradition with YPGold's Hawan Samagri. Crafted with a blend of premium herbs and aromatic ingredients, our Hawan Samagri enhances the spiritual atmosphere of your rituals. With its divine fragrance and purity, YPGold's Hawan Samagri elevates the sacred experience, ensuring a meaningful and auspicious ceremony.</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                 <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
                       <h3 className="text-bold text-black-900">Available Sizes</h3>
