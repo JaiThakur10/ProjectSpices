@@ -13,8 +13,8 @@ function Others() {
     { image: "images/kasoori.jpeg", name: "Kasoori Methi",s1: '20gm |50gm |500 gm' },
     { image: "", name: "Podana Chathi",s1: '1kg' },
     { image: "images/chat.jpg", name: "Chat Masala",s1: '500gm |200 gm |1kg' },
-    { image: "images/soya.jpeg", name: "SoyaChunks Moti",s1: 'Rs 10/-' },
-    { image: "images/mini_soya.jpeg", name: "SoyaChunks Mini",s1: 'Rs 10/-' },
+    { image: "images/soya_2.jpeg", name: "SoyaChunks Moti",s1: 'Rs 10/-' },
+    { image: "images/mini_soya_2.jpeg", name: "SoyaChunks Mini",s1: 'Rs 10/-' },
    
   
   ];
