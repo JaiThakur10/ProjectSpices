@@ -52,7 +52,7 @@ const Button = ({
   ...restProps
 }) => {
   return (
-    <button class="flex items-center bg-[#B8A064] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+    <button class="flex items-center bg-yellow-500 h-[70px] text-[white] rounded-full border-solid border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                     Online order{" "}
                     <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                   </button>
