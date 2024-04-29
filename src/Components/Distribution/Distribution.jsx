@@ -18,8 +18,8 @@ function Distribution() {
           />
         </div> */}
         {/* Content Section */}
-        <div className='w-full h-full  flex py-20'>
-          <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[75%] max-h-[300px] max-[700px]:max-h-[650px] m-auto shadow-lg px-5 py-3 '>
+        <div className='w-full h-[1600px]  flex py-20'>
+          <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[85%] max-h-[1800px] max-[700px]:max-h-[1800px] m-auto shadow-lg px-5 py-3  mt-0 '>
             <div className='w-1/2 md:w-1/2 max-[700px]:border-b-2 md:m-6 border-r-2 max-[700px]:border-r-0 '> 
               <h2 className='font-bold text-xl font-serif'>YP GOLD</h2>
               <p className='mt-2 font-serif font-bold'>Radhika International </p>
@@ -36,7 +36,19 @@ function Distribution() {
                 Contact Here &rarr;
               </button>
               <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFcisLvVcF2fLUn2t_z36R90WGWYHNrLU8xLoA-7prRg8M8A/viewform?embedded=true" width="640" height="1138" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <div >
+              <iframe 
+              style={{ overflowY: "auto", scrollbarWidth: "none" }}
+              scrolling="no"  
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeFcisLvVcF2fLUn2t_z36R90WGWYHNrLU8xLoA-7prRg8M8A/viewform?embedded=true" 
+              width="640" 
+              height="1230" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0">
+                Loading…
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
