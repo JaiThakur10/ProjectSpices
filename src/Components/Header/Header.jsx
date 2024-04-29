@@ -44,7 +44,7 @@ export default function Header({ ...props }) {
               >
                 <button
                   type="button"
-                  className="bg-[#B8A064] text-white-A700 px-2 rounded-full"
+                  className="bg-yellow-500 text-white-A700 px-2 rounded-full"
                 >
                   CONTACT US
                 </button>
