@@ -48,7 +48,7 @@ function Category() {
                 </div>
                 <div className="flex items-center mt-3    ">
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:dropup">
-                    <button class="flex items-center bg-yellow-500 h-[60px] text-[white] rounded-full max-[450px]:pr-6    max-[450px]:rounded-full max-[450px]:border-solid border-solid max-[450px]:p-2 border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                    <button class="flex items-center bg-yellow-500 h-[60px] text-[white]  max-[450px]:pr-6  max-[450px]:border-solid border-solid max-[450px]:p-2 border-2  hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                       Online order{" "}
                       <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                     </button>
@@ -86,7 +86,7 @@ function Category() {
                     to={slides.link}
 
                   >
-                    <button className=" mt-2 mb-2 text-[#0097CC] h-[60px]   max-[450px]:rounded-full max-[450px]:border-solid rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
+                    <button className=" mt-2 mb-2 text-[#0097CC] h-[60px]    max-[450px]:border-solid  border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2">
                       Get Details
                     </button>
                   </NavLink>
@@ -108,6 +108,15 @@ function Category() {
 }
 
 export default Category
+
+
+
+
+
+
+
+
+
 
 
 
