@@ -28,24 +28,21 @@ function Distribution() {
               <p className='font-serif'>+91 9599261209 / 0120-2801554</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
               <p className='font-serif'>radhikainternationalgzb@gmail.com</p>
+              <h4 className='text-[#0097CD] mt-4 font-serif '>Consumer Care Helpline Number</h4>
+              <p className='font-serif'>+91 9599261209 / 0120-2801554</p>
             </div>
             <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
-              <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
-              <p className='mt-2'>+91 9599261209 / 0120-2801554</p>
-              <button onClick={() => { window.open('http://wa.me/9599260899?text=Hello! Provide your Basic details such as Name, City, Pincode, Contact and Firm Name', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
-                Contact Here &rarr;
-              </button>
-              <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
               <div >
               <iframe 
-              style={{ overflowY: "auto", scrollbarWidth: "none" }}
+              style={{ overflowY: "auto", scrollbarWidth: "none", borderRadius: "none" }}
               scrolling="no"  
               src="https://docs.google.com/forms/d/e/1FAIpQLSeFcisLvVcF2fLUn2t_z36R90WGWYHNrLU8xLoA-7prRg8M8A/viewform?embedded=true" 
               width="640" 
               height="1230" 
-              frameborder="0" 
+              //frameborder="5" 
               marginheight="0" 
-              marginwidth="0">
+              marginwidth="0"
+              >
                 Loading…
                 </iframe>
               </div>
