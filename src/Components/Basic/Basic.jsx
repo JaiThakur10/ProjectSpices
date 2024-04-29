@@ -1,5 +1,4 @@
 import React from "react";
-import HomepageCardproduct from "../HomepageCardproduct/HomepageCardproduct";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Basic() {
@@ -28,7 +27,7 @@ function Basic() {
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">
-                    <Button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
+                    <Button class="flex items-center text-[#0097CC]  rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-2 w-auto">
                       Online order <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
                     </Button>
 
