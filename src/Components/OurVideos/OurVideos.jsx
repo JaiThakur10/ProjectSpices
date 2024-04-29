@@ -79,13 +79,13 @@ const data = [
       {
         id: 5,
         imageurl:
-        "videos/video_5.mp4",
+        "videos/video_hing.mp4",
         
       },
       {
         id: 6,
         imageurl:
-        "videos/video_6.mp4",
+        "videos/video_pooja.mp4",
         
       },
        

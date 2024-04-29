@@ -88,7 +88,7 @@ export default function Header({ ...props }) {
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Mixed"}><img className="bg-[white] mix-blend-multiply" src="images/mixed.jpeg" alt="" /></NavLink></li>Mixed Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Others"}><img className="bg-[white] mix-blend-multiply" src="images/others.jpeg" alt="" /></NavLink></li>Others Spices</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Salts"}><img className="bg-[white] mix-blend-multiply" src="images/salts.jpeg" alt="" /></NavLink></li>Salts</p>
-                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Pooja"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hawan.jpeg" alt="" /></NavLink></li>Pooja Samagri</p>
+                  <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Pooja"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hawan_3.jpeg" alt="" /></NavLink></li>Pooja Samagri</p>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Hing"}><img className="bg-[white] mix-blend-multiply h-[4rem]" src="images/hing_2.jpeg" alt="" /></NavLink></li>Hing (asafoetida)</p>
                 </ul>
               </div>

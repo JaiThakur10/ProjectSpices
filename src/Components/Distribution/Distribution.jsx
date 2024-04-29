@@ -32,10 +32,10 @@ function Distribution() {
             <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
               <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
               <p className='mt-2'>+91 9599261209 / 0120-2801554</p>
-              <button onClick={() => { window.open('http://wa.me/9599261209?text=Hello!%20I%20want%20to%20buy%20Masala in Bulk!!!!', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
-                Bulk Buy &rarr;
+              <button onClick={() => { window.open('http://wa.me/9599260899?text=Hello! Provide your Basic details such as Name, City, Pincode, Contact and Firm Name', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
+                Contact Here &rarr;
               </button>
-              <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
+              <h4 className='mt-4'>Want to Take Distribution?</h4>
             </div>
           </div>
         </div>
