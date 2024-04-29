@@ -1,6 +1,7 @@
 import React from "react";
 import { Img } from "../Img";
 import { NavLink } from "react-router-dom";
+import { Facebook, FacebookIcon, FactoryIcon, Instagram, Youtube } from "lucide-react";
 
 export default function Footer({ ...props }) {
   const scrollToTop = () => {
@@ -35,9 +36,10 @@ export default function Footer({ ...props }) {
             <div className="flex flex-col items-start justify-start w-full md:w-[17%] gap-2 md:ml-20">
               <div className="!text-[#0097CD] tracking-[-0.50px] border-b-2 border-[[#E5E5E5] w-full ">MEDIA</div>
               <div className="flex flex-row items-start justify-start gap-6">
-                <a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Img src="images/instagram.png" /></a>
-                <a className="inline-block transition-transform  hover:scale-110" href="https://m.facebook.com/ypspices?mibextid=LQQJ4d"><Img src="images/facebook.png" /></a>
-                <a className="inline-block transition-transform  hover:scale-110" href="https://youtube.com/@radhikainternational2594?si=2hhqSq4N7gEpfI1y"><Img src="images/youtube.png" /></a>
+                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Instagram className="h-10 w-10"/></a></div>
+                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Facebook className="h-10 w-10"/></a></div>
+                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Youtube className="h-10 w-10"/></a></div>
+                
               </div>
             </div>
           </div>

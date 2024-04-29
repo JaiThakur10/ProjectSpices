@@ -11,6 +11,7 @@ import VideoSlider from "../VideoSlider/VideoSlider";
 import OurVideos from "../OurVideos/OurVideos";
 import CVideos from "../CVideos/CVideos";
 
+
 const info = [
   {
     image:
@@ -132,7 +133,7 @@ export default function HomepagePage() {
               <Text
                 size=""
                 as="p"
-                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center"
+                className="text-[#0097CC] text-2xl tracking-[-0.50px] text-center font-family:'Raleway', sans-serif"
               >
                 We write various things related to spices, from tips and what
                 things I need to pay attention to when choosing right spices

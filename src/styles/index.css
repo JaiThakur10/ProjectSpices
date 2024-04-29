@@ -1,12 +1,14 @@
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Rubik;
+  font-family: Raleway;
 }
 * {
   box-sizing: border-box;
   line-height: normal;
-  font-family: inherit;
+  font-family: Raleway;
   margin: unset;
 }
 a {

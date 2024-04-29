@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Hing() {
   const info = [
-    { image: "images/hing_2.jpeg", name: "Hing(asafoetida)", s1:'8gm |20gm |50gm |100 gm'}
+    { image: "images/hing_2.jpeg", name: "Hing(asafoetida)", s1:'10gm |20gm |50gm |100 gm'}
   ];
 
   return (
