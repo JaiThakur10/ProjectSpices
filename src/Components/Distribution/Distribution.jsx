@@ -36,6 +36,7 @@ function Distribution() {
                 Bulk Buy &rarr;
               </button>
               <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFcisLvVcF2fLUn2t_z36R90WGWYHNrLU8xLoA-7prRg8M8A/viewform?embedded=true" width="640" height="1138" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </div>
