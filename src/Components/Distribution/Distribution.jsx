@@ -35,12 +35,8 @@ function Distribution() {
               <button onClick={() => { window.open('http://wa.me/9599260899?text=Hello! Provide your Basic details such as Name, City, Pincode, Contact and Firm Name', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
                 Contact Here &rarr;
               </button>
-<<<<<<< HEAD
               <h4 className='mt-4'> * Bulk order is equivalent to 10kg or more</h4>
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFcisLvVcF2fLUn2t_z36R90WGWYHNrLU8xLoA-7prRg8M8A/viewform?embedded=true" width="640" height="1138" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-=======
-              <h4 className='mt-4'>Want to Take Distribution?</h4>
->>>>>>> 4290009397892a4d565a407eb5f2296239bb92f5
             </div>
           </div>
         </div>
