@@ -26,12 +26,12 @@ function Others() {
           <div key={i} className={`w-full h-[550px] max-[450px]:h-[700px] ${i % 2 === 0 ? 'bg-[#F0F0F0] ' : 'bg-[white]'}  `}>
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
-                <div className="text-3xl"><h1>{info.name}</h1></div>
-                <div className="mt-3 "><p>{info.content}</p></div>
+                <div className="text-3xl"><h1 className="max-[450px]:text-black-900">{info.name}</h1></div>
+                <div className="mt-3 "><p className="max-[450px]:text-black-900">{info.content}</p></div>
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                 <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
-                      <h3 className="text-bold text-black-900">Available Sizes</h3>
-                      <h4 className="text-bold">{info.s1}</h4>
+                      <h3 className="text-bold text-black-900 max-[450px]:text-black-900">Available Sizes</h3>
+                      <h4 className="text-bold max-[450px]:text-black-900">{info.s1}</h4>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">
