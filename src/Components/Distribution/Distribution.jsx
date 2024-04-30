@@ -8,7 +8,7 @@ function Distribution() {
         <title>About</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="   md:flex-row items-center h-[2200px]">
+      <div className="   md:flex-row items-center h-[2300px]">
         {/* Image Section */}
         <div className=" md:w-full mb-6 md:mb-0">
           <img
