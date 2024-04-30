@@ -14,7 +14,7 @@ function Distribution() {
           <img
             src="images/image_slider_7.jpeg"
             alt="About Image"
-            className="w-full h-[30rem] object-conatiner  shadow-lg"
+            className="w-full h-[30rem] max-[450px]:h-[15rem] object-conatiner  shadow-lg"
           />
         </div>
         {/* Content Section */}
