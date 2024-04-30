@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../Button";
 function Salts() {
   const info = [
-    { image: "images/rocksalt_2.png", name: "Rock Salt",s1:'1kg |500gm |200gm |100gm',content:"Experience the purity of YPGold's Rock Salt. Harvested from pristine sources, our Rock Salt adds natural flavor to your dishes. With its distinct taste and mineral richness, YPGold's Rock Salt enhances the essence of every meal, ensuring a wholesome and flavorful culinary experience." },
+    { image: "images/rocksalt_3.png", name: "Rock Salt",s1:'1kg |500gm |200gm |100gm',content:"Experience the purity of YPGold's Rock Salt. Harvested from pristine sources, our Rock Salt adds natural flavor to your dishes. With its distinct taste and mineral richness, YPGold's Rock Salt enhances the essence of every meal, ensuring a wholesome and flavorful culinary experience." },
     { image: "images/blacksalt.jpg", name: "Black Salt",s1:'100gm |200gm |500 gm',content:"Enhance your dishes with the unique flavor of YPGold's Black Salt. Harvested from mineral-rich deposits, our Black Salt adds a distinctive savory taste to your culinary creations. Perfect for seasoning salads, snacks, and chaats, YPGold's Black Salt elevates the flavor profile of every dish, ensuring a delightful dining experience." },
   ];
 
