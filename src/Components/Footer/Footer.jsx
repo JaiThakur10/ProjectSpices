@@ -37,8 +37,8 @@ export default function Footer({ ...props }) {
               <div className="!text-[#0097CD] tracking-[-0.50px] border-b-2 border-[[#E5E5E5] w-full ">MEDIA</div>
               <div className="flex flex-row items-start justify-start gap-6">
                 <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Instagram className="h-10 w-10 max-[450px]:text-black-900"/></a></div>
-                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Facebook className="h-10 w-10"/></a></div>
-                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Youtube className="h-10 w-10"/></a></div>
+                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Facebook className="h-10 w-10 max-[450px]:text-black-900"/></a></div>
+                <div className="h-16 w-16 rounded-full justify-center bg-[#0097CC] flex items-center"><a className="inline-block transition-transform  hover:scale-110" href="https://www.instagram.com/ypgold_spices/"><Youtube className="h-10 w-10 max-[450px]:text-black-900"/></a></div>
                   
                   
               </div>
