@@ -8,7 +8,7 @@ function Distribution() {
         <title>About</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="  md:flex-row items-center">
+      <div className="   md:flex-row items-center h-[2200px]">
         {/* Image Section */}
         <div className=" md:w-full mb-6 md:mb-0">
           <img
@@ -39,7 +39,7 @@ function Distribution() {
               scrolling="no"  
               src="https://docs.google.com/forms/d/e/1FAIpQLScGt_LBC9Jke9DCIGlhjogRbSIa1fF7-Y5tVhZf7PqVbzZ59w/viewform?embedded=true" 
               width="100% "
-              height="1400" 
+              height="1340" 
               //frameborder="5" 
               marginheight="0" 
               marginwidth="0"
