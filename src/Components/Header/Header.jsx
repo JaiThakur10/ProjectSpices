@@ -113,7 +113,7 @@ export default function Header({ ...props }) {
                     type="button"
                     className="bg-[#0097CC] text-white-A700 px-2 rounded-full"
                   >
-                    Get Distributorship ?
+                    Get Distributorship?
                   </button>
                 </NavLink>
               </div>
@@ -194,7 +194,7 @@ export default function Header({ ...props }) {
                     type="button"
                     className=" text-black-900  sm:py-0 sm:px-0 md:py-0 md:px-0 text-1xl"
                   >
-                    Distributorship ?
+                    Distributorship
                   </button>
                 </NavLink>
                 <NavLink
