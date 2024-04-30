@@ -97,7 +97,7 @@ export default function HomepagePage() {
               <Heading
                 size="xl"
                 as="h2"
-                className="tracking-[-0.50px] text-center "
+                className="tracking-[-0.50px] text-center max-[450px]:text-black-900 "
               >
                 Our Videos
               </Heading>

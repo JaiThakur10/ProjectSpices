@@ -15,6 +15,7 @@ module.exports = {
         gray_200: "#ededed",
       },
       boxShadow: { xs: "10px 20px  60px 0px #0000003f" },
+
       fontFamily: { raleway: "Raleway", rubik: "Rubik", pollerone: "Poller One" },
       backgroundImage: { gradient: "linear-gradient(135deg, #273032,#274b53)" },
       opacity: { 0.81: 0.81 },
