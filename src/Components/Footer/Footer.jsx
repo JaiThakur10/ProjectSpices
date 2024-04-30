@@ -46,7 +46,13 @@ export default function Footer({ ...props }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-end w-full mt-[50px] p-6 border-t-2 border-solid bg-[#0097CD] "></div>
+      <div className="flex  w-full mt-[50px] p-6 border-t-2 border-solid bg-[#0097CD] flex justify-end">
+        <div className="  w-[500px] h-[10px] flex gap-4  justify-center text-white-A700">
+          <h1 >Sitemap</h1> <h1>|</h1>
+          <h1>Disclaimer</h1> <h1>|</h1>
+         <h1>Privacy Policy</h1> 
+        </div>
+      </div>
     </footer>
   );
 }
