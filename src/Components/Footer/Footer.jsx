@@ -21,7 +21,7 @@ export default function Footer({ ...props }) {
               <NavLink onClick={scrollToTop} to="/About" className={({ isActive }) => `block duration-200 text-black-900 font-rubik text-xl hover:text-[#0097CC]  hover:translate-x-2`}>About YP GOLD</NavLink>
               <NavLink onClick={scrollToTop} to="/Blog" className={({ isActive }) => `block duration-200 text-black-900 font-rubik text-xl hover:text-[#0097CC]   hover:translate-x-2`}>Blog</NavLink>
               <NavLink onClick={scrollToTop} to="/Contact" className={({ isActive }) => `block duration-200 text-black-900 font-rubik text-xl hover:text-[#0097CC]  hover:translate-x-2`}>Contact Us</NavLink>
-              <NavLink onClick={scrollToTop} to="/" className={({ isActive }) => `block duration-200 text-black-900 font-rubik text-xl hover:text-[#0097CC] hover:translate-x-2`}><img className="h-20 w-20" src="images/bottom_logo.jpg" alt="" /></NavLink>
+              <NavLink onClick={scrollToTop} to="/" className={({ isActive }) => `block duration-200 text-black-900 font-rubik text-xl hover:text-[#0097CC] hover:translate-x-2`}><img className=" h-28 w-28" src="images/bottom_logo.jpg" alt="" /></NavLink>
             </div>
             <div className="flex flex-col items-start justify-start w-full md:w-[17%] gap-2 md:mr-20">
               <div className="!text-[#0097CD] tracking-[-0.50px] border-b-2 border-[[#E5E5E5] w-full mr-20 ">PRODUCT RANGE</div>

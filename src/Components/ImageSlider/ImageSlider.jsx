@@ -20,10 +20,10 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <div className="w-full h-[30rem] overflow-hidden max-[450px]:h-[15rem]"> 
+    <div className="w-full h-[40rem] overflow-hidden max-[450px]:h-[15rem]"> 
       <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((imageUrl, index) => (
-          <div key={index} className="w-full h-[30rem] flex-shrink-0">
+          <div key={index} className="w-full h-[35rem] max-[450px]:h-[15rem] flex-shrink-0">
             <img src={imageUrl} alt={`Slide ${index}`} className="object-container w-full h-full max-[450px]:h-[15rem]" />
           </div>
         ))}
