@@ -14,13 +14,13 @@ export default function About() {
       </Helmet>
       <div className="  md:flex-row items-center">
         {/* Image Section */}
-        {/* <div className=" md:w-full mb-6 md:mb-0">
+        <div className=" md:w-full mb-6 md:mb-0">
           <img
-            src="images/image_slider_1.jpeg"
+            src="images/image_slider_7.jpeg"
             alt="About Image"
             className="w-full h-[30rem] object-conatiner rounded-lg shadow-lg"
           />
-        </div> */}
+        </div>
         {/* Content Section */}
         <div className="md:w-full md:pl-10">
           <h2 className="text-3xl font-bold mt-4 flex justify-center mb-4 text-[#0097CD]">About Us</h2>

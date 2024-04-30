@@ -10,13 +10,13 @@ export default function About() {
       </Helmet>
       <div className="  md:flex-row items-center">
         {/* Image Section */}
-        {/* <div className=" md:w-full mb-6 md:mb-0">
+        <div className=" md:w-full mb-6 md:mb-0">
           <img
-            src="images/image_slider_1.jpeg"
+            src="images/image_slider_4.jpeg"
             alt="About Image"
             className="w-full h-[30rem] object-conatiner  shadow-lg"
           />
-        </div> */}
+        </div>
         {/* Content Section */}
         <div className='w-full h-full  flex py-20'>
           <div className='flex flex-col-2 max-[700px]:!flex-col md:w-[75%] max-h-[300px] max-[700px]:max-h-[650px] m-auto shadow-lg px-5 py-3 '>
