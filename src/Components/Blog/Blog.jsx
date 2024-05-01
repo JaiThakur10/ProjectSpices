@@ -21,7 +21,7 @@ const Blog = () => {
       <div className="mx-auto max-w-xl lg:max-w-7xl">
 
         <div className="mx-auto mb-14 max-w-2xl text-center mt-5">
-          <h1 className="text-5xl font-bold">Our Blogs</h1>
+          <h1 className="text-5xl max-[450px]:text-black-900 font-bold">Our Blogs</h1>
         </div>
         <div className=" flex flex-col justify-center items-center mx-auto px-4">
           <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2 ">
