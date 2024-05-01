@@ -29,7 +29,7 @@ function Distribution() {
               <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
               <p className='font-serif max-[450px]:text-black-900'>radhikainternationalgzb@gmail.com</p>
               <h4 className='text-[#0097CD] mt-4 font-serif '>Consumer Care Helpline Number</h4>
-              <p className='font-serif max-[450px]:text-black-900'>+91 9599261209 / 0120-2801554</p>
+              <p className='font-serif max-[450px]:text-black-900'>+91  9599260899 / 0120-2801554</p>
             </div>
             <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
               <div className=' w-[320px] ' >

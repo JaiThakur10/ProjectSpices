@@ -31,7 +31,7 @@ export default function About() {
             </div>
             <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2 flex flex-col justify-center items-center'> 
               <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
-              <p className='mt-2 max-[450px]:text-black-900'>+91 9599261209 / 0120-2801554</p>
+              <p className='mt-2 max-[450px]:text-black-900'>+91  9599260899 / 0120-2801554</p>
             </div>
           </div>
         </div>

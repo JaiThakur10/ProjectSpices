@@ -35,7 +35,7 @@ import { Helmet } from "react-helmet";
                     </div>
                     <div className='w-1/2 m-6 mt-2  md:w-1/2 max-[700px]:m-0  max-[700px]:mt-2'> 
                       <h4 className='text-[#0097CD] '>Consumer Care Helpline Number</h4>
-                      <p className='mt-2 max-[450px]:text-black-900'>+91 9599261209 / 0120-2801554</p>
+                      <p className='mt-2 max-[450px]:text-black-900'>+91  9599260899 / 0120-2801554</p>
                       <button onClick={() => { window.open('http://wa.me/9599260899?text=Hello! I want to buy some Masala', '_blank'); }} className="mt-10 m-auto text-[#0097CC] border-solid border-2 border-[#0097CC] hover:bg-[#6D6D6D] hover:border-[#6D6D6D] hover:text-white-A700 p-2">
                        Bulk Buy &rarr;
                       </button>
