@@ -31,7 +31,7 @@ function Category() {
 
 
   return (
-    <div className='w-full h-[650px]  bg-[#F0F0F0] max-[450px]:h-[600px]'>
+    <div className='w-full h-[650px]  bg-[#F0F0F0] max-[450px]:h-[700px]'>
       <div className=" h-full overflow-hidden relative bg-center bg-cover mix-blend-multiply " style={{ backgroundImage: `url(${slides[currentSlide].bg_image})`, backgroundSize: 'cover', mixblendmode: 'multiply', transition: 'background-image 1s' }}>
         <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
 
@@ -55,9 +55,9 @@ function Category() {
 
                     <ul
                       tabIndex={0}
-                      className="dropdown-content z-[1] max-[450px]:z-[1] menu shadow h-[8rem] max-[450px]:w-[18rem] max-[450px]:h-[4rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 max-[450px]:bg-[#F0F0F0] max-[450px]:shadow-none "
+                      className="dropdown-content z-[1] max-[450px]:z-[1] menu shadow h-[8rem] max-[450px]:w-[18rem] max-[450px]:h-[4rem] w-[32rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 max-[450px]:shadow-none "
                     >
-                      <li className="w-28 h-[6rem] max-[450px]:w-18 max-[450px]:h-[2.5rem] max-[450px]:border  border border-solid border-gray-500 hover:bg-[#0097CC] max-[450px]:border-none">
+                      <li className="w-28 h-[6rem] max-[450px]:w-18 max-[450px]:h-[2.5rem] max-[450px]:border  border border-solid bg-white-A700 border-gray-500 hover:bg-[#0097CC] max-[450px]:border-none">
                         <NavLink to="https://www.flipkart.com/search?q=ypgold%20masala&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
                           <img
                             className=" max-[450px]:h-[2rem]"
@@ -93,7 +93,7 @@ function Category() {
                 </div>
               </div>
               <div className={`mt-[-1.5rem]  order-1 md:order-2 md:w-1/2 lg:w-1/3 p-4 `}>
-                <img className={`h-[450px] w-[500px] mix-blend-multiply  max-[450px]:h-[200px] `} src={slides.img} alt="" />
+                <img className={`h-[450px] w-[500px] mix-blend-multiply  max-[450px]:h-[300px] `} src={slides.img} alt="" />
               </div>
             </div>
 
