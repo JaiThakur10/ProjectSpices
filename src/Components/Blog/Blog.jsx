@@ -25,16 +25,16 @@ const Blog = () => {
         </div>
         <div className=" flex flex-col justify-center items-center mx-auto px-4">
           <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2 ">
+              <span className="mb-5 block text-black-900 font-bold">Blog 1:</span>
+              <h4 className="mb-5 text-3xl font-semibold text-gray-900">
+                The Spice Route to Flavor: Exploring the Importance of Spices in Indian Cuisine
+              </h4>
             <a className="group block w-full" href="#">
               <img
                 className="mb-5 block w-full rounded-lg"
                 src="images/blog_1.jpeg"
                 alt=""
               />
-              <span className="mb-5 block text-black-900 font-bold">Blog 1:</span>
-              <h4 className="mb-5 text-3xl font-semibold text-gray-900">
-                The Spice Route to Flavor: Exploring the Importance of Spices in Indian Cuisine
-              </h4>
               <p className="max-w-xl text-lg text-gray-800">
                 <span>When you think of Indian food, what comes to mind? Likely a warm, fragrant mixture of spices that creates those iconic and mouthwatering aromas. Spices are more than just flavor enhancers in Indian cuisine - they are integral ingredients that define the very essence of the country's rich culinary traditions.</span>
                 <br /> <br /> <span><p className='font-bold'>A Historical Legacy</p>
@@ -60,14 +60,14 @@ const Blog = () => {
           </div>
           <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2 mt-6 border-t-2 border-black-900">
             <a className="group block w-full" href="#">
+              <span className="mb-5 block text-black-900 font-bold">Blog 2:</span>
+              <h4 className="mb-5 text-3xl font-semibold text-gray-900">
+                Spices in India: More Than Just Seasonings
               <img
                 className="mb-5 block w-full rounded-lg mt-3"
                 src="images/blog_3.jpeg"
                 alt=""
               />
-              <span className="mb-5 block text-black-900 font-bold">Blog 2:</span>
-              <h4 className="mb-5 text-3xl font-semibold text-gray-900">
-                Spices in India: More Than Just Seasonings
 
               </h4>
               <p className="max-w-xl text-lg text-gray-800">
