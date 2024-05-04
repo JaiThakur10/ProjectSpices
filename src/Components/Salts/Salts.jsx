@@ -20,7 +20,7 @@ function Salts() {
                 <div className="flex max-[450px]:flex-col max-[450px]:mt-0 mt-3">
                 <div className="mt-2.5 flex-col  space-x-2 min-[320px]:w-70">
                       <h3 className="text-bold text-black-900 max-[450px]:text-black-900 ">Available Sizes</h3>
-                      <h4 className="text-bold max-[450px]:text-black-900">{info.s1}</h4>
+                      <h4 className="text-bold max-[450px]:text-black-900 text-black-900">{info.s1}</h4>
                   </div>
 
                   <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative max-[450px]:mt-2">

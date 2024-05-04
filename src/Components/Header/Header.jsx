@@ -95,7 +95,7 @@ export default function Header({ ...props }) {
                 ABOUT
               </NavLink>
               <div className="dropdown dropdown-hover py-2 pr-4 pl-3 relative " onMouseLeave={closeDropdown}>
-                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-xl cursor-pointer hover:text-[#0097CC] " onMouseEnter={toggleDropdown}
+                <div className="tabIndex={0} block py-2 pr-4 duration-200 font-rubik text-xl cursor-pointer hover:text-[#0097CC] text-black-900 " onMouseEnter={toggleDropdown}
                 >PRODUCT RANGE</div>
                 <ul tabIndex={0} className={`dropdown-content z-[1] menu shadow h-[28rem] w-[30rem] bg-white-A700 grid grid-cols-3 gap-10 p-4 ${isOpen ? 'block' : 'hidden'}`} onMouseLeave={closeDropdown}>
                   <p> <li className="w-28 h-[6rem] border border-solid text-[white] border-gray-500 "><NavLink to={"/Blend"}><img className="bg-[white] mix-blend-multiply" src="images/blend_1.jpeg" alt="" /></NavLink></li>Blend Spices</p>
