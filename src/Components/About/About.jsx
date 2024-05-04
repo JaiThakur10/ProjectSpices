@@ -33,8 +33,14 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4 mt-4">Our Story</h2>
 
           <p className="text-gray-800 mb-4">
-            Our journey starts from Ghaziabad around 18 years ago. Coming from a small town named Hapur, we starting with selling turmeric and chilli. But with all the hard work, we have expanded our boundries over different states now and have a brand name, well established.
-
+            Welcome to YP Gold Spices, your premier destination for premium-quality spices since 2002. As a seasoned spice manufacturing company, we take pride in offering a wide array of the finest spices available in India today.
+            <br /> <br /> <span>Our journey began with a vision to deliver excellence in every aspect of spice production. From cleaning to preparation and packaging, every step of our process is meticulously executed under one roof to ensure the highest standards of quality and freshness. </span>
+            <br /> <br />
+            <span>At YP Gold Spices, we understand the significance of spices in culinary experiences. Hence, we source only the finest raw materials and employ advanced techniques to preserve their natural flavors and aroma. Our commitment to quality extends to every batch we produce, guaranteeing a delightful and authentic taste in every dish.</span>
+            <br /> <br />
+            <span>Customer satisfaction is at the core of our values. We strive to exceed your expectations by consistently delivering products that not only enhance your cooking but also elevate your dining experiences. Whether you're a professional chef or a home cook, YP Gold Spices is your trusted partner for all your seasoning needs.</span>
+            <br /> <br />
+            <span>Experience the essence of purity, freshness, and flavor with YP Gold Spices - where quality meets perfection in every sprinkle.</span>
           </p>
 
 

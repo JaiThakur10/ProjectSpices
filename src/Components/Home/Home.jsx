@@ -67,18 +67,17 @@ export default function HomepagePage() {
 
 
         {/* philosophy */}
-        <div className="text-[#0097CD] text-4xl flex justify-center  items-center mt-[-5rem] max-[450px]:flex max-[450px]:text-xl bg-white-A700">
-          <span>
-            We believe spices are the backbone of Indian kitchens and to
-            preserve this, we are satisfied with nothing but perfect ingredients only.</span>
-          
+        <div className="text-[#0097CD] w-full  max-[450px]: mx-auto max-[450px]:w-1/2 text-4xl flex flex-col mt-[-5rem] max-[450px]:flex  bg-white-A700">
+     <div className=" ">We believe spices are the backbone of Indian kitchens and to preserve this, we are satisfied</div>
+           <div className="flex items-center justify-center ">with nothing but perfect ingredients only.</div>
+
         </div>
 
-        <Category/>
+        <Category />
 
         {/*blend basic slider */}
 
-        
+
 
         {/* video slider */}
 
@@ -86,7 +85,7 @@ export default function HomepagePage() {
           <h1 className="text-2xl font-bold">Video Carousel</h1>
          <VideoSlider videoPaths={videoPaths} />
         </div> */}
-        <VideoSlider/>
+        <VideoSlider />
         {/* video slider closed */}
 
 
@@ -101,12 +100,12 @@ export default function HomepagePage() {
                 Sneek Peek into the world of Spices
               </Heading>
               <div className=" w-screen ">
-              <OurVideos/>
-              
-              
+                <OurVideos />
+
+
               </div>
-              
-              
+
+
             </div>
           </div>
         </div>
@@ -121,18 +120,18 @@ export default function HomepagePage() {
               >
                 Join Us on Instagram
               </Heading>
-              
+
               <div className=" w-screen ">
-              <CVideos/>
-              
-              
+                <CVideos />
+
+
               </div>
-              
-              
+
+
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </>

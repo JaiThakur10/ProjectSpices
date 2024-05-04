@@ -39,7 +39,7 @@ function Category() {
             <div key={index} className=" carousel-item relative w-full flex justify-center gap-8 flex-col md:flex-row max-[450px]:gap-0 " >
               <div className="max-[450px]:w-full w-1/3 lg:mt-[4rem]   order-2 md:order-1 md:w-1/2 lg:w-1/3 md:mt-[0] p-4">
                 <div className="text-3xl font-bold max-[450px]:ml-20 ">
-                  <h1 className='max-[450px]:text-black-900 max-[100px]:text-black-900'>{slides.name}</h1>
+                  <h1 className='max-[450px]:text-black-900'>{slides.name}</h1>
                 </div>
                 <div className="mt-3 max-[450px]:mt-5 max-[450px]:w-full">
                   <p className=' max-[450px]:text-xs max-[450px]:text-black-900'>
