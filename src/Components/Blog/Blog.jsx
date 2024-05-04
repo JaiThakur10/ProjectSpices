@@ -18,7 +18,7 @@ const Blog = () => {
       </div>
 
 
-      <div className="mx-auto max-w-xl lg:max-w-7xl">
+      <div className="mx-auto w-full lg:max-w-7xl">
 
         <div className="mx-auto mb-14 max-w-2xl text-center mt-5">
           <h1 className="text-5xl max-[450px]:text-black-900 font-bold text-black-900">Our Blogs</h1>
@@ -31,7 +31,7 @@ const Blog = () => {
                 src="images/blog_1.jpeg"
                 alt=""
               />
-              <span className="mb-5 block text-gray-500">Post 1:</span>
+              <span className="mb-5 block text-black-900 font-bold">Blog 1:</span>
               <h4 className="mb-5 text-3xl font-semibold text-gray-900">
                 The Spice Route to Flavor: Exploring the Importance of Spices in Indian Cuisine
               </h4>
@@ -44,28 +44,28 @@ const Blog = () => {
                   While spices certainly create the distinctive tastes we associate with Indian food, their roles go far beyond just flavoring dishes. Many Indian spices like turmeric, cumin, coriander, and chili peppers have medicinal properties and have been used for centuries in Ayurvedic medicine to treat various ailments. The use of spices is, therefore deeply rooted in India's ancient spiritual traditions and beliefs about food as nourishment for both body and soul.</span>
                 <br /> <br />
                 <img
-                className="mb-5 block w-full rounded-lg"
-                src="images/blog_2.jpeg"
-                alt=""
-              />
+                  className="mb-5 block w-full rounded-lg"
+                  src="images/blog_2.jpeg"
+                  alt=""
+                />
                 <span><p className='font-bold font-raleway'>Versatile and Varied</p>
                   One of the reasons spices are so vital to Indian cuisine is because of the vast variety of vegetarian dishes. Spices help coax amazing flavors out of humble lentils, potatoes, cauliflower, and other vegetables. They transform simple ingredients into rich, complex curries and dals. From fiery vindaloo curry to aromatic biryanis, Indian spices work their magic across a vast range of savory and sweet dishes found across the country's diverse regions.
                 </span>
-                <br /> 
+                <br />
                 <br />
                 <span>Indian cuisine wouldn't be the same without its signature spices and seasoning blends. These humble yet powerful ingredients are key to unlocking the nation's vibrant flavors and centuries-old culinary heritage. From lentil curries to biryani, Indian food delights the senses with each spice-laden bite.</span>
               </p>
-             
+
             </a>
           </div>
-          <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2 mt-4">
+          <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2 mt-6 border-t-2 border-black-900">
             <a className="group block w-full" href="#">
               <img
-                className="mb-5 block w-full rounded-lg"
+                className="mb-5 block w-full rounded-lg mt-3"
                 src="images/blog_3.jpeg"
                 alt=""
               />
-              <span className="mb-5 block text-gray-500">Post 2:</span>
+              <span className="mb-5 block text-black-900 font-bold">Blog 2:</span>
               <h4 className="mb-5 text-3xl font-semibold text-gray-900">
                 Spices in India: More Than Just Seasonings
 
@@ -81,12 +81,12 @@ const Blog = () => {
                   For Hindu communities across India, spices play a sacred role in rituals, ceremonies, and spiritual practices. Turmeric is considered auspicious and is used during weddings and religious festivals. The fragrant spices in incense sticks, like cloves, cinnamon, and frankincense, create an atmosphere conducive to meditation and prayer. Ayurvedic rituals like abhyanga, the anointing of the body with warm herb-infused oils, utilize spices for their therapeutic value. Spices are inextricably linked to Indian spirituality and purity, energy, and wellness beliefs.</span>
                 <br /> <br />
                 <img
-                className="mb-5 block w-full rounded-lg"
-                src="images/blog_4.jpeg"
-                alt=""
-              />
-              <br />
-              
+                  className="mb-5 block w-full rounded-lg"
+                  src="images/blog_4.jpeg"
+                  alt=""
+                />
+                <br />
+
                 <span><p className='font-bold'>Beauty Secrets and Cosmetics</p>
                   Another use of Indian spices that may be surprising is in the realm of cosmetics and beauty treatments. Turmeric is renowned for its radiance-boosting properties for skin and is a key ingredient in bridal beauty rituals like haldi ceremonies. Sandalwood powder combines with spices like saffron and rose to create fragrant body powders. Warming spices like cinnamon and cayenne are featured in hair oils and masks that promote hair growth and combat issues like dandruff. Indian grandmothers have long understood the multipurpose benefits of the humble spice box.</span>
 

@@ -25,7 +25,7 @@ export default function About() {
               <p className='mt-2 font-serif font-bold max-[450px]:text-black-900'>Radhika International </p>
              <p className='mt-2 font-serif max-[450px]:text-black-900'> 18/1/4 South Side Industrial Area, G.T Road, Ghaziabad</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Office</h4>
-              <p className='font-serif max-[450px]:text-black-900'>+91 9599261209 / 0120-2801554</p>
+              <p className='font-serif max-[450px]:text-black-900'>+91 9599260899 / 0120-2801554</p>
               <h4 className='text-[#0097CD] mt-4 font-serif'>Email</h4>
               <p className='font-serif max-[450px]:text-black-900'>radhikainternationalgzb@gmail.com</p>
             </div>
