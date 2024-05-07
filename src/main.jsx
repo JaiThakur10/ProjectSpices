@@ -35,6 +35,7 @@ const router = createBrowserRouter(
       <Route path='Pooja' element={<Pooja/>} />
       <Route path='Hing' element={<Hing/>} />
       <Route path='Distribution' element={<Distribution/>} />
+      
 
     </Route>
   )

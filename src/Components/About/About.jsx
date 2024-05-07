@@ -25,14 +25,9 @@ export default function About() {
         <div className="md:w-full md:pl-10">
           <h2 className="text-3xl font-bold mt-4 flex justify-center mb-4 text-[#0097CD]">About Us</h2>
 
-          <div className='flex flex-col items-center text-xl font-bold '>
-            <span>YP Spices, as the name suggest, is a spice manufacturing company. Established in 2002, we provide all the major spices today in India.</span>
-            <span>Our functioning includes cleaning, preparing and packaging under one roof. Providing you with best quality product.
-            </span>
-          </div>
-          <h2 className="text-3xl font-bold mb-4 mt-4">Our Story</h2>
+         
 
-          <p className="text-gray-800 mb-4">
+          <p className=" text-black-900 font-bold mb-4">
             Welcome to YP Gold Spices, your premier destination for premium-quality spices since 2002. As a seasoned spice manufacturing company, we take pride in offering a wide array of the finest spices available in India today.
             <br /> <br /> <span>Our journey began with a vision to deliver excellence in every aspect of spice production. From cleaning to preparation and packaging, every step of our process is meticulously executed under one roof to ensure the highest standards of quality and freshness. </span>
             <br /> <br />
