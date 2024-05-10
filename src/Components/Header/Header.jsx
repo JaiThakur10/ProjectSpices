@@ -21,19 +21,19 @@ export default function Header({ ...props }) {
     <header {...props}>
       <div className="flex flex-row items-center w-full max-w-[12500px] bg-[#FFFFFF]">
         <div className="flex justify-between min-[450px]:w-full h-[100px]">
-          <div className="flex-shrink-0 max-[450px]:hidden ml-24">
+          <div className="lg:flex-shrink-0 xl:flex-shrink-0  max-[450px]:hidden ml-24">
             <NavLink to="/"> <Img src="images/ypgold.png" alt="image" className="h-[120px] w-full" /> </NavLink>
           </div>
           <div className="hidden md:flex  pb-0 py-0 items-end relative mr-24 flex-wrap">
             {/* upper div */}
             <div className="flex  justify-center  gap-2 mb-4 h-1/3 w-[75%] ml-auto  items-center">
-          
-            <Pin className="mt-6 h-4 w-4 ml-20"/><input  type="text"  
+
+              <Pin className="mt-6 h-4 w-4 ml-20" /><input type="text"
                 placeholder="Hi , Enter your Pincode"
                 className="flex items-start justify-start w-[1/4] h-10 mt-6 pl-4 border-t-0 border-b-0 border-l-0 border-2 border-r-grey-600"
-                />
+              />
               <div className="dropdown dropdown-hover pr-4 pl-3 relative ">
-               
+
                 <button class="flex items-center text-[#0097CC] rounded-full border-solid border-2 border-[#0097CC] hover:bg-[#0097CC] hover:text-white-A700 p-1 w-auto mt-8">
                   Online order{" "}
                   <img src="images/img_arrow_down.svg" alt="" class="ml-2 " />
@@ -61,9 +61,9 @@ export default function Header({ ...props }) {
                 >
                   CONTACT US
                 </button>
-                
+
               </NavLink>
-              <Search className="mt-6"/>
+              <Search className="mt-6" />
             </div>
             {/* upper div closed */}
             <div className=" flex items-baseline space-x-0 mb-0 ml-auto ">
@@ -130,12 +130,12 @@ export default function Header({ ...props }) {
                   }  font-rubik text-xl   hover:text-[#0097CC] `
                 }
               >
-               <button
-                    type="button"
-                    className="bg-[#0097CC] text-white-A700 px-2 rounded-full"
-                  >
-                    B2B
-                  </button>
+                <button
+                  type="button"
+                  className="bg-[#0097CC] text-white-A700 px-2 rounded-full"
+                >
+                  B2B
+                </button>
               </NavLink>
             </div>
           </div>
