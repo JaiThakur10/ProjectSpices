@@ -31,7 +31,16 @@ function OurVideos() {
           
           arrows: false,
         },
-      }
+      },
+      {
+        breakpoint:1024, // Adjust breakpoint as needed
+        settings: {
+          
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+        },
+      },
     ]
   };
 

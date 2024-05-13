@@ -52,8 +52,8 @@ function CVideos() {
     <div className="w-full">
       <Slider {...settings} >
         {data.map((d) => (
-          <div key={d.id} className="h-[250px]" onClick={() => enlargeImage(d.imageurl)}>
-            <div className="flex justify-center items-center">
+          <div key={d.id} className="h-[250px] " onClick={() => enlargeImage(d.imageurl)}>
+            <div className="flex justify-center items-center ">
               <img src={d.imageurl} alt="" className="h-60 w-64" loading="lazy"/>
             </div>
           </div>
@@ -63,7 +63,7 @@ function CVideos() {
         <div className="fixed top-0 left-0 w-full h-full  flex justify-center items-center bg-black bg-opacity-75 ">
           <div className="relative">
             <button className="absolute  top-2 right-2 text-white z-10" onClick={handleClose}><img className=" h-9 w-9 max-[450px]:h-9 md:w-9" src="images/cross.png" alt="" /></button>
-            <img src={selectedImage} alt="" className="max-w-[600px] max-h-[600px] max-[450px]:h-[400px] max-[450px]:w-[400px]" />
+            <img src={selectedImage} alt="" className="max-w-[600px] max-h-[600px] max-[450px]:h-[400px] max-[450px]:w-[400px] lg:h-[500px]" />
           </div>
         </div>
       )}

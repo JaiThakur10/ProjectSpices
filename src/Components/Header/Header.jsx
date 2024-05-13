@@ -19,14 +19,14 @@ export default function Header({ ...props }) {
   };
   return (
     <header {...props}>
-      <div className="flex flex-row items-center w-full max-w-[12500px] bg-[#FFFFFF]">
+      <div className="flex flex-row items-center w-full max-w-[12500px] bg-[#FFFFFF] lg:mb-6">
         <div className="flex justify-between min-[450px]:w-full h-[100px]">
-          <div className="lg:flex-shrink-0 xl:flex-shrink-0  max-[450px]:hidden ml-24">
+          <div className="lg:flex-shrink-0 xl:flex-shrink-0  max-[770px]:hidden ml-24">
             <NavLink to="/"> <Img src="images/ypgold.png" alt="image" className="h-[120px] w-full" /> </NavLink>
           </div>
           <div className="hidden md:flex  pb-0 py-0 items-end relative mr-24 flex-wrap">
             {/* upper div */}
-            <div className="flex  justify-center  gap-2 mb-4 h-1/3 w-[75%] ml-auto  items-center">
+            <div className="flex lg:w-[100%] justify-center  gap-2 mb-4 h-1/3 w-[75%] ml-auto  items-center">
 
               <Pin className="mt-6 h-4 w-4 ml-20" /><input type="text"
                 placeholder="Hi , Enter your Pincode"
