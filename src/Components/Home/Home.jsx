@@ -67,9 +67,9 @@ export default function HomepagePage() {
 
 
         {/* philosophy */}
-        <div className="text-[#0097CD] w-full  max-[770px]: mx-auto max-[770px]:w-1/2 text-4xl flex flex-col mt-[-5rem] max-[770px]:flex  bg-white-A700">
-          <div className=" min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center ">We believe spices are the backbone of Indian kitchens and to preserve </div>
-          <div className="min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center ">this, we are satisfied with nothing but perfect ingredients only.</div>
+        <div className="text-[#0097CD] w-full  max-[770px]:mx-auto max-[770px]:w-1/2 text-4xl  flex flex-col mt-[-5rem] max-[770px]:flex  bg-white-A700">
+          <div className="text-center min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center "> We believe spices are the backbone of Indian kitchens and to preserve </div>
+          <div className="text-center min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center  ">this, we are satisfied with nothing but perfect ingredients only.</div>
 
         </div>
 

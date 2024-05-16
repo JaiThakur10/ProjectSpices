@@ -26,7 +26,7 @@ export default function Header({ ...props }) {
           </div>
           <div className="hidden md:flex  pb-0 py-0 items-end relative mr-24 flex-wrap">
             {/* upper div */}
-            <div className="flex lg:w-[100%] justify-center  gap-2 mb-4 h-1/3 w-[75%] ml-auto  items-center">
+            <div className="flex lg:w-[80%] justify-center  gap-2 mb-4 h-1/3 w-[75%] ml-auto  items-center">
 
               <Pin className="mt-6 h-4 w-4 ml-20" /><input type="text"
                 placeholder="Hi , Enter your Pincode"
