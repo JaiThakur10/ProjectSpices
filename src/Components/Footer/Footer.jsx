@@ -50,7 +50,7 @@ export default function Footer({ ...props }) {
         <div className=" w-[500px] h-[10px] flex gap-4  justify-center text-white-A700" >
           <h1> <a href="https://start-up-eight.vercel.app/">Created by Weularity</a>  </h1>
         </div>
-        <div className="  w-[500px] h-[10px] flex gap-4  justify-center text-white-A700">
+        <div className="  w-[500px] h-[10px] flex gap-4 max-[450px]:hidden  justify-center text-white-A700">
           <h1 >Sitemap</h1> <h1>|</h1>
           <h1>Disclaimer</h1> <h1>|</h1>
          <h1>Privacy Policy</h1> 
