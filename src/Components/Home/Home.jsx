@@ -67,9 +67,9 @@ export default function HomepagePage() {
 
 
         {/* philosophy */}
-        <div className="text-[#0097CD] w-full  max-[450px]: mx-auto max-[450px]:w-1/2 text-4xl flex flex-col mt-[-5rem] max-[450px]:flex  bg-white-A700">
-          <div className=" min-[450px]:flex min-[450px]:text-3xl min-[450px]:justify-center ">We believe spices are the backbone of Indian kitchens and to preserve </div>
-          <div className="min-[450px]:flex min-[450px]:text-3xl min-[450px]:justify-center ">this, we are satisfied with nothing but perfect ingredients only.</div>
+        <div className="text-[#0097CD] w-full  max-[770px]:mx-auto max-[770px]:w-1/2 text-4xl  flex flex-col mt-[-5rem] max-[770px]:flex  bg-white-A700">
+          <div className="text-center min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center "> We believe spices are the backbone of Indian kitchens and to preserve </div>
+          <div className="text-center min-[770px]:flex min-[770px]:text-3xl min-[770px]:justify-center  ">this, we are satisfied with nothing but perfect ingredients only.</div>
 
         </div>
 
@@ -95,7 +95,7 @@ export default function HomepagePage() {
               <Heading
                 size="xl"
                 as="h2"
-                className="tracking-[-0.50px] text-center max-[450px]:text-black-900 "
+                className="tracking-[-0.50px] text-center max-[770px]:text-black-900 "
               >
                 Sneek Peek into the world of Spices
               </Heading>
@@ -116,7 +116,7 @@ export default function HomepagePage() {
               <Heading
                 size="xl"
                 as="h2"
-                className="tracking-[-0.50px] text-center max-[450px]:text-black-900"
+                className="tracking-[-0.50px] text-center max-[770px]:text-black-900"
               >
                 Join Us on Instagram
               </Heading>

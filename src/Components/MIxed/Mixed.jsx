@@ -5,14 +5,14 @@ import { Button } from "../Button";
 function Mixed() {
     const info = [
         { image: "images/garam_1.jpg", name: "Garam Masala Special", s1: '200gm |500 gm |1kg',content:"Experience the exquisite blend of flavors with YPGold's Garam Masala Special. Carefully crafted with a unique combination of aromatic spices, our Garam Masala Special adds depth and richness to your dishes. Whether you're cooking savory curries, flavorful biryanis, or aromatic stews, YPGold's Garam Masala Special elevates your culinary creations to new heights. Enhance the taste and aroma of your meals with the distinctive flavor profile of YPGold's Garam Masala Special, and delight your senses with every bite."},
-        { image: "images/samosa_2.jpeg", name: "Salad Samosa Masala", s1: '50gm | 500gm',content:"Transform your salads into culinary delights with YPGold's Salad Samosa Masala. Crafted with a blend of aromatic spices and herbs, our Salad Samosa Masala adds a burst of flavor to your salad creations. Whether you're tossing together a refreshing green salad or a hearty grain bowl, YPGold's Salad Samosa Masala brings a taste of India to every bite. Elevate your salads with the irresistible flavor of YPGold's Salad Samosa Masala and turn simple greens into a gourmet experience."},
+        { image: "images/samosa.jpeg", name: "Salad Samosa Masala", s1: '50gm | 500gm',content:"Transform your salads into culinary delights with YPGold's Salad Samosa Masala. Crafted with a blend of aromatic spices and herbs, our Salad Samosa Masala adds a burst of flavor to your salad creations. Whether you're tossing together a refreshing green salad or a hearty grain bowl, YPGold's Salad Samosa Masala brings a taste of India to every bite. Elevate your salads with the irresistible flavor of YPGold's Salad Samosa Masala and turn simple greens into a gourmet experience."},
       
       ];
   return (
     <div>
      <div className="mx-auto grid w-full items-center  ">
         {info.map((info, i) => (
-          <div key={i} className={`w-full h-[550px] max-[450px]:h-[700px] ${i % 2 === 0 ? 'bg-[#F0F0F0] ' : 'bg-[white]'}  `}>
+          <div key={i} className={`w-full h-[550px] max-[450px]:h-[800px] ${i % 2 === 0 ? 'bg-[#F0F0F0] ' : 'bg-[white]'}  `}>
             <div key={i} className={` relative w-full flex max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]: justify-center gap-12 ${i % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
               <div className="justify-start w-1/3 mt-[6.5rem] max-[450px]:w-full max-[450px]:mt-[-2rem] max-[450px]:py-[-2rem]">
                 <div className="text-3xl"><h1 className="max-[450px]:text-black-900 text-black-900">{info.name}</h1></div>
